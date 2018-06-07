@@ -63,13 +63,14 @@ body{
 
 
 .nav_section{
-   z-index: 1;
-  position: absolute;
-   /*height:100px;*/
+    z-index: 2;
+    position: absolute;
+   height:500px;
+   background-color: red;
 }
 .nav_section_1 {
-z-index: 1;
- padding-top: 15px;
+  z-index: 1;
+  padding-top: 15px;
 }
 
 
