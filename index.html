@@ -33,8 +33,9 @@
 
     <!--Links to activate javascript and jQuery on github pages-->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!--Link to activate font-awesome fonts on github pages-->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
@@ -63,14 +64,19 @@
 <!--*************************
               1ST   NAVIGATION
       **************************-->
-
+<!--
       <section class="nav_section_1">
   <div class="container-fluid">
     <div class="row row-content">
 
       <div class="offset-6 col-6 nav-bar">
         <div class="navigation">
+
+        -->
+
           <!--I'm keeping the navbar at the bottom by using the bootstrap class fixed-bottom, i could use fixed-top or sticky top-->
+
+          <!--
           <nav class="navbar navbar-inverse navbar-toggleable-sm sticky-top navbar-light bg-faded">
             <div class="collapse navbar-collapse" id="Navbar">
 
@@ -97,19 +103,23 @@
 </section>
 
 
-
+-->
 
 <!--*************************
               2ND   NAVIGATION
       **************************-->
-
+<!--
       <section class="nav_section text-muted">
   <div class="container-fluid">
     <div class="row-content">
 
       <div class="col-6 offset-3 nav-bar">
         <div class="navigation">
+
+        -->
           <!--I'm keeping the navbar at the bottom by using the bootstrp class fixed-bottom, i could use fixed-top or sticky top-->
+
+          <!--
           <nav class="navbar navbar-inverse navbar-toggleable-sm fixed-bottom navbar-light bg-faded">
             <div class="collapse navbar-collapse" id="Navbar">
               <ul class="navbar-nav mx-auto">
@@ -133,6 +143,19 @@
     </div>
    </div>
 </section>
+-->
+<!--
+      <section class="nav_section text-muted">
+  <div class="container-fluid">
+    <div class="row-content">
+
+      <div class="col-6 offset-3 nav-bar">
+        <div class="navigation">
+
+        -->
+          <!--I'm keeping the navbar at the bottom by using the bootstrp class fixed-bottom, i could use fixed-top or sticky top-->
+
+
 
 
 <!--*************************
@@ -140,6 +163,7 @@
 **************************-->
 <!--I'm linking the home nav to the logo so that when the home button is clicked it shows the logo section, otherwise it will cut it off.-->
 
+<!--
 <section id="home" class="logo bg-faded">
   <div class="container-fluid">
     <div class="row row-content">
@@ -154,7 +178,7 @@
     </div>
   </div>
 </section>
-      
+      -->
       
 
 <!--*************************
@@ -171,6 +195,40 @@
   </div>
 </section>
 
+
+<!-- Navigation -->
+<div class="nav_border sticky-top">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">
+    <img src="https://i.imgur.com/B7LICxx.jpg" width="90px" max-width="100%" height="auto" class="img-fluid" title="Joan Clarke Portfolio" alt="logo">
+  </a>
+  <a href="#home" class="logo_title text-uppercase"><span class="name">Joan Clarke</span><br><span class="text-capitalize career">Front-End Developer</span></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link text-uppercase" href="#home">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-uppercase" href="#about">About Me</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-uppercase" href="#portfolio_section">Portfolio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-uppercase" href="#contact_me">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+</div>
+<!-- End of Navigation -->
+
+
 <!--*************************
           WELCOME
 **************************-->
@@ -184,11 +242,20 @@
           <div class="col-4 offset-4">
 
           </div>
-          <div class="col-12">
-            <p class="text-center">WELCOME TO MY PORTFOLIO</p>
+          <div class="col-12 welcome_head">
+            <p>WELCOME</p>
           </div>
-<div class=" col-12 Learn_more_button">
-                    <button type="button" class="btn btn-link"><a href="#outlook"> Learn More</a></button>
+          <!--Typing-->
+          <div class="typing">
+          <h1>
+            <a href="" class="typewrite" data-period="2000" data-type='[ "My Name is Joan.", "I am a Developer.", "Let&#8217;s build something awesome." ]'>
+              <span class="wrap"></span>
+            </a>
+          </h1> 
+          </div>
+
+          <div class=" col-12 Learn_more_button">
+            <button type="button" class="btn btn-link"><a href="=#outlook"> Learn More</a></button>
           </div>
          <div class="col-12 social_buttons text-center">
             <a href="https://www.linkedin.com/in/clarkejoan" target="_blank" class="fa fa-linkedin" aria-hidden="true"></a>
@@ -209,11 +276,12 @@
 <section id="about" class="about_me">
   <div class="container container-fluid">
     <div class="row row-content">
+      <div class="col-12 text-center">
+          <p class="about_heading text-uppercase">About Me</p>
+      </div>
       <div class="col-12">
-          <p class="text-center">
-I’m extremely excited to invite you to explore my portfolio, skills, education and professional experience, and learn a little more about me.  I’m a born goal-getter, who gives 110% to every project (challenging or otherwise) I take on.
-I believe that with every challenge comes growth, perserverance and a sense of responsibility, as such I make it a point to face them head on with determination and the premise that "I can do all things through Christ who gives me strength". 
-</p>
+          <p class="text-center">I&#8217;m extremely excited to invite you to explore my portfolio, skills, education and experience and learn a little more about me. I'm a self-taught Front-End Developer with a passion for making clean, responsive and user-friendly websites and apps.  My favorite part of being a developer, is being a part of an idea from conception to completion. Being able to bring ideas to life is truly amazing.</p>
+          <p class="text-center">When I'm not coding, you can find me writing songs, spending time at church or with my family.</p>
       </div>
     </div>
   </div>
@@ -224,7 +292,7 @@ I believe that with every challenge comes growth, perserverance and a sense of r
 **************************-->
 
 <section id ="portfolio_section" class="portfolio">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row row-content">
                 <div class="col-12 text-center">
                     <p class="portfolio_heading text-uppercase">Portfolio</p>
@@ -234,7 +302,7 @@ I believe that with every challenge comes growth, perserverance and a sense of r
             <div class="row row-content skills_row">
               
               <!--Project Read-->
-                <div class="col-12 col-sm-4 skills large_screen">
+                <div class="col-12 col-sm-3  skills large_screen">
                     <img src="https://i.imgur.com/ZJ1nBxQ.png" class="skills_image" title="Project: Project Read" alt="image of phone, ipad and book">  
                   <!--view project button-->
                   <a class="button view_button" href="#">View</a>
@@ -248,7 +316,7 @@ I believe that with every challenge comes growth, perserverance and a sense of r
                 
                  
               <!--Chicago Inn-->
-                <div class="col-12 col-sm-4 skills large_screen">
+                <div class="col-12 col-sm-3 skills large_screen">
                     <img src="https://i.imgur.com/Du53XBP.jpg" class="skills_image" title="Project: Chicago Inn" alt="image of Chicago Inn">    
              <!--view project button-->
                   <a class="button view_button" href="#">View</a>     
@@ -262,7 +330,7 @@ I believe that with every challenge comes growth, perserverance and a sense of r
 
             
               <!--Human Dev Comp.-->
-                <div class="col-12 col-sm-4 skills large_screen">
+                <div class="col-12 col-sm-3 skills large_screen">
                     <img src="https://i.imgur.com/XewQiUc.png" class="skills_image" title="Project: Human Comparator" alt="image of Human Comparator line graph">
                   <!--view project button-->
                   <a class="button view_button" href="#">View</a>
@@ -275,10 +343,10 @@ I believe that with every challenge comes growth, perserverance and a sense of r
             <!--******-->
                  
               <!--PITW Ministries-->
-                <div class="col-12 col-sm-4 skills large_screen">
+                <div class="col-12 col-sm-3 skills large_screen">
                     <img src="https://i.imgur.com/NLZ1zde.png" class="skills_image" title="Project: Power In The Word Ministries" alt="image of woman singing">      
                   <!--view project button-->
-                  <a class="button view_button" href="#">View</a>
+                  <a class="button view_button" href="https://joanclarke.github.io/Power-in-the-Word-Website/">View</a>
                   <p class="my_skills">Power in the Word Ministries</p>
                     <p class="skills_sentence ">Church Website</p>    
                   <p class="languages">CSS&nbsp; HTML&nbsp; JavaScript&nbsp; Bootstrap</p>
@@ -289,10 +357,10 @@ I believe that with every challenge comes growth, perserverance and a sense of r
               
                
               <!--Beautiful Homes-->
-                <div class="col-12 col-sm-4 skills large_screen">
+                <div class="col-12 col-sm-3 skills large_screen">
                     <img src="https://i.imgur.com/t3Ydg3C.png" class="skills_image" title="Project: Beautiful Homes" alt="image of Beautiful Homes Website"> 
                   <!--view project button-->
-                  <a class="button view_button" href="#">View</a>
+                  <a class="button view_button coming_soon" href="#">Coming Soon</a>
                   <p class="my_skills">Beautiful Homes</p>
                     <p class="skills_sentence ">Furniture store Website</p>    
                   <p class="languages">CSS&nbsp; HTML&nbsp; JavaScript&nbsp; Bootstrap&nbsp; PHP&nbsp; SQL</p>
@@ -303,10 +371,10 @@ I believe that with every challenge comes growth, perserverance and a sense of r
               
               
               <!--Project Read-->
-                <div class="col-12 col-sm-4 skills large_screen">
+                <div class="col-12 col-sm-3 skills large_screen">
                     <img src="https://i.imgur.com/5pFayuc.png" class="skills_image" title="Project: Portfolio landing Page" alt="image of a stick man and writing">
                   <!--view project button-->
-                  <a class="button view_button" href="#">View</a>
+                  <a class="button view_button coming_soon" href="#">Coming Soon</a>
                   <p class="my_skills">Portfolio Landing Page</p>
                     <p class="skills_sentence ">Single Page Portfolio</p>    
                   <p class="languages">CSS&nbsp; HTML&nbsp; JavaScript</p>
@@ -323,7 +391,7 @@ I believe that with every challenge comes growth, perserverance and a sense of r
                QUOTE
   **************************-->
   
-  <section class="text-center quote_section">
+  <section id="portfolio_section" class="text-center quote_section">
     <div class="container">
       <div class="row row-content">
         <div class="col-12">
