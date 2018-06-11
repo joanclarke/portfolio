@@ -568,7 +568,7 @@ button.btn.btn-link:hover {
 
 .view_button {
     margin-top:-150px;
-    margin-left:90px;
+    margin-left:120px;
     display: none;
     position:absolute;
     border: solid 1px white;
@@ -582,7 +582,7 @@ button.btn.btn-link:hover {
 }
 
 .coming_soon {
-    margin-left:65px;
+    margin-left:85px;
 }
 
 .view_button:hover {
