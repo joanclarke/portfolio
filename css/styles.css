@@ -74,6 +74,7 @@ body{
 **************************--*/
 
 .nav_border {
+  margin-top: -20px;
   border: 1px solid #080808;
   box-shadow: 5px 3px 5px #080808;
 }
@@ -101,7 +102,7 @@ nav a.logo_title span.name{
 
 nav a.logo_title span.career{
   font-size: 16px;
-  padding-right: 300px;
+  padding-right: 0px;
 }
 
 nav a.logo_title span.text-capitalize {
@@ -167,13 +168,13 @@ a.active {
   padding-right:0;
   padding-bottom:0;
   z-index: 1;
-  height:670px;
+  height:650px;
   border-top-width: 15px; 
   border-top-color: rgba(254, 249, 231, 0.5);
 }
 /*for some reason .container-fluid .row is extending pass the given home height so i had to give it a fixed height whuch is the same height as home.*/
 .home .container-fluid .row {
-  height:670px;
+  height:650px;
 }
 
 .home .col-12 {
@@ -206,13 +207,14 @@ a.active {
 .welcome {
   z-index: 2;
   position: absolute;
-  /*background-color: rgba(255, 255, 255, 0.5);*/
-  top: 20px;
-  left: 100px;
-  right: 100px;
+  background-color: rgb(232, 246, 243);
+  top: 0px;
+  left: 230px;
+  right: 230px;
+ bottom: 220px;
   /*width: 1000px;*/
   /*height: 314px;*/
-  padding-top: 96px;
+  padding-top: 46px;
   font-size: 55px;
   
   /*color:#2C3E50;*/
@@ -221,21 +223,24 @@ a.active {
   /* color: rgb(255,255,255)*/
   /* Safari 3-4, iOS 1-3.2, Android 1.6- */
   /*-webkit-border-radius: 12px; */
-  -webkit-border-bottom-left-radius: 50%;
-  -webkit-border-bottom-right-radius: 50%;
+  /*-webkit-border-bottom-left-radius: 50%;
+  -webkit-border-bottom-right-radius: 50%;*/
   /* Firefox 1-3.6 */
   /*-moz-border-radius: 12px; */
-  -moz-border-bottom-left-radius: 50%;
-  -moz-border-bottom-right-radius: 50%;
+  /*-moz-border-bottom-left-radius: 50%;
+  -moz-border-bottom-right-radius: 50%;*/
   /* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
-  border-bottom-left-radius: 50%;
-  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 70%;
+  border-bottom-right-radius: 70%;
+  
 }
 /*
 .welcome img {
   margin-top:-100px;
 }
 */
+
+
 .welcome_head, .typing {
   text-align: center;
 }
@@ -247,8 +252,9 @@ a.active {
   font-family: "Quicksand", sans-serif;
   font-weight: 700;
   font-size: 65px;
-  color:rgb(255,255,255);
-  text-shadow: 1px 1px 1px rgb(105,105,105);
+  /*color:rgb(255,255,255);*/
+  color: rgb(66, 73, 73);
+  /*text-shadow: 1px 1px 1px rgb(105,105,105);*/
   display: inline-block;
   /*using transform: scale to stretch the font; */
   transform: scale(1.0, 1);
@@ -269,11 +275,11 @@ a.active {
 }
 
 .typewrite {
-   color:rgb(255,255,255);
+   /*color:rgb(255,255,255);*/
+  color: rgb(66, 73, 73);
   text-decoration: none;
   font-weight: 300;
 }
-
 
 .Learn_more_button {
   z-index: 2;
@@ -308,12 +314,20 @@ button.btn.btn-link:hover {
    border: solid 1px white;
 }
 
-.social_buttons {
-  margin-top: -80px;
+.colored_social_buttons .social_buttons {
+  /*
+  use this for mobile
+  margin-top: -200px;*/
+  z-index: 9999;
+
+}
+
+.colored_social_buttons .social_buttons a{
+margin-left: 10px;
 }
 
 .fa {
-  padding: 12px 15px 12px 15px;
+  padding: 8px 10px 8px 10px;
   font-size: 25px !important;
   background-color: rgb(255, 255, 255);
   text-align: center;
@@ -325,22 +339,22 @@ button.btn.btn-link:hover {
 }
 
 .fa-google-plus{
-  padding: 12px 10px 12px 10px;
-  border: solid 1px white;
+  padding: 8px 5px 8px 5px;
+  
   background: #dd4b39;
   color: white;
   text-decoration: none;
 }
 
 .fa-linkedin {
-  border: solid 1px white;
+ 
   background: #007bb5;
   color: white;
   text-decoration: none;
 }
 
 .fa-instagram {
-   border: solid 1px white;
+  
     color: white;
    text-decoration: none;
     background: #e95950; /* For browsers that do not support gradients */
@@ -389,7 +403,7 @@ button.btn.btn-link:hover {
           PORTFOLIO
 **************************--*/
 
-.portfolio, .personal_profile{
+.portfolio{
   z-index:1;
   /*font-family: 'Roboto', sans-serif;
 	font-family: 'Open Sans Condensed', sans-serif;
@@ -406,9 +420,9 @@ button.btn.btn-link:hover {
 	padding-bottom: 100px;
 }
 
-.about_heading, .portfolio_heading,.professional_heading, .profile_heading, .contact_heading {
+.about_heading, .portfolio_heading,.professional_heading, .contact_heading {
 	line-height: 50px;
-	padding-top: 150px;
+	padding-top: 110px;
 	font-size: 42px;
 }
 
@@ -417,7 +431,7 @@ button.btn.btn-link:hover {
   margin-bottom: 30px;
 }
 
-.skills {
+.project {
   text-align:left;
   min-width: 370px;
 	margin-top: 40px;
@@ -427,18 +441,18 @@ button.btn.btn-link:hover {
   border: 1px solid #EBEDEF;
 }
 
-.skills:hover {
+.project:hover {
   box-shadow: 10px 10px 5px #aaaaaa;
 }
 
-.my_skills {
+.my_project {
   padding-top:30px;
   padding-left:15px;
 	font-size: 24px;
   color:#4d458a;
 }
 
-.skills_sentence {
+.project_sentence {
   padding-left: 15px;
 	font-size: 14px;
   color:#7b8690;
@@ -459,7 +473,7 @@ button.btn.btn-link:hover {
   color:#808B96;
 }
 /*
-.portfolio .row .skills_sentence{
+.portfolio .row .project_sentence{
 	padding-top: 20px;
 }*/
 
@@ -470,7 +484,7 @@ button.btn.btn-link:hover {
 	/*margin-left: -8%;*/
 }
 
-.portfolio .row .skills_image {
+.portfolio .row .project_image {
 	margin-top: 0;
 	padding-top: 0;
 	height: 250px;
@@ -479,7 +493,7 @@ button.btn.btn-link:hover {
 .quote_section {
   height:450px;
   font-weight:100;
-  padding-top: 100px;
+  /*padding-top: 100px;*/
   padding-bottom:40px;
   padding-left:150px;
   padding-right:150px;
@@ -540,6 +554,7 @@ button.btn.btn-link:hover {
 
 .professional_heading {
 	padding-top: 150px;
+  font-weight: 200;
 }
 
 .professional_sub-heading {
@@ -547,9 +562,10 @@ button.btn.btn-link:hover {
 }
 
 /*styling for prfesional outlook and work experience buttons*/
-.professional_content button.btn.btn-link, .work_experience button.btn.btn-link {
+.professional_content button.btn.btn-link, .experience button.btn.btn-link {
 	margin-top: 30px;
 	margin-left: 80px;
+  margin-bottom: 20px;
 	background-color: rgb(248, 249, 249);
 	border:solid 1px black;
 	color:black;
@@ -559,8 +575,8 @@ button.btn.btn-link:hover {
   background-color:rgba(254, 249, 231,0.4);
 }
 */
-/*styling for prfesional outlook and work experience buttons*/
-.professional_content button.btn.btn-link:hover, .work_experience button.btn.btn-link:hover{
+/*styling for professional outlook and work experience buttons*/
+.professional_content button.btn.btn-link:hover, .experience button.btn.btn-link:hover{
 	background-color: rgb(64, 64, 72);
 	color: white;
 }
@@ -600,25 +616,100 @@ img:hover + .view_button,
 /*--============================
      *** PERSONAL PROFILE *** 
   =============================--*/
+/*
+
 .personal_profile {
-background-color:rgba(254, 249, 231,0.4);
+  /
+/*background-color:rgba(254, 249, 231,0.4);*/
+/*
 }
 
 .personal_profile p {
   text-align: center;
 }
+*/
 
-.profile_detail {
-  font-size: 18px;
+
+.experience {
+   font-size: 18px;
   line-height: 35px;
- /* height: 220px;*/
-  margin-top: 20px;
-  margin-left: 210px;
-  margin-right: 210px;
-  margin-bottom:20px;
+  background-color: rgb(232, 246, 243);
+  margin-top: 0;
+  padding-top: 30px;
+  padding-bottom: 80px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.experience_heading,.skills_heading {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 42px;
+  font-weight: 100 !important;
+  
+}
+
+.experience .col-sm-6{
+   padding-left: 50px;
+  padding-right: 50px;
+
   font-family: 'Open Sans', sans-serif;
   font-family: 'Raleway', sans-serif;
 }
+
+.experience_sub-heading{
+  font-size: 30px;
+
+}
+/*
+.experience .download_resume button.btn.btn-link{
+  margin-left: 41%;
+  margin-top: 60px;
+}
+*/
+/*
+.experience{
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 32px;
+  text-align: center;
+  padding: 38px 178px 38px 178px;
+}
+*/
+
+
+
+
+/*--============================
+          *** project *** 
+  =============================--*/
+
+.skills .progress {
+  margin-left: 200px;
+  
+}
+
+.skills_logo img {
+  height: 100%;
+  width: 5%;
+}
+
+.progress{
+    width: 70%;
+    background: #eee;
+    margin: 15px;
+    height: 40px !important;
+}
+
+.html, .css, .jquery, .php{
+    width: 0;
+    background: green;
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 5px
+}
+
 /*--============================
           *** CONTACT *** 
   =============================--*/
