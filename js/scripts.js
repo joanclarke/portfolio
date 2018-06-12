@@ -127,3 +127,27 @@ var TxtType = function(el, toRotate, period) {
         css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #2C3E50}";
         document.body.appendChild(css);
     };
+
+
+
+    /*Skills progress bar*/
+/*--Codes retrieved and adjusted from this jsfiddle - https://jsfiddle.net/hibbard_eu/pxnZZ/--*/
+
+function animateProgressBar(el, width){
+    el.animate(
+        {width: width}, 
+        {
+            duration: 2000,
+            step: function(now, fx) {
+                if(fx.prop == 'width') {
+                    el.html(el.data("name") + ": " + Math.round(now * 100) / 100 + '%');
+                }
+            }
+        }        
+    );    
+}
+
+
+$('.progress').each(function(){
+   animateProgressBar($(this).find("div"), $(this).data("width")) 
+});
