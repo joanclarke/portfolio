@@ -15,7 +15,11 @@ body{
   padding-right:0;
 }
 
+/*
+#video { background: white; opacity: 0; pointer-events: none; position: relative; }
 
+#video.loaded{ background: transparent; opacity: 1; }
+*/
 /*--*************************
           LOGO
 **************************--*/
@@ -38,13 +42,16 @@ body{
 }
 */
 .navbar-brand img{
-  border: 0;
-  margin-top: -10px;
-  margin-bottom: -10px;
-  padding-top:0px;
- margin-left: 60px;
- border-radius: 50%;
-}
+    border: 0;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    padding-top:0px;
+    border-radius: 50%;
+    width:90px;
+    max-width:100%;
+    height:auto;
+    margin-left: 20px;
+  }
 /*
 .logo #title {
   margin-top: 15px;
@@ -186,9 +193,14 @@ a.active {
 .home iframe { 
   z-index: 1;
   position: absolute;
+  width:100%; 
+
+  height:155%;
   min-width: 100%;
   min-height: 100%;
   margin-top: -165px;
+
+
 /*  margin-left: -15px;
   margin-right:-15px;*/
   
@@ -204,19 +216,19 @@ a.active {
           WELCOME
 **************************--*/
 
-.welcome {
+.welcome_section {
   z-index: 2;
   position: absolute;
   background-color: rgb(232, 246, 243);
-  top: 0px;
-  left: 230px;
-  right: 230px;
- bottom: 220px;
+  top: 100px;
+  left: 250px;
+  right: 250px;
+  bottom: 170px;
   /*width: 1000px;*/
-  /*height: 314px;*/
-  padding-top: 46px;
+  height: 414px;
+  padding-top: 76px;
   font-size: 55px;
-  
+ 
   /*color:#2C3E50;*/
   /*font-weight:100;*/
   
@@ -230,28 +242,31 @@ a.active {
   /*-moz-border-bottom-left-radius: 50%;
   -moz-border-bottom-right-radius: 50%;*/
   /* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
+  /*
   border-bottom-left-radius: 70%;
   border-bottom-right-radius: 70%;
-  
+  */
 }
+
 /*
 .welcome img {
   margin-top:-100px;
 }
 */
-
+/*
 
 .welcome_head, .typing {
   text-align: center;
 }
+*/
 
-.welcome p {
+
+.welcome_section .welcome p {
   font-family: 'Open Sans', sans-serif;
   font-family: 'Raleway', sans-serif;
   font-family: "Open Sans Condensed", sans-serif;
   font-family: "Quicksand", sans-serif;
-  font-weight: 700;
-  font-size: 65px;
+  
   /*color:rgb(255,255,255);*/
   color: rgb(66, 73, 73);
   /*text-shadow: 1px 1px 1px rgb(105,105,105);*/
@@ -262,33 +277,42 @@ a.active {
   padding-bottom: 0;
   margin-bottom: 0;
   /*margin-left: -30px;*/
-  width: 500px;
+  /*width: 500px;*/
   margin-top: -60px;
 }
 
-.typing {
-  /*background-color:rgba(254, 249, 231,0.4);*/
-  padding-top: 20px;
-  padding-left: 10px;
-  padding-bottom: 20px;
-  width: 700px;
+.welcome_section .welcome .welcome_title{
+  font-weight: 700;
+  font-size: 65px;
 }
 
-.typewrite {
+.welcome_section .welcome .typing {
+    /* background-color: rgba(254, 249, 231,0.4); */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 0px;
+   /* margin-left: -89px;*/
+    /* padding-right: 20px; */
+    width: 100%;   
+}
+
+
+.welcome_section .welcome a.typewrite {
    /*color:rgb(255,255,255);*/
   color: rgb(66, 73, 73);
   text-decoration: none;
   font-weight: 300;
-}
+  font-size: 45px;
+  padding-left: 0px !important
 
-.Learn_more_button {
-  z-index: 2;
-  position: relative;
-  top: -384px;
-  padding-top: 375px;
-  text-align: center;
+  /*padding-left: 190px;*/
+ 
 }
-
+/*
+.welcome_section .welcome  button.btn.btn-link{
+  margin-top: 10px;
+}
+*/
 button.btn.btn-link {
   color: white;
   font-size: 14px;
@@ -314,6 +338,11 @@ button.btn.btn-link:hover {
    border: solid 1px white;
 }
 
+/*
+.welcome.container.row {
+ height: 340px !important;
+}
+*/
 .colored_social_buttons .social_buttons {
   /*
   use this for mobile
@@ -328,7 +357,7 @@ margin-left: 10px;
 
 .fa {
   padding: 8px 10px 8px 10px;
-  font-size: 25px !important;
+  font-size: 20px !important;
   background-color: rgb(255, 255, 255);
   text-align: center;
   text-decoration: none;
@@ -340,8 +369,14 @@ margin-left: 10px;
 
 .fa-google-plus{
   padding: 8px 5px 8px 5px;
-  
   background: #dd4b39;
+  color: white;
+  text-decoration: none;
+}
+
+.fa-github{
+
+  background: rgb(0,0,0);
   color: white;
   text-decoration: none;
 }
@@ -420,7 +455,7 @@ margin-left: 10px;
 	padding-bottom: 100px;
 }
 
-.about_heading, .portfolio_heading,.professional_heading, .contact_heading {
+.about_heading, .portfolio_heading,.professional_heading, .education_heading, .contact_heading {
 	line-height: 50px;
 	padding-top: 110px;
 	font-size: 42px;
@@ -436,7 +471,7 @@ margin-left: 10px;
   min-width: 370px;
 	margin-top: 40px;
 	margin-right: 15px;
-	margin-left: 30px;
+	margin-left: 10px;
 	background-color: white;
   border: 1px solid #EBEDEF;
 }
@@ -517,71 +552,6 @@ margin-left: 10px;
 }
 
 
-/*================================
-    *** PROFESSIONAL OUTLOOK  *** 
-=================================*/
-
-.professional_outlook{
-	padding: 0;
-	margin: 0;
-	margin-left: -150px;
-	background-color: rgb(248, 249, 249);
-  
-}
-
-.outlook_img {
-	margin: 0;
-	padding: 0;
-	background: url('https://i.imgur.com/IsiR20L.jpg') 100% 0 no-repeat;
-	background-size: cover;
-	min-height: 800px;
-	min-width: 400px;
-	background-attachment: fixed
-}
-
-.professional_content p{
-	padding-left: 80px;
-	margin-right: -80px;
-  font-weight:100;
-}
-
-.professional_detail, .contact_info{
-  font-family: 'Open Sans', sans-serif;
-  font-family: 'Raleway', sans-serif;
-  line-height: 35px;
-  font-size:18px;
-}
-
-.professional_heading {
-	padding-top: 150px;
-  font-weight: 200;
-}
-
-.professional_sub-heading {
-	font-size: 24px;
-}
-
-/*styling for prfesional outlook and work experience buttons*/
-.professional_content button.btn.btn-link, .experience button.btn.btn-link {
-	margin-top: 30px;
-	margin-left: 80px;
-  margin-bottom: 20px;
-	background-color: rgb(248, 249, 249);
-	border:solid 1px black;
-	color:black;
-}
-/*
-.professional_content button.btn.btn-link {
-  background-color:rgba(254, 249, 231,0.4);
-}
-*/
-/*styling for professional outlook and work experience buttons*/
-.professional_content button.btn.btn-link:hover, .experience button.btn.btn-link:hover{
-	background-color: rgb(64, 64, 72);
-	color: white;
-}
-
-
 .view_button {
     margin-top:-150px;
     margin-left:120px;
@@ -612,9 +582,111 @@ img:hover + .view_button,
     display: inline-block;
 }
 
+/*================================
+    *** PROFESSIONAL OUTLOOK  *** 
+=================================*/
+.professional_outlook .col-md-6.outlook_img {
+max-height: 500px;
+}
+
+.professional_outlook{
+	padding: 0;
+	margin: 0;
+	/*margin-left: -150px;*/
+	background-color: rgb(248, 249, 249);
+  
+}
+
+.professional_outlook .text-left {
+  padding-left: 70px !important;
+  padding-right: 70px !important;
+  padding-bottom: 30px !important;
+}
+
+.professional_outlook p{
+  line-height: 2.0;
+}
+
+.outlook_img {
+	margin: 0;
+	padding: 0;
+	background: url('https://i.imgur.com/IsiR20L.jpg') 100% 0 no-repeat;
+	background-size: cover;
+  /*width: 100%;
+  min-height: 600px !important;
+	max-height: 800px;
+	max-width: 400px;
+*/
+	background-attachment: fixed;
+  
+}
+
+.outlook_height_img {
+  min-height: 2000px !important;
+}
+
+.professional_heading {
+	padding-top: 100px;
+  font-weight: 200;
+}
+
+.professional_sub-heading {
+  padding-top: 30px;
+	font-size: 30px;
+  font-weight: 100;
+}
+
+/*
+.professional_content p{
+  padding-right: 50px;
+  padding-left: 50px;
+  height: 450px;
+  */
+  /*margin-right: -80px;*/
+  /*
+  font-weight:100;
+}
+*/
+.professional_detail, .contact_info{
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-size:18px;
+  line-height: 1.5;
+}
+
+.professional_detail {
+  padding-bottom: 20px;
+}
+/*styling for prfesional outlook and work experience buttons*/
+.professional_outlook button.btn.btn-link, .experience button.btn.btn-link {
+	margin-top: 30px;
+	margin-left: 80px;
+  margin-bottom: 20px;
+	background-color: rgb(248, 249, 249);
+	border:solid 1px black;
+	color:black;
+}
+
+.professional_outlook button.btn.btn-link {
+  margin-top: 0px;
+  margin-left: 0px;
+}
+
+/*
+.professional_content button.btn.btn-link {
+  background-color:rgba(254, 249, 231,0.4);
+}
+*/
+/*styling for professional outlook and work experience buttons*/
+.professional_outlook button.btn.btn-link:hover, .experience button.btn.btn-link:hover{
+	background-color: rgb(64, 64, 72);
+	color: white;
+}
+
+
 
 /*--============================
-     *** PERSONAL PROFILE *** 
+     *** WORK EXPERIENCE *** 
   =============================--*/
 /*
 
@@ -630,22 +702,23 @@ img:hover + .view_button,
 */
 
 
-.experience {
+.experience, .education {
    font-size: 18px;
   line-height: 35px;
   background-color: rgb(232, 246, 243);
   margin-top: 0;
   padding-top: 30px;
+  padding-left: 50px;
   padding-bottom: 80px;
   margin-left: 0px;
   margin-right: 0px;
 }
 
-.experience_heading,.skills_heading {
+.education_heading, .experience_heading, .skills_heading {
   padding-top: 30px;
   padding-bottom: 30px;
   font-size: 42px;
-  font-weight: 100 !important;
+  font-weight: 100;
   
 }
 
@@ -657,9 +730,8 @@ img:hover + .view_button,
   font-family: 'Raleway', sans-serif;
 }
 
-.experience_sub-heading{
+.education_sub-heading, .experience_sub-heading{
   font-size: 30px;
-
 }
 /*
 .experience .download_resume button.btn.btn-link{
@@ -677,16 +749,15 @@ img:hover + .view_button,
 }
 */
 
-
-
-
 /*--============================
-          *** project *** 
+          *** SKILLS *** 
   =============================--*/
+.skills {
+  padding-bottom: 40px;
+}
 
 .skills .progress {
   margin-left: 200px;
-  
 }
 
 .skills_logo img {
@@ -710,6 +781,22 @@ img:hover + .view_button,
     padding: 0 5px
 }
 
+
+/*--============================
+          *** EDUCATION *** 
+  =============================--*/
+
+.education_heading, .education_sub-heading {
+  font-weight: 200;
+}
+
+.education_date {
+   font-size: 18px;
+  font-weight: 100 !important;
+}
+
+
+
 /*--============================
           *** CONTACT *** 
   =============================--*/
@@ -722,7 +809,9 @@ img:hover + .view_button,
 	/*background-color: rgb(248, 249, 249);*/
 }
 .contact_heading {
-  padding-top: 200px;
+  padding-top: 190px;
+  /*padding-bottom: 140px;*/
+  font-weight: 200;
 }
 
 .mail {
@@ -748,7 +837,7 @@ img:hover + .view_button,
 }
 
 form{
-	padding-top: 100px;
+	padding-top: 120px;
   padding-left: 30px;
   padding-right:100px;
 }
@@ -788,4 +877,549 @@ footer {
   padding-top:9px;
   font-size:11px;
   height:90px;
+}
+
+
+
+/*====================================*/
+
+/*========== MEDIA QUERIES  ==========*/
+
+/*====================================*/
+
+
+/***** max-width: 1366px *****/
+@media screen and (max-width: 1366px){
+
+ .row.project_row{
+  padding-left: 40px;
+ }
+}
+
+/***** max-width: 1024px *****/
+@media screen and (max-width: 1024px){
+  .home {
+    height: 530px;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+
+  .home iframe {
+    margin-top: -430px;
+    width: 100%;
+    height: 1400px;
+ 
+  }
+
+  .welcome_section {
+    top: 60px;
+    left: 150px;
+    right: 150px;
+    bottom: 190px;
+    /*width: 1000px;*/
+    height: 380px;
+    padding-top: 76px;
+    font-size: 55px;
+  }
+
+  .welcome_section .welcome .typewrite {
+     /*color:rgb(255,255,255);*/
+    padding-left: 20px;
+  }
+
+  .about_me {
+    margin-left: 130px;
+    margin-right: 130px;
+    margin-bottom:100px;
+  }
+/*
+  .navbar-brand img{
+    width:90px;
+    max-width:100%;
+    height:auto;
+   margin-left: 20px;
+  }
+*/
+  .colored_social_buttons{
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  ul.navbar-nav {
+    padding-right: 15px;
+  }
+
+    .row.project_row{
+    padding-left: 80px;
+   }
+
+    .professional_outlook .text-left {
+        padding-left: 26px !important;
+        padding-right: 26px !important;
+        padding-bottom: 10px !important;
+    }
+
+  .experience {
+    padding-left: 40px;
+  }
+
+  .experience_sub-heading{
+    font-size: 25px;
+  }
+
+
+  .skills .progress {
+    margin-left: 150px;
+  }
+
+      .contact {
+      padding-left:60px;
+      padding-right:30px;
+      padding-bottom:150px;
+      font-weight:100;
+      /*background-color: rgb(248, 249, 249);*/
+      }
+
+    form {
+      padding-top: 120px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+}
+
+/***** max-width: 812px *****/
+@media screen and (max-width: 812px){
+  
+  .home {
+    height: 500px;
+    margin-top: -100px;
+  }
+
+.home iframe {
+    margin-top: -470px;
+    width: 100%;
+    height: 1550px !important;
+  }
+
+.welcome_section {
+  top: 38px;  
+  padding-top: 26px;
+  padding-bottom: 20px;
+  font-size: 55px;
+  height: 300px;
+}
+
+.welcome_section .welcome .typing {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.welcome_section .welcome a.typewrite {
+  font-size: 32px;
+}
+
+  .about_me {
+    margin-left: 90px;
+    margin-right: 90px;
+  }
+
+  .navbar-collapse {
+    margin-left: 700px;
+  }
+
+  .row.project_row{
+    padding-left: 10px;
+   }
+
+  .project {
+    margin-top: 40px;
+    margin-right: 8px;
+    margin-left: 8px;
+  }
+
+  .quote_section {
+      padding-left:20px;
+      padding-right:20px;
+      margin-left:20px;
+      margin-right:20px;
+    }
+
+  .professional_outlook .text-left {
+      padding-left: 40px !important;
+      padding-right: 40px !important;
+      padding-bottom: 10px !important;
+  }
+
+  .professional_outlook p{
+    line-height: 1.8;
+  }
+
+  .professional_sub-heading {
+    padding-top: 16px;
+    font-size: 26px;
+    font-weight: 100;
+  }
+
+  .professional_detail {
+      padding-bottom: 10px;
+}
+
+  .experience .col-sm-6{
+     padding-left: 20px;
+    padding-right: 20px;
+
+  }
+
+  .experience_sub-heading{
+    font-size: 22px;
+  }
+
+
+.skills .progress {
+  margin-left: 120px;
+}
+
+}
+/***** max-width: 768px *****/
+@media screen and (max-width: 768px){
+  
+  .welcome_section .welcome a.typewrite {
+    font-size: 30px;
+  }
+
+  .navbar-collapse {
+    margin-left: 650px;
+  }
+
+ .row.project_row{
+    padding-left: 5px;
+   }
+
+  .project {
+    min-width: 350px;
+    margin-right: 3px;
+    margin-left: 3px;
+  }
+
+  .my_project {
+    line-height: 1.1;
+    padding-top:30px;
+    padding-left:15px;
+    font-size: 24px;
+    color:#4d458a;
+  }
+
+  .professional_outlook .text-left {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+    padding-bottom: 10px !important;
+  }
+
+  .experience .col-sm-6{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+}
+
+
+/***** max-width: 670px *****/
+@media screen and (max-width: 670px){
+  
+ .home {
+    height: 410px;
+    margin-top: -70px;
+}
+
+  .home iframe {
+    margin-top: -700px;
+    height: 1880px !important;
+  }
+
+  .welcome_section {
+    height: 270px;
+    top: 25px;
+    left: 90px;
+    right: 90px;
+    bottom: -120px;
+    padding-top: 12px;
+  }
+
+  .welcome_section p{
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .welcome_section .welcome .welcome_title{
+    font-size: 50px;
+    padding-top: 0;
+  }
+
+  .welcome_section .welcome .typing a {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+.welcome_section .welcome a.typewrite {
+    font-size: 28px;
+  }
+
+  .welcome_section .welcome button {
+      margin-top: -10px;
+  }
+
+  .about_me {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .navbar-brand img{
+      width:70px;
+      max-width:70%;
+      height:auto;
+     margin-left: 40px;
+    }
+  button.navbar-toggler {
+    margin-right: 55px;
+  }
+    .navbar-collapse {
+    margin-left: 530px;
+  }
+
+  .colored_social_buttons .social_buttons a{
+      margin-left: 5px;
+  }
+
+  .fa {
+    padding: 5px 6px 5px 6px;
+    font-size: 12px !important;
+  }
+
+    .fa-google-plus{
+    padding: 5px 5px 5px 5px;
+    }
+
+  .row.project_row{
+    padding-left: 7px;
+   }
+
+  .project {
+    min-width: 310px;
+    margin-right: 3px;
+    margin-left: 3px;
+  }
+
+    .quote_section {
+      padding-left:0px;
+      padding-right:0px;
+      margin-left:2px;
+      margin-right:2px;
+      margin-bottom: -60px !important;
+    }
+
+  .quote_section .container {
+    max-width: 640px;
+  }
+
+  .quote_section .quote {
+    font-size: 28px;
+  }
+
+
+  .outlook_height_img {
+    min-height: 1100px !important;
+  }
+
+  .experience .col-sm-6{
+     padding-left: 10px;
+    padding-right: 10px;
+
+  }
+
+  .skills .progress {
+    margin-left: 90px;
+  }
+
+ .contact .col-md-6 .contact_heading.text-left {
+  padding-top: 100px;
+    text-align: center !important;
+  }
+  .contact .fa {
+    font-size: 18px !important;
+  }
+
+}
+/***** max-width: 640px *****/
+@media screen and (max-width: 640px){
+  .project {
+    min-width: 300px;
+  }
+
+
+  .outlook_height_img {
+    min-height: 300px !important;
+  }
+}
+
+
+/***** max-width: 568px *****/
+@media screen and (max-width: 568px){
+  .home {
+    height: 400px;
+    margin-top: -100px;
+}
+
+  .home iframe {
+    margin-top: -700px;
+    height: 1900px !important;
+  }
+
+.welcome_section {
+    height: 250px;
+    top: 20px;
+    left: 70px;
+    right: 70px;
+    bottom: -120px;
+    padding-top: 5px;
+  }
+
+  .welcome_section .welcome .welcome_title{
+    font-size: 45px;
+    padding-top: 0;
+  }
+
+  .welcome_section .welcome a.typewrite {
+    font-size: 26px;
+  }
+  .navbar-brand img{
+      width:70px;
+      max-width:70%;
+      height:auto;
+     margin-left: 5px;
+    }
+  
+    .navbar-collapse {
+    margin-left: 430px;
+  }
+
+
+  .skills .progress {
+    margin-left: 85px;
+  }
+
+}
+
+
+/***** max-width: 375px *****/
+@media screen and (max-width: 375px){
+
+.home {
+    height: 380px;
+    margin-top: -50px;
+    line-height: 0;
+}
+
+  .home iframe {
+   display: none;
+  }
+  .welcome_section {
+    left: 20px;
+    right: 20px;
+  }
+.welcome_section .welcome {
+  margin-top: -10px;
+}
+
+.welcome_section .welcome .welcome_title{
+    font-size: 35px;
+    padding-top: 0;
+    line-height: 0;
+    }
+
+    .welcome_section .welcome a.typewrite {
+      font-size: 16px;
+       line-height: 0.5;
+       margin-top: -20px !important;
+    }
+
+    .welcome_section {
+        height: 240px;
+        top: 20px;
+        left: 40px;
+        right: 40px;
+        bottom: -100px;
+        padding-top: 5px;
+      }
+
+    .about_me {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+     .navbar-brand img{
+      width:70px;
+      max-width:70%;
+      height:auto;
+     margin-left: 35px;
+    }
+  
+    .navbar-collapse {
+    margin-left: 230px;
+    }
+
+    .row.project_row{
+    padding-right: 10px;
+   }
+
+
+  .skills .progress {
+    margin-left: 50px;
+  }
+
+  form {
+      padding-left: 5px;
+      padding-right: 5px;
+      margin-right: -15px;
+      margin-left: -45px;
+    }
+  }
+
+
+/***** max-width: 320px *****/
+@media screen and (max-width: 320px){
+
+  .navbar-brand img{
+      width:70px;
+      max-width:70%;
+      height:auto;
+     margin-left: 95px;
+    }
+
+    nav a.logo_title{
+  margin-left: 50px;
+}
+  
+
+  .colored_social_buttons .social_buttons {
+      margin-left: 20px;
+  }
+
+
+    .navbar-collapse {
+    margin-left: 185px;
+    }
+
+
+ .welcome_section .welcome a.typewrite {
+      font-size: 14px;
+       line-height: 0.5;
+       margin-top: -60px !important;
+    }
+
+  .row.project_row{
+      padding-left: 0px;
+     }
+  
 }

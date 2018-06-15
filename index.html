@@ -60,7 +60,19 @@
   <div class="container-fluid">
     <div class="row row-content">
       <div class="col-12">
-     <iframe src="https://player.vimeo.com/video/261676943?&amp;autoplay=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0" width="1000" height="1000" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+     <!--Typing video source - Vimeo-->
+     
+     <iframe src="https://player.vimeo.com/video/261676943?autoplay=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+
+     <!--
+      <iframe src="https://player.vimeo.com/video/261676943?&amp;autoplay=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0" width="1000" height="1000" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  
+     -->
+  
+    <!--Typing video source - Youtube-->
+    <!--
+     <iframe  id="video" width="1000" height="1000" src="https://www.youtube.com/embed/5fWr3eMpeb8?autoplay=1&loop=1&playlist=5fWr3eMpeb8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+   -->
       </div>
     </div>
   </div>
@@ -71,7 +83,7 @@
 <div class="nav_border sticky-top ">
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="#">
-    <img src="https://i.imgur.com/B7LICxx.jpg" width="90px" max-width="100%" height="auto" class="img-fluid" title="Joan Clarke Portfolio" alt="logo">
+    <img src="https://i.imgur.com/B7LICxx.jpg" class="img-fluid" title="Joan Clarke Portfolio" alt="logo">
   </a>
   <a href="#home" class="logo_title text-uppercase"><span class="name">Joan Clarke</span><br><span class="text-capitalize career">Front-End Developer</span></a>
      <div class="colored_social_buttons">
@@ -79,7 +91,8 @@
             <a href="https://www.linkedin.com/in/clarkejoan" target="_blank" class="fa fa-linkedin" aria-hidden="true"></a>
            <a href="https://plus.google.com/100285123760876941947" target="_blank" class="fa fa-google-plus" aria-hidden="true"></a>
            <a href="https://www.instagram.com/joan_clarke/" target="_blank" class="fa fa-instagram" aria-hidden="true"></a>
-       
+          
+          <a href="https://github.com/joanclarke/portfolio" target="_blank" class="fa fa-github" aria-hidden="true"></a>
           </div>
     </div>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -95,7 +108,7 @@
         <a class="nav-link text-uppercase" href="#home">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-uppercase" href="#about">About Me</a>
+        <a class="nav-link text-uppercase" href="#about">About</a>
       </li>
       <li class="nav-item">
         <a class="nav-link text-uppercase" href="#portfolio_section">Portfolio</a>
@@ -116,23 +129,20 @@
 <!--*************************
           WELCOME
 **************************-->
-
+<!--
 <section class="welcome" id="home">
-  <div class="container">
-    <div class="row row-content">
-      <div class="col-12 offset-1 col-sm-8 offset-2">
-
-        <div class="row">
-          <div class="col-4 offset-4">
-
-          </div>
-          <div class="col-12 welcome_head">
+  <div class="container-fluid">
+    <div class="row">
+     
+          <div class="col-12 welcome_head text-center">
             <p>WELCOME</p>
           </div>
+        -->
           <!--Typing-->
+          <!--
           <div class="typing">
-          <h1>
-            <a href="" class="typewrite" data-period="2000" data-type='[ "My Name is Joan.", "I am a Developer.", "Let&#8217;s build something awesome." ]'>
+          <h1 class="text-center">
+            <a href="" class="typewrite" data-period="2000" data-type='[ "My Name is Joan.", "I am a Front-End Developer.", "Let&#8217;s build something awesome." ]'>
               <span class="wrap"></span>
             </a>
           </h1> 
@@ -141,11 +151,35 @@
           <div class=" col-12 Learn_more_button">
             <button type="button" class="btn btn-link"><a href="#outlook_section"> Learn More</a></button>
           </div>
-        </div>
-      </div>
+
     </div>
   </div>
 </section>
+-->
+
+
+<section class="welcome_section" id="home">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center welcome">
+        <p class="welcome_title">WELCOME</p>
+    
+      
+        
+          <p class="text-center typing">
+            <a href="" class="typewrite" data-period="2000" data-type='[ "My Name is Joan.", "I am a Front-End Developer.", "Let&#8217;s build something awesome." ]'>
+              <span class="wrap"></span>
+            </a>
+          </p> 
+         
+            <button type="button" class="btn btn-link"><a href="#outlook_section"> Learn More</a></button>
+          </div>
+     
+    </div>
+  </div>
+</section>
+
+
 <!--
 <section class="colored_social_buttons fixed">
   <dir class="container-fluid">
@@ -164,7 +198,7 @@
 <!--*************************
           ABOUT ME
 **************************-->
-<section id="about" style="height: 50px;"></section>
+<!--<section id="about" style="height: 50px;"></section>-->
 <section id="about" class="about_me">
   <div class="container container-fluid">
     <div class="row row-content">
@@ -204,7 +238,7 @@
                   <hr>
                   <p class="detail">Responsive website. Designed to provide viewers with live streaming services as well as videos of past events.</p>
                 </div>
-            <!--******-->
+              <!--******-->
 
               <!--Project Read-->
                 <div class="col-12 col-sm-3 project large_screen">
@@ -299,18 +333,25 @@
   **************************-->
   
  <section id="outlook_section" class="professional_outlook">
-        <div class="container">
-            <div class=" row d-flex flex-sm-row-reverse">
-                <div class="col-12 col-sm-5 text-left professional_content p-2">
+        <div class="container-fluid">
+          <div class="row">
+            
 
-                    
+                <div class="col-12 col-md-6 outlook_img">
+                  <!--<div class="col-12 col-md-6 outlook_img p-2">-->
+                    <!--<img class="img-responsive" src="../img/outlook_img.jpg">-->
+                    <div class="outlook_height_img"></div>
+                </div>
+            <!--<div class=" row d-flex flex-sm-row-reverse">-->
+                <div class="col-12 col-md-6 text-left">       
+                  <!--<div class="col-12 col-md-6 text-left p-2">-->
                     <p class="professional_sub-heading">Where I am, Where I am going</p>
-                    <p class="professional_detail">I am a self taught Front-End Developer seeking to apply project and education obtained to manage projects through critical and innovative thinking.  I believe that these characteristics along with my skill-set and business background that will make me a valuable addition to any organization. Feel free to check out my resume to get a better idea of what I can offer.</p>
+                    <p class="professional_detail text-justify">I am a self taught Front-End Developer seeking to apply project and education obtained to manage projects through critical and innovative thinking.  I believe that these characteristics along with my skill-set and business background that will make me a valuable addition to any organization. Feel free to check out my resume to get a better idea of what I can offer.</p>
 
-       <!--download resume button-->
-      <button type="button" class="btn btn-link contact_btn"><a href="https://drive.google.com/open?id=1ZWJ9jJpm6lUCiOVHjeqotE-t4n9_0bTs"> Download Resume</a></button>
-      <!--
-      <p class="professional_heading text-uppercase" >Professional&nbsp; Outlook</p>
+                     <!--download resume button-->
+                    <button type="button" class="btn btn-link contact_btn"><a href="https://drive.google.com/open?id=1ZWJ9jJpm6lUCiOVHjeqotE-t4n9_0bTs"> Download Resume</a></button>
+                    <!--
+                    <p class="professional_heading text-uppercase" >Professional&nbsp; Outlook</p>
                     
                     <p class="professional_detail">My method for dealing with each project/task assigned is to approach it with eagerness, a positive attitude, a desire to learn and an unwillingness to quit.  I believe that it is these characteristics along with my education, experience and skill set that would make me a valuable addition to any organization. Feel free to check out my resume, so you can get a better idea of what I can offer.</p>
                   -->
@@ -318,9 +359,7 @@
                     <!--<button type="button" class="btn btn-link contact_btn"><a href="#contact_me"> Contact Me</a></button>
                     -->
                 </div>
-                <div class="col-12 col-sm-7 outlook_img p-2">
-                    <!--<img class="img-responsive" src="../img/outlook_img.jpg">-->
-                </div>
+                
             </div>
         </div>
     </section>
@@ -348,16 +387,16 @@
         <div class="container-fluid">
             <div class="row">  
                 <div class=" col-12">
-                    <p class="experience_heading text-center">EXPERIENCE</p>
+                    <p class="experience_heading text-center text-uppercase">EXPERIENCE</p>
                 </div>
                 
                     <div class="col-sm-6">
-                    <p class="experience_sub-heading">SYSTEM SUPPORT OFFICER<br> NATIONAL LIBRARY OF JAMAICA</p>
+                    <p class="experience_sub-heading text-uppercase">SYSTEM SUPPORT OFFICER<br> NATIONAL LIBRARY OF JAMAICA</p>
                     <p class="experience_date">October 2017 - February 2018</p>
                     
                   </div>
                   <div class="col-sm-6">
-                    <p class="experience_sub-heading">SECRETARY<br> UWI MONA LIBRARY – JAMAICA</p>
+                    <p class="experience_sub-heading text-uppercase">SECRETARY<br> UWI MONA LIBRARY – JAMAICA</p>
                     <p class="experience_date">January 2007 - September 2017</p>
                   </div>
                   <!--<div class="col-12 download_resume">-->
@@ -421,53 +460,34 @@
           <div class="sql" data-name="Bootstrap" style="background: rgb(154,30,210); color:rgb(255,255,255);"></div>
       </div>
 
-      <!--
-           <div class="skillCubes" style="margin-left: -7%">
-                <div>
-                    <div class="progress" data-width="100%">
-                        <img src="img/html5_logo.png" height="10px" width="15px" style="background-color: white">
-                              <div class="html5" data-name="HTML5"></div>
-                    </div>
-                </div>
-                 <div class="progress" data-width="90%">
-                       <img src="img/css3_logo.png" height="40px" width="40px" style="background-color: white">
-                          <div class="css3" data-name="CSS3">
-                          </div>
-                  </div>
-                  <div class="progress" data-width="65%">
-                      <img src="img/javascript_logo.png" height="40px" width="45px" style="background-color: white">
-                           <div class="javascript" data-name="JavaScript">
-                           </div>
-                    </div>
-                    <div class="progress" data-width="45%">
-                        <img src="img/jquery_logo.png" height="40px" width="45px" style="background-color: white">
-                              <div class="jquery" data-name="jQuery">
-                              </div>
-                    </div>
-                        <div class="progress" data-width="50%">
-                               <img src="img/csharp_logo.png" height="40px" width="45px" style="background-color: white">
-                         <div class="c-sharp" data-name="C-Sharp">
-                          </div>
-                        </div>
-                    <div class="progress" data-width="60%">
-                        <img src="img/php_logo.png" height="40px" width="45px" style="background-color: white">
-                        <div class="php" data-name="PHP"></div>
-                    </div>
-                    <div class="progress" data-width="70%">
-                        <img src="img/sql_logo.png" height="40px" width="45px" style="background-color: white">
-                     <div class="sql" data-name="SQL">
-                  </div>
-              </div>
-          </div>
-        </div>
-      </div>
-    -->
-
     </div>
   </div>         
 </section>
 
 
+<!--=====================================
+            *** EDUCATION SECTION *** 
+======================================-->
+
+<section id="outlook_section" class="education">
+  <div class="container-fluid">
+    <div class="row">
+      
+      <div class=" col-12">
+          <p class="education_heading text-center text-uppercase">EDUCATION</p>
+      </div>
+      
+      <div class="col-12 education_info">
+          <p class="education_sub-heading text-uppercase text-center">Information Technology <span class="text-capitalize">(MSc.)</span> </br>Loyola University Chicago</p>
+          <p class="education_date experience_date text-center">August 2014 - May 2016</p>
+      </br>
+          <p class="education_sub-heading text-uppercase text-center">Business Management<span>(BA)</span> </br>University of Technology, Jamaica</p>
+          <p class="education_date text-center">September 2006 - September 2011</p>
+      </div>
+
+    </div>
+  </div>
+</section>
 
 
   <!--============================
@@ -477,7 +497,7 @@
     <section id="contact_me" class="contact">
         <div class="container-fluid">
             <div class="row row-content">
-                <div class="col-sm-12 col-md-6 social_buttons text-left">
+                <div class="col-12 col-md-6 social_buttons text-left">
                     <p class="contact_heading text-uppercase text-left">Contact Me</p>
                     <p class="contact_info text-left">Thank you for reviewing my background. Please get in touch to find out more.</p>
                    <ul class="navbar-nav contact_email">
@@ -497,7 +517,9 @@
        <a href="#" class="fa fa-free-code-camp" aria-hidden="true"></a>
        -->
                 </div>
-                <div class="col-sm-12 col-md-6">
+
+
+                <div class="col-12 col-md-6">
                    <!--Adding a Basic Form-->
                    <form>
                         <!--Name-->
