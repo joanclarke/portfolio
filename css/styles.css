@@ -219,7 +219,8 @@ a.active {
 .welcome_section {
   z-index: 2;
   position: absolute;
-  background-color: rgb(232, 246, 243);
+  /*background-color: rgb(232, 246, 243);*/
+  background-color: rgba(232, 246, 243,0.7);
   top: 100px;
   left: 250px;
   right: 250px;
