@@ -65,9 +65,6 @@ $(document).ready(function(){
 });
 
 
-
-
-
 //CODE FOR TYPING TEXT
 //code retrived from https://codepen.io/hi-im-si/pen/DHoup
 
