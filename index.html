@@ -4,6 +4,7 @@
     <!-- Required meta tags always come first -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
 <!-- favicon icon -->
@@ -45,7 +46,12 @@
         <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed:100,200,300,400,600,700|Open+Sans|Roboto|Roboto+Condensed:300,400" rel="stylesheet">
 
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800|Raleway:300,600,900" rel="stylesheet">
-    
+  
+
+<!--
+<link href="https://fonts.googleapis.com/css?family=Arapey|Jura|Lobster" rel="stylesheet">
+-->
+
     <!--Page Title-->
     <title>Joan Clarke | Home</title>
 </head>
@@ -55,14 +61,18 @@
 <!--*************************
           HOME
 **************************-->
+<!--<section class="display_on_small_screen">
+  
+</section>-->
 
-<section class="home">
+<section class="home" id="home">
   <div class="container-fluid">
     <div class="row row-content">
       <div class="col-12">
+     
      <!--Typing video source - Vimeo-->
      
-     <iframe src="https://player.vimeo.com/video/261676943?autoplay=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+     <iframe class="small_phone_only" src="https://player.vimeo.com/video/261676943?muted=1&amp;autoplay=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
 
      <!--
       <iframe src="https://player.vimeo.com/video/261676943?&amp;autoplay=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0" width="1000" height="1000" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
@@ -80,19 +90,29 @@
 
 
 <!-- Navigation -->
-<div class="nav_border sticky-top ">
+
+<!--2ND NAVIGATION-->
+<div class="nav_border sticky-top">
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="#">
     <img src="https://i.imgur.com/B7LICxx.jpg" class="img-fluid" title="Joan Clarke Portfolio" alt="logo">
   </a>
   <a href="#home" class="logo_title text-uppercase"><span class="name">Joan Clarke</span><br><span class="text-capitalize career">Front-End Developer</span></a>
-     <div class="colored_social_buttons">
+     <div class="colored_social_buttons small_phone_only">
         <div class="col-12 social_buttons text-center">
             <a href="https://www.linkedin.com/in/clarkejoan" target="_blank" class="fa fa-linkedin" aria-hidden="true"></a>
+            <!--
            <a href="https://plus.google.com/100285123760876941947" target="_blank" class="fa fa-google-plus" aria-hidden="true"></a>
+
+            -->
+
            <a href="https://www.instagram.com/joan_clarke/" target="_blank" class="fa fa-instagram" aria-hidden="true"></a>
           
           <a href="https://github.com/joanclarke/portfolio" target="_blank" class="fa fa-github" aria-hidden="true"></a>
+
+          <a href="https://codepen.io/Joanc/" target="_blank" class="fa fa-codepen" aria-hidden="true"></a>
+
+          <a href="https://www.freecodecamp.org/joanclarke" target="_blank" class="fa fa-free-code-camp" aria-hidden="true"></a>
           </div>
     </div>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -113,8 +133,19 @@
       <li class="nav-item">
         <a class="nav-link text-uppercase" href="#portfolio_section">Portfolio</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link text-uppercase" href="#outlook_section">Outlook</a>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-uppercase" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Outlook
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#outlook_section">Professional Outlook</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#experience_1">Experience</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#skills_1">Skills</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#education_1">Education</a>
+        </div>
       </li>
       <li class="nav-item">
         <a class="nav-link text-uppercase" href="#contact_me">Contact</a>
@@ -158,21 +189,72 @@
 -->
 
 
-<section class="welcome_section" id="home">
+<section class="welcome_section">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center welcome">
+        <!--
         <p class="welcome_title">WELCOME</p>
+      -->
     
-      
-        
+<!--TOP NAVIGATION BAR-->
+
+<nav class="navbar navbar-expand-lg navbar-dark top_nav">
+  <a class="navbar-brand" href="#">
+    <img src="https://i.imgur.com/7lvg2oS.png" class="img-fluid" title="Joan Clarke Portfolio" alt="logo">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#portfolio_section">Portfolio</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Outlook
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+           <a class="dropdown-item" href="#outlook_section">Professional Outlook</a>
+           <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#experience_1">Experience</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#skills_1">Skills</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#education_1">Education</a>
+        </div>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#contact_me">Contact</a>
+      </li>
+     
+  </div>
+</nav>
+
+
           <p class="text-center typing">
-            <a href="" class="typewrite" data-period="2000" data-type='[ "My Name is Joan.", "I am a Front-End Developer.", "Let&#8217;s build something awesome." ]'>
+            <a href="" class="typewrite" data-period="2000" data-type='[ "My name is Joan", "I am a Software Developer","Specializing in Web/Front-End Development"]'>
               <span class="wrap"></span>
             </a>
           </p> 
+          <p class="lets_build text-uppercase text-center">Let&#8217;s build something amazing together</p>
          
-            <button type="button" class="btn btn-link"><a href="#outlook_section"> Learn More</a></button>
+            <button type="button" class="btn btn-link text-uppercase">
+              <a href="#outlook_section"> Learn More</a>
+            </button>
+<!--
+            <button type="button" class="btn btn-link text-uppercase">
+              <a href="#outlook_section"> Resume</a>
+            </button>
+-->
           </div>
      
     </div>
@@ -203,11 +285,10 @@
   <div class="container container-fluid">
     <div class="row row-content">
       <div class="col-12 text-center">
-          <p class="about_heading text-uppercase">About Me</p>
+          <p class="about_heading text-uppercase text-dark">About Me</p>
       </div>
       <div class="col-12">
-          <p class="text-center">I&#8217;m extremely excited to invite you to explore my portfolio, project, education and experience and learn a little more about me. I&#8217;m a self-taught Front-End Developer with a passion for making clean, responsive and user-friendly websites and apps.  My favorite part of being a developer, is being a part of an idea from concept to completion. For me being able to bring ideas to life is as intriguing and amazing as it is fulfilling.</p>
-          <p class="text-center">When I&#8217;m not coding, you can find me singing and writing songs, spending time at church or hanging out with my friends and family.</p>
+          <p class="text-center text-dark">I&#8217;m extremely excited to invite you to explore my profile and learn a little more about me. I am a self-taught Junior Software Developer (Front-End) with aspirations of becoming a Full Stack a passion for making clean, responsive and user-friendly websites and apps.  My favorite part of being a developer, is being a part of an idea from concept to completion. For me being able to bring ideas to life is as intriguing and amazing as it is fulfilling. When I&#8217;m not coding, you can find me singing and writing songs, spending time at church or hanging out with my friends and family.</p>
       </div>
     </div>
   </div>
@@ -219,10 +300,11 @@
 
 <section id ="portfolio_section" class="portfolio">
         <div class="container-fluid">
-            <div class="row row-content">
-                <div class="col-12 text-center">
+            <div class="row">
+                <div class="col-12 text-center text-dark">
                     <p class="portfolio_heading text-uppercase">Portfolio</p>
-                <p>
+                <p class="small_quotes text-secondary"><em>"Success is not final; failure is not fatal: It is the courage to continue that counts.</em></p>
+                <p class="text-secondary"><em class="quote_arthor">Winston S. Churchill</em></p>
                 </div>
             </div>
             <div class="row row-content project_row">
@@ -231,7 +313,7 @@
                 <div class="col-12 col-sm-3 project large_screen">
                     <img src="https://i.imgur.com/jcwvFpP.jpg"class="project_image" title="Project: Power In The Word Ministries" alt="image of Power In The Word Ministry Project">      
                   <!--view project button-->
-                  <a class="button view_button" href="https://joanclarke.github.io/Power-in-the-Word-Website/">View</a>
+                  <a class="button view_button text-uppercase" href="https://joanclarke.github.io/Power-in-the-Word-Website/">View Project</a>
                   <p class="my_project">Power in the Word Ministries</p>
                     <p class="project_sentence ">Church Website</p>    
                   <p class="languages">CSS&nbsp; HTML&nbsp; JavaScript&nbsp; Bootstrap</p>
@@ -244,7 +326,7 @@
                 <div class="col-12 col-sm-3 project large_screen">
                     <img src="https://i.imgur.com/z8rO1DE.jpg" class="project_image" title="Project: Portfolio landing Page" alt="image of a stick man and writing">
                   <!--view project button-->
-                  <a class="button view_button" href=" https://joanclarke.github.io/portfolio/">View</a>
+                  <a class="button view_button text-uppercase" href=" https://joanclarke.github.io/portfolio/">View Project</a>
                   <p class="my_project">Portfolio Landing Page</p>
                     <p class="project_sentence ">Single Page Portfolio</p>    
                   <p class="languages">CSS&nbsp; HTML&nbsp; JavaScript</p>
@@ -254,10 +336,10 @@
             <!--******-->
 
               <!--Project Read-->
-                <div class="col-12 col-sm-3  project large_screen">
+                <div class="col-12 col-sm-3 project large_screen">
                     <img src="https://i.imgur.com/ZJ1nBxQ.png" class="project_image" title="Project: Project Read" alt="image of phone, ipad and book">  
                   <!--view project button-->
-                  <a class="button view_button coming_soon" href="#">Coming Soon</a>
+                  <a class="button view_button coming_soon text-uppercase" href="#">Coming Soon</a>
                   <p class="my_project">Project Read</p>
                     <p class="project_sentence ">Multi-platform Reading Feature</p>    
                   <p class="languages">CSS&nbsp; HTML&nbsp; JavaScript</p>
@@ -271,7 +353,7 @@
                 <div class="col-12 col-sm-3 project large_screen">
                     <img src="https://i.imgur.com/Du53XBP.jpg" class="project_image" title="Project: Chicago Inn" alt="image of Chicago Inn">    
              <!--view project button-->
-                  <a class="button view_button coming_soon" href="#">Coming Soon</a>     
+                  <a class="button view_button coming_soon text-uppercase" href="#">Coming Soon</a>     
                   <p class="my_project">Chicago Inn</p>
                     <p class="project_sentence ">Hotel Reservation Database</p>    
                   <p class="languages">SQL&nbsp; PHP&nbsp; Javascript&nbsp; jQuery&nbsp; HTML&nbsp; CSS</p>
@@ -285,7 +367,7 @@
                 <div class="col-12 col-sm-3 project large_screen">
                     <img src="https://i.imgur.com/XewQiUc.png" class="project_image" title="Project: Human Comparator" alt="image of Human Comparator line graph">
                   <!--view project button-->
-                  <a class="button view_button coming_soon" href="#">Coming Soon</a>
+                  <a class="button view_button coming_soon text-uppercase" href="#">Coming Soon</a>
                   <p class="my_project">Human Dev. Comparator</p>
                     <p class="project_sentence ">Data visualization Web Application</p>    
                   <p class="languages">JavaScript&nbsp; Ajax&nbsp; HTML&nbsp; CSS&nbsp; React+D3&nbsp; Node.js </p>
@@ -298,7 +380,7 @@
                 <div class="col-12 col-sm-3 project large_screen">
                     <img src="https://i.imgur.com/t3Ydg3C.png" class="project_image" title="Project: Beautiful Homes" alt="image of Beautiful Homes Website"> 
                   <!--view project button-->
-                  <a class="button view_button coming_soon" href="#">Coming Soon</a>
+                  <a class="button view_button coming_soon text-uppercase" href="#">Coming Soon</a>
                   <p class="my_project">Beautiful Homes</p>
                     <p class="project_sentence ">Furniture store Website</p>    
                   <p class="languages">CSS&nbsp; HTML&nbsp; JavaScript&nbsp; Bootstrap&nbsp; PHP&nbsp; SQL</p>
@@ -320,8 +402,8 @@
     <div class="container">
       <div class="row row-content">
         <div class="col-12">
-          <p class="professional_heading text-uppercase">Professional Outlook</p>
-          <p class = "quote">"If you really want to do something, you will find a way.  <br>If you don't you'll find an excuse." </p>Jim Rohn</em></p>
+          <p class="professional_heading text-uppercase text-dark">Professional Outlook</p>
+          <p class = "quote">"If you really want to do something, you will find a way.  <br>If you don't you'll find an excuse." </p><p class="text-secondary"><em>Jim Rohn</em></p>
          <!-- <p class="author_info">A Return To Love</p>-->
         </div>
       </div>
@@ -346,7 +428,7 @@
                 <div class="col-12 col-md-6 text-left">       
                   <!--<div class="col-12 col-md-6 text-left p-2">-->
                     <p class="professional_sub-heading">Where I am, Where I am going</p>
-                    <p class="professional_detail text-justify">I am a self taught Front-End Developer seeking to apply project and education obtained to manage projects through critical and innovative thinking.  I believe that these characteristics along with my skill-set and business background that will make me a valuable addition to any organization. Feel free to check out my resume to get a better idea of what I can offer.</p>
+                    <p class="professional_detail text-justify">I am a self-taught Junior Software Developer, currently focusing on Web/Front-End Development with aspirations of becoming a Full Stack Developer. My love for development began when I was studying Information Technology at Loyola University Chicago.  I’ve been hooked ever since.  My education and work background encompasses a mixture of business and technology experience.  It is this, coupled with my reluctance to quit and goal-getter attitude that I believe will help me in making informed decisions in real world projects and will make me a valuable addition to any organization. Feel free to check out my resume to get a better idea of what I can offer.</p>
 
                      <!--download resume button-->
                     <button type="button" class="btn btn-link contact_btn"><a href="https://drive.google.com/open?id=1ZWJ9jJpm6lUCiOVHjeqotE-t4n9_0bTs"> Download Resume</a></button>
@@ -383,21 +465,35 @@
             *** WORK EXPERIENCE SECTION *** 
         ======================================-->
 
-    <section id="outlook_section" class="experience">
+    <section id="experience_1" class="experience">
         <div class="container-fluid">
             <div class="row">  
-                <div class=" col-12">
-                    <p class="experience_heading text-center text-uppercase">EXPERIENCE</p>
+                <div class=" col-12 text-center">
+                    <p class="experience_heading text-capitalize">Experience</p>
                 </div>
                 
                     <div class="col-sm-6">
                     <p class="experience_sub-heading text-uppercase">SYSTEM SUPPORT OFFICER<br> NATIONAL LIBRARY OF JAMAICA</p>
                     <p class="experience_date">October 2017 - February 2018</p>
+                    <ul>
+                        <li>Configured and maintained NLJ’s Poetry Index and Manuscript databases and catalogues to provide access to the Library’s collections.</li>
+                        <li>Migrated data into the library management software, including the conversion of nonstandard data to standards such as MARC 21.</li>
+                        <li>Provided technical support as well as plans and delivers software training.</li>
+                        <li>Documented issues and resolutions related to the maintaining of software for future reference.</li>
+                        <li>Assisted with installation, configuration, upgrade, maintenance and support of software solutions.</li>
+                        <li>Contributed to the development of software policies and procedures.</li>
+                    </ul>
                     
                   </div>
                   <div class="col-sm-6">
                     <p class="experience_sub-heading text-uppercase">SECRETARY<br> UWI MONA LIBRARY – JAMAICA</p>
                     <p class="experience_date">January 2007 - September 2017</p>
+                    <ul>
+                      <li>Primary personnel with responsibilty for the creation of complex schedules of over 100 staff members for regular and extended opening hour duties and arranges replacements for absenteeism, on order to ensure efficient daily management of the University Libraries. </li>
+                      <li>Handled highly confidential and non-confidential documents and constructed replies to correspondence.</li>
+                      <li>Designed marketing materials (banners, posters, flyers) and coordinated seminars, workshops and social functions to facilitate promotion of the UWI libraries and services.</li>
+                      <li>Took diction, minutes of selected meetings as directed by the Deputy Librarian and reproduced the same in letters, memos, speech and report formats.</li>
+                    </ul>
                   </div>
                   <!--<div class="col-12 download_resume">-->
                     <!--download resume button-->
@@ -410,16 +506,67 @@
         </div>
     </section>
 
-<section id="outlook_section" class="skills">
+<section id="skills_1"  class="skills">
   <div class="container-fluid">
     <div class="row-content">
       
-      <div class="col-12">
-          <p class="skills_heading text-center">Skills</p>
+      <div class="col-12 text-center">
+          <p class="skills_heading text-capitalize">Skills</p>
       </div>
+
+      <div>
+        <ul>
+          <li><i class="fa fa-code-fork" aria-hidden="true"></i></li>
+         
+          <li><i class="fa fa-file-code-o" aria-hidden="true"></i></li>
+
+           <li><i class="fa fa-th" aria-hidden="true"></i></li>
+
+        </ul>
+      </div>
+      <table class="text-center">
+        <tr class="text-uppercase" >
+          <th class="first_row font-weight-normal">Experience with</th>
+          <th class="font-weight-normal">Languages</th>
+          <th class="font-weight-normal">Frameworks</th>
+        </tr>
+        <tr>
+          <td class="first_row">Version Control (Git and Github, Bitbucket)</td>
+          <td>HTML (HTML5) and CSS (CSS3)</td>
+          <td>Bootstrap</td>
+        </tr>
+        <tr>
+          <td class="first_row">JavaScript Runtime Environment(Node.js)</td>
+          <td>JavaScript</td>
+          <td>jQuery</td>
+        </tr>
+        <tr>
+          <td class="first_row">Relational Database Modeling System (MySQL)</td>
+          <td>SQL</td>
+          <td>SASS/SCSS</td>
+        </tr>
+         <tr>
+          <td class="first_row"></td>
+          <td>PHP</td>
+          <td>Xamarin</td>
+        </tr>
+         <tr>
+          <td class="first_row"></td>
+          <td>C-Sharp</td>
+          <td></td>
+        </tr>
+      </table>
+<!--
+      <div class="col-6 col-sm-4">
+        <p class="frame_top"><i class="fa fa-code" aria-hidden="true"></i>
+          <i class="fa fa-terminal" aria-hidden="true"></i>
+        </p>
+         <p class="frame text-center"> <i class="fa fa-github" aria-hidden="true"></i> <i class="fa fa-codepen" aria-hidden="true"></i> <i class="fa fa-bitbucket" aria-hidden="true"></i></p>
+      </div>
+-->
       <!--project CHART-->
   
-
+<!--
         <div class="progress skills_logo" data-width="100%">
           <img src="https://i.imgur.com/H8jEoz7.png" alt="HTML5 Logo">
           <div class="html" data-name="HTML" style="background: rgb(255,77,0);"></div>
@@ -459,6 +606,7 @@
         <img src="https://i.imgur.com/Kf493Hl.png" alt="Bootstrap Logo">
           <div class="sql" data-name="Bootstrap" style="background: rgb(154,30,210); color:rgb(255,255,255);"></div>
       </div>
+    -->
 
     </div>
   </div>         
@@ -469,12 +617,12 @@
             *** EDUCATION SECTION *** 
 ======================================-->
 
-<section id="outlook_section" class="education">
+<section id="education_1"  class="education">
   <div class="container-fluid">
     <div class="row">
       
-      <div class=" col-12">
-          <p class="education_heading text-center text-uppercase">EDUCATION</p>
+      <div class=" col-12 text-center">
+          <p class="education_heading text-capitalize">Education</p>
       </div>
       
       <div class="col-12 education_info">
@@ -490,6 +638,26 @@
 </section>
 
 
+<section class="separator_bg">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 separator_bg_cover">
+        <div class="dark_background">
+          <div>
+        <p class="text-uppercase text-center lets_build">I'm available for Hire.</p>
+      </div>
+        <div class="button_wrapper">
+         <button type="button" class="btn btn-link text-uppercase"><a href="#contact_me" >Contact Me Today</a>
+            </button>
+          </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
   <!--============================
       *** CONTACT SECTION *** 
   =============================-->
@@ -498,7 +666,7 @@
         <div class="container-fluid">
             <div class="row row-content">
                 <div class="col-12 col-md-6 social_buttons text-left">
-                    <p class="contact_heading text-uppercase text-left">Contact Me</p>
+                    <p class="contact_heading text-uppercase text-left text-dark">Contact Me</p>
                     <p class="contact_info text-left">Thank you for reviewing my background. Please get in touch to find out more.</p>
                    <ul class="navbar-nav contact_email">
                         <li class="nav-item">
@@ -510,8 +678,17 @@
                     </ul>
             <div class="contact_social">
             <a href="https://www.linkedin.com/in/clarkejoan" target="_blank" class="fa fa-linkedin fa-2x" aria-hidden="true"></a>
+          <!--
            <a href="https://plus.google.com/100285123760876941947" target="_blank" class="fa fa-google-plus" aria-hidden="true"></a>
+
+         -->
            <a href="https://www.instagram.com/joan_clarke/" target="_blank" class="fa fa-instagram" aria-hidden="true"></a>
+          <a href="https://github.com/joanclarke/portfolio" target="_blank" class="fa fa-github" aria-hidden="true"></a>
+
+          <a href="https://codepen.io/Joanc/" target="_blank" class="fa fa-codepen" aria-hidden="true"></a>
+
+          <a href="https://www.freecodecamp.org/joanclarke" target="_blank" class="fa fa-free-code-camp" aria-hidden="true"></a>
+
               </div>
               <!--
        <a href="#" class="fa fa-free-code-camp" aria-hidden="true"></a>
