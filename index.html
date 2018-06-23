@@ -7,11 +7,11 @@
 
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-<!-- favicon icon -->
-    <!--Generated from https://www.favicon-generator.org/-->
-
-    <link rel="shortcut icon" href="img/icon.jpg" type="image/x-icon">
-
+    <!--Icon image for tab -->
+    <link rel="shortcut icon" href="https://i.imgur.com/OcbmqwK.jpg" type="image/x-icon">
+    <!--
+    <link rel="shortcut icon" href="https://i.imgur.com/ELZABj0.png?1" type="image/x-icon">
+    -->
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 
@@ -53,7 +53,7 @@
 -->
 
     <!--Page Title-->
-    <title>Joan Clarke | Home</title>
+    <title>Joan Clarke Portfolio</title>
 </head>
 <body>
 
@@ -61,9 +61,6 @@
 <!--*************************
           HOME
 **************************-->
-<!--<section class="display_on_small_screen">
-  
-</section>-->
 
 <section class="home" id="home">
   <div class="container-fluid">
@@ -73,38 +70,34 @@
      <!--Typing video source - Vimeo-->
      
      <iframe class="small_phone_only" src="https://player.vimeo.com/video/261676943?muted=1&amp;autoplay=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
-
-     <!--
-      <iframe src="https://player.vimeo.com/video/261676943?&amp;autoplay=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0" width="1000" height="1000" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
-  
-     -->
-  
-    <!--Typing video source - Youtube-->
-    <!--
-     <iframe  id="video" width="1000" height="1000" src="https://www.youtube.com/embed/5fWr3eMpeb8?autoplay=1&loop=1&playlist=5fWr3eMpeb8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-   -->
       </div>
     </div>
   </div>
 </section>
+<!-- End of Home -->
 
+<!-- **********************
 
-<!-- Navigation -->
+    2ND NAVIGATION BAR
 
-<!--2ND NAVIGATION-->
+************************-->
+
+<!--==========  NOTE  =============
+/  This navigation bar will appear /
+/  under the video and will stick  /
+/  to the top of the screen when   /
+/  scrolled.                       /
+ ===============================-->
+
 <div class="nav_border sticky-top">
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark">
   <a class="navbar-brand" href="#">
     <img src="https://i.imgur.com/B7LICxx.jpg" class="img-fluid" title="Joan Clarke Portfolio" alt="logo">
   </a>
-  <a href="#home" class="logo_title text-uppercase"><span class="name">Joan Clarke</span><br><span class="text-capitalize career">Front-End Developer</span></a>
+  <a href="#home" class="logo_title text-uppercase"><span class="name">Joan Clarke</span><br><span class="text-capitalize career">Software Developer</span></a>
      <div class="colored_social_buttons small_phone_only">
         <div class="col-12 social_buttons text-center">
             <a href="https://www.linkedin.com/in/clarkejoan" target="_blank" class="fa fa-linkedin" aria-hidden="true"></a>
-            <!--
-           <a href="https://plus.google.com/100285123760876941947" target="_blank" class="fa fa-google-plus" aria-hidden="true"></a>
-
-            -->
 
            <a href="https://www.instagram.com/joan_clarke/" target="_blank" class="fa fa-instagram" aria-hidden="true"></a>
           
@@ -121,8 +114,6 @@
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
- 
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
         <a class="nav-link text-uppercase" href="#home">Home <span class="sr-only">(current)</span></a>
@@ -154,50 +145,38 @@
   </div>
 </nav>
 </div>
-<!-- End of Navigation -->
+<!-- End of 2nd Navigation -->
 
 
 <!--*************************
-          WELCOME
+           
+           WELCOME
+
 **************************-->
-<!--
-<section class="welcome" id="home">
-  <div class="container-fluid">
-    <div class="row">
-     
-          <div class="col-12 welcome_head text-center">
-            <p>WELCOME</p>
-          </div>
-        -->
-          <!--Typing-->
-          <!--
-          <div class="typing">
-          <h1 class="text-center">
-            <a href="" class="typewrite" data-period="2000" data-type='[ "My Name is Joan.", "I am a Front-End Developer.", "Let&#8217;s build something awesome." ]'>
-              <span class="wrap"></span>
-            </a>
-          </h1> 
-          </div>
 
-          <div class=" col-12 Learn_more_button">
-            <button type="button" class="btn btn-link"><a href="#outlook_section"> Learn More</a></button>
-          </div>
-
-    </div>
-  </div>
-</section>
--->
-
+<!--=======================  NOTE  ============================
+ /  I used the z-index property and CSS offsets (top, bottom,  /
+ /  left, right) in order to stack the welcome section above   /
+ /  the video.  I also had to use position:absolute as z-index /
+ /  only works on positioned elements (position:absolute,      /
+ /  position:relative, or position:fixed).                     /
+=============================================================-->
 
 <section class="welcome_section">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center welcome">
-        <!--
-        <p class="welcome_title">WELCOME</p>
-      -->
-    
+        
 <!--TOP NAVIGATION BAR-->
+
+<!--=======================  NOTE  ====================
+ /  This navigation bar was placed inside the welcome /
+ /  section so that it would inherit the z-index      /
+ /  property and be stacked above the video and image /
+ /  which is in the background. This navbar will      /
+ /  at the top of the page and will disappear when the/
+ /  page is scrolled. The background is transparent.  /
+====================================================-->
 
 <nav class="navbar navbar-expand-lg navbar-dark top_nav">
   <a class="navbar-brand" href="#">
@@ -219,7 +198,7 @@
         <a class="nav-link" href="#portfolio_section">Portfolio</a>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Outlook
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -250,45 +229,23 @@
             <button type="button" class="btn btn-link text-uppercase">
               <a href="#outlook_section"> Learn More</a>
             </button>
-<!--
-            <button type="button" class="btn btn-link text-uppercase">
-              <a href="#outlook_section"> Resume</a>
-            </button>
--->
-          </div>
-     
+          </div>  
     </div>
   </div>
 </section>
-
-
-<!--
-<section class="colored_social_buttons fixed">
-  <dir class="container-fluid">
-    <div class=" row row-content">
-      <div class="col-12 social_buttons text-center">
-            <a href="https://www.linkedin.com/in/clarkejoan" target="_blank" class="fa fa-linkedin" aria-hidden="true"></a>
-           <a href="https://plus.google.com/100285123760876941947" target="_blank" class="fa fa-google-plus" aria-hidden="true"></a>
-           <a href="https://www.instagram.com/joan_clarke/" target="_blank" class="fa fa-instagram" aria-hidden="true"></a>
-       
-          </div>
-    </div>
-  </dir>
-</section>
--->
 
 <!--*************************
           ABOUT ME
 **************************-->
 <!--<section id="about" style="height: 50px;"></section>-->
 <section id="about" class="about_me">
-  <div class="container container-fluid">
+  <div class="container-fluid">
     <div class="row row-content">
       <div class="col-12 text-center">
           <p class="about_heading text-uppercase text-dark">About Me</p>
       </div>
       <div class="col-12">
-          <p class="text-center text-dark">I&#8217;m extremely excited to invite you to explore my profile and learn a little more about me. I am a self-taught Junior Software Developer (Front-End) with aspirations of becoming a Full Stack a passion for making clean, responsive and user-friendly websites and apps.  My favorite part of being a developer, is being a part of an idea from concept to completion. For me being able to bring ideas to life is as intriguing and amazing as it is fulfilling. When I&#8217;m not coding, you can find me singing and writing songs, spending time at church or hanging out with my friends and family.</p>
+          <p class="text-center text-dark">I&#8217;m extremely excited to invite you to explore my profile and learn a little more about me. I am a Junior Software Developer (Front-End) with aspirations of becoming a Full Stack a passion for making clean, responsive and user-friendly websites and apps.  My favorite part of being a developer, is being a part of an idea from concept to completion. For me being able to bring ideas to life is as intriguing and amazing as it is fulfilling. When I&#8217;m not coding, you can find me singing and writing songs, spending time at church or hanging out with my friends and family.</p>
       </div>
     </div>
   </div>
@@ -303,7 +260,7 @@
             <div class="row">
                 <div class="col-12 text-center text-dark">
                     <p class="portfolio_heading text-uppercase">Portfolio</p>
-                <p class="small_quotes text-secondary"><em>"Success is not final; failure is not fatal: It is the courage to continue that counts.</em></p>
+                <p class="small_quotes text-secondary">"Success is not final; failure is not fatal: It is the courage </br>to continue that counts.</p>
                 <p class="text-secondary"><em class="quote_arthor">Winston S. Churchill</em></p>
                 </div>
             </div>
@@ -322,9 +279,9 @@
                 </div>
               <!--******-->
 
-              <!--Project Read-->
+              <!--Portfolio Project-->
                 <div class="col-12 col-sm-3 project large_screen">
-                    <img src="https://i.imgur.com/z8rO1DE.jpg" class="project_image" title="Project: Portfolio landing Page" alt="image of a stick man and writing">
+                    <img src="https://i.imgur.com/GeA1Uzh.jpg" class="project_image" title="Project: Portfolio landing Page" alt="image of a stick man and writing">
                   <!--view project button-->
                   <a class="button view_button text-uppercase" href=" https://joanclarke.github.io/portfolio/">View Project</a>
                   <p class="my_project">Portfolio Landing Page</p>
@@ -395,71 +352,41 @@
     </section>
 
   <!--*************************
-               QUOTE
+        PROFESSIONAL OUTLOOK
   **************************-->
+
+  <!--********* QUOTE *********-->
   
   <section id="outlook_section" class="text-center quote_section">
     <div class="container">
       <div class="row row-content">
         <div class="col-12">
           <p class="professional_heading text-uppercase text-dark">Professional Outlook</p>
-          <p class = "quote">"If you really want to do something, you will find a way.  <br>If you don't you'll find an excuse." </p><p class="text-secondary"><em>Jim Rohn</em></p>
-         <!-- <p class="author_info">A Return To Love</p>-->
+          <p class = "quote">"There are no secrets to success. It is the result of preparation, <br>hard work, and learning from failure.</p>
+          <p class="text-secondary quote_arthor_big"><em>Colin Powell</em></p>
         </div>
       </div>
     </div>
   </section>
-  
-  <!--*************************
-        PROFESSIONAL OUTLOOK
-  **************************-->
-  
+
+   <!--********* OUTLOOK *********-->
+
  <section id="outlook_section" class="professional_outlook">
         <div class="container-fluid">
           <div class="row">
-            
-
                 <div class="col-12 col-md-6 outlook_img">
-                  <!--<div class="col-12 col-md-6 outlook_img p-2">-->
-                    <!--<img class="img-responsive" src="../img/outlook_img.jpg">-->
                     <div class="outlook_height_img"></div>
                 </div>
-            <!--<div class=" row d-flex flex-sm-row-reverse">-->
-                <div class="col-12 col-md-6 text-left">       
-                  <!--<div class="col-12 col-md-6 text-left p-2">-->
-                    <p class="professional_sub-heading">Where I am, Where I am going</p>
-                    <p class="professional_detail text-justify">I am a self-taught Junior Software Developer, currently focusing on Web/Front-End Development with aspirations of becoming a Full Stack Developer. My love for development began when I was studying Information Technology at Loyola University Chicago.  I’ve been hooked ever since.  My education and work background encompasses a mixture of business and technology experience.  It is this, coupled with my reluctance to quit and goal-getter attitude that I believe will help me in making informed decisions in real world projects and will make me a valuable addition to any organization. Feel free to check out my resume to get a better idea of what I can offer.</p>
+                    <div class="col-12 col-md-6 text-left">       
+                      <p class="professional_sub-heading">Where I am, Where I am going</p>
+                      <p class="professional_detail text-justify">I am a self-taught Junior Software Developer, currently focusing on Web/Front-End Development with aspirations of becoming a Full Stack Developer. My love for development began when I was studying Information Technology at Loyola University Chicago.  I’ve been hooked ever since.  My education and work background encompasses a mixture of business and technology experience.  It is this, coupled with my reluctance to quit and goal-getter attitude that I believe will help me in making informed decisions in real world projects and will make me a valuable addition to any organization. Feel free to check out my resume to get a better idea of what I can offer.</p>
 
-                     <!--download resume button-->
+                     <!--Button - Download Resume-->
                     <button type="button" class="btn btn-link contact_btn"><a href="https://drive.google.com/open?id=1ZWJ9jJpm6lUCiOVHjeqotE-t4n9_0bTs"> Download Resume</a></button>
-                    <!--
-                    <p class="professional_heading text-uppercase" >Professional&nbsp; Outlook</p>
-                    
-                    <p class="professional_detail">My method for dealing with each project/task assigned is to approach it with eagerness, a positive attitude, a desire to learn and an unwillingness to quit.  I believe that it is these characteristics along with my education, experience and skill set that would make me a valuable addition to any organization. Feel free to check out my resume, so you can get a better idea of what I can offer.</p>
-                  -->
-                    <!--Download Resume button-->
-                    <!--<button type="button" class="btn btn-link contact_btn"><a href="#contact_me"> Contact Me</a></button>
-                    -->
-                </div>
-                
+                </div>           
             </div>
         </div>
     </section>
-
-    <!--============================
-    *** PERSONAL PROFILE SECTION *** 
-    =============================-->
-<!--
-<section class="personal_profile">
-  <div class="container-fluid">
-    <div class="row-content">
-      <p class="profile_heading text-uppercase">Personal Profile</p>
-      <p class="profile_detail">I’m Front-End Developer seeking to apply the project and education I’ve obtained to manage projects through critical and innovative thinking and creative problem solving. I possess a strong eye for detail and can thrive independently as well as in a team environment.</p>
-      <button type="button" class="btn btn-link contact_btn"><a href="https://drive.google.com/open?id=1ZWJ9jJpm6lUCiOVHjeqotE-t4n9_0bTs"> Download Resume</a></button>
-    </div>
-  </div>
-</section>
--->
 
     <!--=====================================
             *** WORK EXPERIENCE SECTION *** 
@@ -468,8 +395,9 @@
     <section id="experience_1" class="experience">
         <div class="container-fluid">
             <div class="row">  
-                <div class=" col-12 text-center">
-                    <p class="experience_heading text-capitalize">Experience</p>
+                <div class="col-12 text-center">
+                  <p class="experience_heading text-uppercase">Experience</p>
+                    <hr>
                 </div>
                 
                     <div class="col-sm-6">
@@ -495,13 +423,6 @@
                       <li>Took diction, minutes of selected meetings as directed by the Deputy Librarian and reproduced the same in letters, memos, speech and report formats.</li>
                     </ul>
                   </div>
-                  <!--<div class="col-12 download_resume">-->
-                    <!--download resume button-->
-                    <!--
-                    <button type="button" class="btn btn-link contact_btn"><a href="https://drive.google.com/open?id=1ZWJ9jJpm6lUCiOVHjeqotE-t4n9_0bTs"> Download Resume</a></button>
-                </div>
-              -->
-        
             </div>
         </div>
     </section>
@@ -511,11 +432,14 @@
     <div class="row-content">
       
       <div class="col-12 text-center">
-          <p class="skills_heading text-capitalize">Skills</p>
+          <p class="skills_heading text-uppercase">Skills</p>
+          <hr>
+          <p class="small_quotes text-secondary">"Success seems to be connected with action. Successful people keep moving. </br>They make mistakes, but they don't quit."</p>
+                <p class="text-secondary"><em class="quote_arthor">Conrad Hilton</em></p>
       </div>
 
       <div>
-        <ul>
+        <ul class="text-dark">
           <li><i class="fa fa-code-fork" aria-hidden="true"></i></li>
          
           <li><i class="fa fa-file-code-o" aria-hidden="true"></i></li>
@@ -524,47 +448,45 @@
 
         </ul>
       </div>
-      <table class="text-center">
+      <table class="text-center table_styling" align="center">
         <tr class="text-uppercase" >
-          <th class="first_row font-weight-normal">Experience with</th>
-          <th class="font-weight-normal">Languages</th>
-          <th class="font-weight-normal">Frameworks</th>
+          <th class="first_row font-weight-bold">Experience with</th>
+          <th class="font-weight-bold" colspan="2">Languages & Levels</th>
+          <th class="font-weight-bold">Frameworks</th>
         </tr>
         <tr>
-          <td class="first_row">Version Control (Git and Github, Bitbucket)</td>
-          <td>HTML (HTML5) and CSS (CSS3)</td>
+          <td>Version Control (Git and Github, Bitbucket)</td>
+          <td>HTML (HTML5) & CSS (CSS3)</td>
+          <td class="small_col">Expert</td>
           <td>Bootstrap</td>
         </tr>
         <tr>
-          <td class="first_row">JavaScript Runtime Environment(Node.js)</td>
+          <td>JavaScript Runtime Environment(Node.js)</td>
           <td>JavaScript</td>
+          <td class="small_col">Basic - Intermediate</td>
           <td>jQuery</td>
         </tr>
         <tr>
-          <td class="first_row">Relational Database Modeling System (MySQL)</td>
+          <td>Relational Database Modeling System (MySQL)</td>
           <td>SQL</td>
+          <td class="small_col">Intermediate</td>
           <td>SASS/SCSS</td>
         </tr>
          <tr>
-          <td class="first_row"></td>
+          <td></td>
           <td>PHP</td>
+          <td class="small_col">Intermediate</td>
           <td>Xamarin</td>
         </tr>
          <tr>
-          <td class="first_row"></td>
+          <td></td>
           <td>C-Sharp</td>
+          <td class="small_col">Basic - Intermediate</td>
           <td></td>
         </tr>
       </table>
-<!--
-      <div class="col-6 col-sm-4">
-        <p class="frame_top"><i class="fa fa-code" aria-hidden="true"></i>
-          <i class="fa fa-terminal" aria-hidden="true"></i>
-        </p>
-         <p class="frame text-center"> <i class="fa fa-github" aria-hidden="true"></i> <i class="fa fa-codepen" aria-hidden="true"></i> <i class="fa fa-bitbucket" aria-hidden="true"></i></p>
-      </div>
--->
-      <!--project CHART-->
+
+ <!--project CHART-->
   
 <!--
         <div class="progress skills_logo" data-width="100%">
@@ -608,6 +530,7 @@
       </div>
     -->
 
+
     </div>
   </div>         
 </section>
@@ -622,7 +545,8 @@
     <div class="row">
       
       <div class=" col-12 text-center">
-          <p class="education_heading text-capitalize">Education</p>
+          <p class="education_heading text-uppercase">Education</p>
+            <hr>
       </div>
       
       <div class="col-12 education_info">
@@ -656,8 +580,6 @@
   </div>
 </section>
 
-
-
   <!--============================
       *** CONTACT SECTION *** 
   =============================-->
@@ -678,10 +600,7 @@
                     </ul>
             <div class="contact_social">
             <a href="https://www.linkedin.com/in/clarkejoan" target="_blank" class="fa fa-linkedin fa-2x" aria-hidden="true"></a>
-          <!--
-           <a href="https://plus.google.com/100285123760876941947" target="_blank" class="fa fa-google-plus" aria-hidden="true"></a>
 
-         -->
            <a href="https://www.instagram.com/joan_clarke/" target="_blank" class="fa fa-instagram" aria-hidden="true"></a>
           <a href="https://github.com/joanclarke/portfolio" target="_blank" class="fa fa-github" aria-hidden="true"></a>
 
@@ -689,13 +608,8 @@
 
           <a href="https://www.freecodecamp.org/joanclarke" target="_blank" class="fa fa-free-code-camp" aria-hidden="true"></a>
 
-              </div>
-              <!--
-       <a href="#" class="fa fa-free-code-camp" aria-hidden="true"></a>
-       -->
-                </div>
-
-
+          </div>
+            </div>
                 <div class="col-12 col-md-6">
                    <!--Adding a Basic Form-->
                    <form>
@@ -715,9 +629,9 @@
                         <div class="form-group row">
                             <div class="col-5 col-sm-6 col-md-6">
                                 <div class="input-group form-border rounded-0">
-                                    <div class="input-group-addon">(</div>
+                                    <div class="input-group-addon form-border rounded-0">(</div>
                                         <input type="tel" class="form-control rounded-0" id="areacode" name="areacode" placeholder="Area code">
-                                    <div class="input-group-addon">)</div>
+                                    <div class="input-group-addon form-border rounded-0">)</div>
                                 </div>
                             </div>
                             <div class="col-7 col-sm-6 col-md-6">
@@ -1035,9 +949,6 @@
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/tether/dist/js/tether.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
-
-     
-
+    <script src="js/scripts.js"></script>     
 </body>
 </html>
