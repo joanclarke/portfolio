@@ -121,11 +121,11 @@ var TxtType = function(el, toRotate, period) {
         // INJECT CSS
         var css = document.createElement("style");
         css.type = "text/css";
-        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #2C3E50}";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid transparent}";
         document.body.appendChild(css);
     };
 
-
+/*#2C3E50*/
 
     /*Skills progress bar*/
 /*--Codes retrieved and adjusted from this jsfiddle - https://jsfiddle.net/hibbard_eu/pxnZZ/--*/
