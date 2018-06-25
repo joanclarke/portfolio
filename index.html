@@ -10,6 +10,9 @@
     <!--Icon image for tab -->
     <link rel="shortcut icon" href="https://i.imgur.com/OcbmqwK.jpg" type="image/x-icon">
     <!--
+    <link rel="shortcut icon" href="https://i.imgur.com/yoGLIJf.jpg" type="image/x-icon">
+  -->
+    <!--
     <link rel="shortcut icon" href="https://i.imgur.com/ELZABj0.png?1" type="image/x-icon">
     -->
     <!-- Bootstrap CSS -->
@@ -45,9 +48,11 @@
 
         <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed:100,200,300,400,600,700|Open+Sans|Roboto|Roboto+Condensed:300,400" rel="stylesheet">
 
+      <!--
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800|Raleway:300,600,900" rel="stylesheet">
+      -->
   
-
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Raleway:200,300,400,500,600,700|Roboto:300,400,500,700,900" rel="stylesheet">
 <!--
 <link href="https://fonts.googleapis.com/css?family=Arapey|Jura|Lobster" rel="stylesheet">
 -->
@@ -116,7 +121,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <a class="nav-link text-uppercase" href="#home">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link text-uppercase" href="#home_welcome">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link text-uppercase" href="#about">About</a>
@@ -162,7 +167,7 @@
  /  position:relative, or position:fixed).                     /
 =============================================================-->
 
-<section class="welcome_section">
+<section id="home_welcome" class="welcome_section">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center welcome">
@@ -242,10 +247,10 @@
   <div class="container-fluid">
     <div class="row row-content">
       <div class="col-12 text-center">
-          <p class="about_heading text-uppercase text-dark">About Me</p>
+          <p class="about_heading text-uppercase">About Me</p>
       </div>
       <div class="col-12">
-          <p class="text-center text-dark">I&#8217;m extremely excited to invite you to explore my profile and learn a little more about me. I am a Junior Software Developer (Front-End) with aspirations of becoming a Full Stack a passion for making clean, responsive and user-friendly websites and apps.  My favorite part of being a developer, is being a part of an idea from concept to completion. For me being able to bring ideas to life is as intriguing and amazing as it is fulfilling. When I&#8217;m not coding, you can find me singing and writing songs, spending time at church or hanging out with my friends and family.</p>
+          <p class="text-center text-dark">I&#8217;m extremely excited to invite you to explore my profile and learn a little more about me. I am a Software Developer (Front-End) with aspirations of becoming a Full Stack Developer with a passion for making clean, responsive and user-friendly websites and apps.  My favorite part of being a developer, is being a part of an idea from concept to completion. For me being able to bring ideas to life is as intriguing and amazing as it is fulfilling. When I&#8217;m not coding, you can find me singing and writing songs, spending time at church or hanging out with my friends and family.</p>
       </div>
     </div>
   </div>
@@ -258,7 +263,7 @@
 <section id ="portfolio_section" class="portfolio">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12 text-center text-dark">
+                <div class="col-12 text-center">
                     <p class="portfolio_heading text-uppercase">Portfolio</p>
                 <p class="small_quotes text-secondary">"Success is not final; failure is not fatal: It is the courage </br>to continue that counts.</p>
                 <p class="text-secondary"><em class="quote_arthor">Winston S. Churchill</em></p>
@@ -358,10 +363,10 @@
   <!--********* QUOTE *********-->
   
   <section id="outlook_section" class="text-center quote_section">
-    <div class="container">
+    <div class="container-fluid">
       <div class="row row-content">
         <div class="col-12">
-          <p class="professional_heading text-uppercase text-dark">Professional Outlook</p>
+          <p class="professional_heading text-uppercase">Professional Outlook</p>
           <p class = "quote">"There are no secrets to success. It is the result of preparation, <br>hard work, and learning from failure.</p>
           <p class="text-secondary quote_arthor_big"><em>Colin Powell</em></p>
         </div>
@@ -382,7 +387,7 @@
                       <p class="professional_detail text-justify">I am a self-taught Junior Software Developer, currently focusing on Web/Front-End Development with aspirations of becoming a Full Stack Developer. My love for development began when I was studying Information Technology at Loyola University Chicago.  I’ve been hooked ever since.  My education and work background encompasses a mixture of business and technology experience.  It is this, coupled with my reluctance to quit and goal-getter attitude that I believe will help me in making informed decisions in real world projects and will make me a valuable addition to any organization. Feel free to check out my resume to get a better idea of what I can offer.</p>
 
                      <!--Button - Download Resume-->
-                    <button type="button" class="btn btn-link contact_btn"><a href="https://drive.google.com/open?id=1ZWJ9jJpm6lUCiOVHjeqotE-t4n9_0bTs"> Download Resume</a></button>
+                    <button type="button" class="btn btn-link"><a href="https://drive.google.com/open?id=1ZWJ9jJpm6lUCiOVHjeqotE-t4n9_0bTs"> Download Resume</a></button>
                 </div>           
             </div>
         </div>
@@ -396,8 +401,8 @@
         <div class="container-fluid">
             <div class="row">  
                 <div class="col-12 text-center">
-                  <p class="experience_heading text-uppercase">Experience</p>
-                    <hr>
+                  <p class="professional_sub_headings text-uppercase">Experience</p>
+                    <!--<hr class="heading_underline">-->
                 </div>
                 
                     <div class="col-sm-6">
@@ -429,13 +434,16 @@
 
 <section id="skills_1"  class="skills">
   <div class="container-fluid">
-    <div class="row-content">
+    <div class="row">
       
-      <div class="col-12 text-center">
-          <p class="skills_heading text-uppercase">Skills</p>
-          <hr>
+      <div class=" col-12 text-center">
+          <p class="professional_sub_headings text-uppercase">Skills</p>
+             <!--<hr class="heading_underline">-->
+      </div>
+          <div class="col-12 text-center">
           <p class="small_quotes text-secondary">"Success seems to be connected with action. Successful people keep moving. </br>They make mistakes, but they don't quit."</p>
-                <p class="text-secondary"><em class="quote_arthor">Conrad Hilton</em></p>
+          <p class="text-secondary"><em class="quote_arthor">Conrad Hilton</em></p>
+          <hr class="heading_underline2">
       </div>
 
       <div>
@@ -448,11 +456,12 @@
 
         </ul>
       </div>
-      <table class="text-center table_styling" align="center">
-        <tr class="text-uppercase" >
-          <th class="first_row font-weight-bold">Experience with</th>
-          <th class="font-weight-bold" colspan="2">Languages & Levels</th>
-          <th class="font-weight-bold">Frameworks</th>
+      <div>
+      <table class="text-center text-dark table_styling" align="center">
+        <tr class="text-uppercase " >
+          <th class="first_row font-weight-bold heading_row">Experience with</th>
+          <th class="font-weight-bold heading_row" colspan="2">Languages & Levels</th>
+          <th class="font-weight-bold heading_row">Frameworks</th>
         </tr>
         <tr>
           <td>Version Control (Git and Github, Bitbucket)</td>
@@ -485,6 +494,7 @@
           <td></td>
         </tr>
       </table>
+    </div>
 
  <!--project CHART-->
   
@@ -545,8 +555,8 @@
     <div class="row">
       
       <div class=" col-12 text-center">
-          <p class="education_heading text-uppercase">Education</p>
-            <hr>
+          <p class="professional_sub_headings text-uppercase">Education</p>
+             <!--<hr class="heading_underline">-->
       </div>
       
       <div class="col-12 education_info">
@@ -588,7 +598,7 @@
         <div class="container-fluid">
             <div class="row row-content">
                 <div class="col-12 col-md-6 social_buttons text-left">
-                    <p class="contact_heading text-uppercase text-left text-dark">Contact Me</p>
+                    <p class="contact_heading text-uppercase text-left">Contact Me</p>
                     <p class="contact_info text-left">Thank you for reviewing my background. Please get in touch to find out more.</p>
                    <ul class="navbar-nav contact_email">
                         <li class="nav-item">
