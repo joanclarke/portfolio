@@ -9,25 +9,17 @@
 
     <!--Icon image for tab -->
     <link rel="shortcut icon" href="https://i.imgur.com/OcbmqwK.jpg" type="image/x-icon">
-    <!--
-    <link rel="shortcut icon" href="https://i.imgur.com/yoGLIJf.jpg" type="image/x-icon">
-  -->
-    <!--
-    <link rel="shortcut icon" href="https://i.imgur.com/ELZABj0.png?1" type="image/x-icon">
-    -->
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 
     <link rel="stylesheet" href="css/bootstrap-social.css">
 
-
     <!-- font awesome bootstrap-social Insert -->
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     
-
     <!-- Customized CSS -->
      <link type="text/css" rel="stylesheet" href="css/styles.css" >
-
 
     <!--Link to activate bootstrap on github pages-->
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -38,24 +30,9 @@
 
     <!--Google Fonts -->
 
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed:100,200,300,400,600,700|Open+Sans|Roboto|Roboto+Condensed:300,400" rel="stylesheet">
 
-        <!--******* Open Sans Condensed ********-->
-       <!--
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Quicksand:300,400,500" rel="stylesheet"> 
-
-        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
--->
-
-        <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed:100,200,300,400,600,700|Open+Sans|Roboto|Roboto+Condensed:300,400" rel="stylesheet">
-
-      <!--
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800|Raleway:300,600,900" rel="stylesheet">
-      -->
-  
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Raleway:200,300,400,500,600,700|Roboto:300,400,500,700,900" rel="stylesheet">
-<!--
-<link href="https://fonts.googleapis.com/css?family=Arapey|Jura|Lobster" rel="stylesheet">
--->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Raleway:200,300,400,500,600,700|Roboto:300,400,500,700,900" rel="stylesheet">
 
     <!--Page Title-->
     <title>Joan Clarke Portfolio</title>
@@ -63,45 +40,19 @@
 <body>
 
 
-<!--*************************
-          HOME
-**************************-->
-
-<section class="home" id="home">
-  <div class="container-fluid">
-    <div class="row row-content">
-      <div class="col-12">
-     
-     <!--Typing video source - Vimeo-->
-     
-     <iframe class="small_phone_only" src="https://player.vimeo.com/video/261676943?muted=1&amp;autoplay=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End of Home -->
 
 <!-- **********************
-
-    2ND NAVIGATION BAR
-
+      NAVIGATION BAR
 ************************-->
 
-<!--==========  NOTE  =============
-/  This navigation bar will appear /
-/  under the video and will stick  /
-/  to the top of the screen when   /
-/  scrolled.                       /
- ===============================-->
-
-<div class="nav_border sticky-top">
-<nav class="navbar navbar-expand-lg navbar-dark">
+<!--<div class="nav_border">-->
+<nav id="navbar" class="navbar nav_border navbar-expand-lg navbar-dark fixed-top">
   <a class="navbar-brand" href="#">
     <img src="https://i.imgur.com/B7LICxx.jpg" class="img-fluid" title="Joan Clarke Portfolio" alt="logo">
   </a>
   <a href="#home" class="logo_title text-uppercase"><span class="name">Joan Clarke</span><br><span class="text-capitalize career">Software Developer</span></a>
-     <div class="colored_social_buttons small_phone_only">
-        <div class="col-12 social_buttons text-center">
+    <div class="colored_social_buttons small_phone_only">
+      <div class="col-12 social_buttons text-center">
             <a href="https://www.linkedin.com/in/clarkejoan" target="_blank" class="fa fa-linkedin" aria-hidden="true"></a>
 
            <a href="https://www.instagram.com/joan_clarke/" target="_blank" class="fa fa-instagram" aria-hidden="true"></a>
@@ -110,7 +61,7 @@
 
           <a href="https://codepen.io/Joanc/" target="_blank" class="fa fa-codepen" aria-hidden="true"></a>
 
-          <a href="https://www.freecodecamp.org/joanclarke" target="_blank" class="fa fa-free-code-camp" aria-hidden="true"></a>
+          <a id="profile-link" href="https://www.freecodecamp.org/joanclarke" target="_blank" class="fa fa-free-code-camp" aria-hidden="true"></a>
           </div>
     </div>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -121,13 +72,13 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <a class="nav-link text-uppercase" href="#home_welcome">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link text-uppercase" href="#welcome-section">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link text-uppercase" href="#about">About</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-uppercase" href="#portfolio_section">Portfolio</a>
+        <a class="nav-link text-uppercase" href="#projects">Portfolio</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle text-uppercase" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -149,14 +100,31 @@
     </ul>
   </div>
 </nav>
-</div>
-<!-- End of 2nd Navigation -->
+<!-- </div> --> 
+<!-- End of Navigation -->
 
-
+<main id="main">
 <!--*************************
-           
-           WELCOME
+          HOME
+**************************-->
 
+<section id="home">
+  <div class="container-fluid">
+    <div class="row row-content">
+      <div class="col-12">
+      <div id="videoWrapper">
+     <!--Typing video source - Vimeo-->
+     <iframe id="video" class="small_phone_only" src="https://player.vimeo.com/video/261676943?muted=1&amp;autoplay=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+    </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- End of Home -->
+
+<!--*************************          
+           WELCOME
 **************************-->
 
 <!--=======================  NOTE  ============================
@@ -167,69 +135,17 @@
  /  position:relative, or position:fixed).                     /
 =============================================================-->
 
-<section id="home_welcome" class="welcome_section">
+<section id="welcome-section">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center welcome">
         
-<!--TOP NAVIGATION BAR-->
-
-<!--=======================  NOTE  ====================
- /  This navigation bar was placed inside the welcome /
- /  section so that it would inherit the z-index      /
- /  property and be stacked above the video and image /
- /  which is in the background. This navbar will      /
- /  at the top of the page and will disappear when the/
- /  page is scrolled. The background is transparent.  /
-====================================================-->
-
-<nav class="navbar navbar-expand-lg navbar-dark top_nav">
-  <a class="navbar-brand" href="#">
-    <img src="https://i.imgur.com/7lvg2oS.png" class="img-fluid" title="Joan Clarke Portfolio" alt="logo">
-  </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#about">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#portfolio_section">Portfolio</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Outlook
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-           <a class="dropdown-item" href="#outlook_section">Professional Outlook</a>
-           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#experience_1">Experience</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#skills_1">Skills</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#education_1">Education</a>
-        </div>
-      </li>
-       <li class="nav-item">
-        <a class="nav-link" href="#contact_me">Contact</a>
-      </li>
-     
-  </div>
-</nav>
-
-
-          <p class="text-center typing">
+        <p class="text-center typing">
             <a href="" class="typewrite" data-period="2000" data-type='[ "My name is Joan", "I am a Software Developer","Specializing in Web/Front-End Development"]'>
               <span class="wrap"></span>
             </a>
           </p> 
-          <p class="lets_build text-uppercase text-center">Let&#8217;s build something amazing together</p>
+          <h1 class="lets_build text-uppercase text-center">Let&#8217;s build something amazing together</h1>
          
             <button type="button" class="btn btn-link text-uppercase">
               <a href="#outlook_section"> Learn More</a>
@@ -238,19 +154,21 @@
     </div>
   </div>
 </section>
+<!--End of Welcome Section-->
+
 
 <!--*************************
           ABOUT ME
 **************************-->
 <!--<section id="about" style="height: 50px;"></section>-->
-<section id="about" class="about_me">
+<section id="about">
   <div class="container-fluid">
     <div class="row row-content">
       <div class="col-12 text-center">
-          <p class="about_heading text-uppercase">About Me</p>
+          <h2 class="about_heading text-uppercase">About Me</h2>
       </div>
       <div class="col-12">
-          <p class="text-center text-dark">I&#8217;m extremely excited to invite you to explore my profile and learn a little more about me. I am a Software Developer (Front-End) with aspirations of becoming a Full Stack Developer with a passion for making clean, responsive and user-friendly websites and apps.  My favorite part of being a developer, is being a part of an idea from concept to completion. For me being able to bring ideas to life is as intriguing and amazing as it is fulfilling. When I&#8217;m not coding, you can find me singing and writing songs, spending time at church or hanging out with my friends and family.</p>
+          <p class="text-center text-dark">I&#8217;m extremely excited to invite you to explore my profile and learn a little more about me. I am a Software Developer (Front-End Web Development) with a passion for making clean, responsive and user-friendly websites and applications. My favorite part of being a developer, is taking ideas from concept to completion. Being able to bring ideas to life is as intriguing as it is fulfilling. When I&#8217;m not coding, you can find me writing songs, singing, spending time at church or hanging out with my friends and family.</p>
       </div>
     </div>
   </div>
@@ -260,11 +178,11 @@
           PORTFOLIO
 **************************-->
 
-<section id ="portfolio_section" class="portfolio">
+<section id ="projects">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 text-center">
-                    <p class="portfolio_heading text-uppercase">Portfolio</p>
+                    <h2 class="projects_heading text-uppercase">Portfolio</h2>
                 <p class="small_quotes text-secondary">"Success is not final; failure is not fatal: It is the courage </br>to continue that counts.</p>
                 <p class="text-secondary"><em class="quote_arthor">Winston S. Churchill</em></p>
                 </div>
@@ -272,7 +190,7 @@
             <div class="row row-content project_row">
               
               <!--Power In The Word Ministry-->
-                <div class="col-12 col-sm-3 project large_screen">
+                <div class="col-12 col-sm-3 project-tile large_screen">
                     <img src="https://i.imgur.com/jcwvFpP.jpg"class="project_image" title="Project: Power In The Word Ministries" alt="image of Power In The Word Ministry Project">      
                   <!--view project button-->
                   <a class="button view_button text-uppercase" href="https://joanclarke.github.io/Power-in-the-Word-Website/">View Project</a>
@@ -285,7 +203,7 @@
               <!--******-->
 
               <!--Portfolio Project-->
-                <div class="col-12 col-sm-3 project large_screen">
+                <div class="col-12 col-sm-3 project-tile large_screen">
                     <img src="https://i.imgur.com/GeA1Uzh.jpg" class="project_image" title="Project: Portfolio landing Page" alt="image of a stick man and writing">
                   <!--view project button-->
                   <a class="button view_button text-uppercase" href=" https://joanclarke.github.io/portfolio/">View Project</a>
@@ -298,7 +216,7 @@
             <!--******-->
 
               <!--Project Read-->
-                <div class="col-12 col-sm-3 project large_screen">
+                <div class="col-12 col-sm-3 project-tile large_screen">
                     <img src="https://i.imgur.com/ZJ1nBxQ.png" class="project_image" title="Project: Project Read" alt="image of phone, ipad and book">  
                   <!--view project button-->
                   <a class="button view_button coming_soon text-uppercase" href="#">Coming Soon</a>
@@ -312,7 +230,7 @@
                 
                  
               <!--Chicago Inn-->
-                <div class="col-12 col-sm-3 project large_screen">
+                <div class="col-12 col-sm-3 project-tile large_screen">
                     <img src="https://i.imgur.com/Du53XBP.jpg" class="project_image" title="Project: Chicago Inn" alt="image of Chicago Inn">    
              <!--view project button-->
                   <a class="button view_button coming_soon text-uppercase" href="#">Coming Soon</a>     
@@ -326,7 +244,7 @@
 
             
               <!--Human Dev Comp.-->
-                <div class="col-12 col-sm-3 project large_screen">
+                <div class="col-12 col-sm-3 project-tile large_screen">
                     <img src="https://i.imgur.com/XewQiUc.png" class="project_image" title="Project: Human Comparator" alt="image of Human Comparator line graph">
                   <!--view project button-->
                   <a class="button view_button coming_soon text-uppercase" href="#">Coming Soon</a>
@@ -339,7 +257,7 @@
             <!--******-->
                     
               <!--Beautiful Homes-->
-                <div class="col-12 col-sm-3 project large_screen">
+                <div class="col-12 col-sm-3 project-tile large_screen">
                     <img src="https://i.imgur.com/t3Ydg3C.png" class="project_image" title="Project: Beautiful Homes" alt="image of Beautiful Homes Website"> 
                   <!--view project button-->
                   <a class="button view_button coming_soon text-uppercase" href="#">Coming Soon</a>
@@ -356,6 +274,7 @@
         </div>
     </section>
 
+ 
   <!--*************************
         PROFESSIONAL OUTLOOK
   **************************-->
@@ -366,7 +285,7 @@
     <div class="container-fluid">
       <div class="row row-content">
         <div class="col-12">
-          <p class="professional_heading text-uppercase">Professional Outlook</p>
+          <h2 class="professional_heading text-uppercase">Professional Outlook</h2>
           <p class = "quote">"There are no secrets to success. It is the result of preparation, <br>hard work, and learning from failure.</p>
           <p class="text-secondary quote_arthor_big"><em>Colin Powell</em></p>
         </div>
@@ -380,11 +299,11 @@
         <div class="container-fluid">
           <div class="row">
                 <div class="col-12 col-md-6 outlook_img">
-                    <div class="outlook_height_img"></div>
+                    <div></div>
                 </div>
                     <div class="col-12 col-md-6 text-left">       
                       <p class="professional_sub-heading">Where I am, Where I am going</p>
-                      <p class="professional_detail text-justify">I am a self-taught Junior Software Developer, currently focusing on Web/Front-End Development with aspirations of becoming a Full Stack Developer. My love for development began when I was studying Information Technology at Loyola University Chicago.  I’ve been hooked ever since.  My education and work background encompasses a mixture of business and technology experience.  It is this, coupled with my reluctance to quit and goal-getter attitude that I believe will help me in making informed decisions in real world projects and will make me a valuable addition to any organization. Feel free to check out my resume to get a better idea of what I can offer.</p>
+                      <p class="professional_detail text-justify">I am a self-taught Software Developer, currently focusing on Front-End Web Development with aspirations of becoming a Full Stack Developer. My love for development started while I was at University doing a masters degree in Information Technology at Loyola University Chicago; I took a Web Design course and was hooked. Both my educational and work experiences encorporates a mixture of business and technology, this coupled with my diligent work ethic and goal-getter attitude will make me a valuable addition to any organization. Feel free to check out my resume to get a better idea of what I can offer.</p>
 
                      <!--Button - Download Resume-->
                     <button type="button" class="btn btn-link"><a href="https://drive.google.com/open?id=1ZWJ9jJpm6lUCiOVHjeqotE-t4n9_0bTs"> Download Resume</a></button>
@@ -401,8 +320,8 @@
         <div class="container-fluid">
             <div class="row">  
                 <div class="col-12 text-center">
-                  <p class="professional_sub_headings text-uppercase">Experience</p>
-                    <!--<hr class="heading_underline">-->
+                  <h3 class="professional_sub_headings text-uppercase text-center text-dark">Experience</h3>
+                    <hr class="heading_underline">
                 </div>
                 
                     <div class="col-sm-6">
@@ -436,9 +355,9 @@
   <div class="container-fluid">
     <div class="row">
       
-      <div class=" col-12 text-center">
-          <p class="professional_sub_headings text-uppercase">Skills</p>
-             <!--<hr class="heading_underline">-->
+      <div class=" col-12">
+          <h3 class="professional_sub_headings text-uppercase text-dark text-center">Skills</h3>
+              <hr class="heading_underline">
       </div>
           <div class="col-12 text-center">
           <p class="small_quotes text-secondary">"Success seems to be connected with action. Successful people keep moving. </br>They make mistakes, but they don't quit."</p>
@@ -495,52 +414,6 @@
         </tr>
       </table>
     </div>
-
- <!--project CHART-->
-  
-<!--
-        <div class="progress skills_logo" data-width="100%">
-          <img src="https://i.imgur.com/H8jEoz7.png" alt="HTML5 Logo">
-          <div class="html" data-name="HTML" style="background: rgb(255,77,0);"></div>
-        </div>
-    
-      <div class="progress skills_logo" data-width="85%">
-        <img src="https://i.imgur.com/FIEqSmF.png" alt="CSS Logo">
-          <div class="css" data-name="CSS" style="background: rgb(29,32,231);"></div>
-      </div>
-
-      <div class="progress skills_logo" data-width="60%">
-        <img src="https://i.imgur.com/wn34f2O.png" alt="JavaScript Logo">
-          <div class="javascript" data-name="JavaScript" style="background: rgb(249,221,54); color: rgb(255,255,255);"></div>
-      </div>
-
-      <div class="progress skills_logo" data-width="40%">
-        <img src="https://i.imgur.com/A1o8Otw.png" alt=" jQuery Logo">
-          <div class="jquery" data-name="jQuery" style="background: rgb(40,42,149);"></div>
-      </div>
-
-       <div class="progress skills_logo" data-width="70%">
-        <img src="https://i.imgur.com/7tAXLVz.png" alt="C-Sharp Logo">
-          <div class="c-sharp" data-name="C-Sharp" style="background: rgb(148,40,149);  color:rgb(255,255,255);"></div>
-      </div>
-      
-      <div class="progress skills_logo" data-width="65%">
-        <img src="https://i.imgur.com/q48uSzQ.png" alt=" PHP Logo">
-          <div class="php" data-name="PHP" style="background: rgb(0,0,0);"></div>
-      </div>
-
-       <div class="progress skills_logo" data-width="60%">
-        <img src="https://i.imgur.com/hAYqaPY.png" alt="SQL Logo">
-          <div class="sql" data-name="SQL" style="background: rgb(36,132,204); color:rgb(255,255,255);"></div>
-      </div>
-
-      <div class="progress skills_logo" data-width="80%">
-        <img src="https://i.imgur.com/Kf493Hl.png" alt="Bootstrap Logo">
-          <div class="sql" data-name="Bootstrap" style="background: rgb(154,30,210); color:rgb(255,255,255);"></div>
-      </div>
-    -->
-
-
     </div>
   </div>         
 </section>
@@ -555,8 +428,8 @@
     <div class="row">
       
       <div class=" col-12 text-center">
-          <p class="professional_sub_headings text-uppercase">Education</p>
-             <!--<hr class="heading_underline">-->
+          <h3 class="professional_sub_headings text-uppercase text-dark">Education</h3>
+              <hr class="heading_underline">
       </div>
       
       <div class="col-12 education_info">
@@ -572,13 +445,13 @@
 </section>
 
 
-<section class="separator_bg">
+<section id="separator_bg">
   <div class="container-fluid">
     <div class="row">
       <div class="col-12 separator_bg_cover">
         <div class="dark_background">
           <div>
-        <p class="text-uppercase text-center lets_build">I'm available for Hire.</p>
+        <p class="text-uppercase text-center">I'm available for Hire.</p>
       </div>
         <div class="button_wrapper">
          <button type="button" class="btn btn-link text-uppercase"><a href="#contact_me" >Contact Me Today</a>
@@ -598,7 +471,7 @@
         <div class="container-fluid">
             <div class="row row-content">
                 <div class="col-12 col-md-6 social_buttons text-left">
-                    <p class="contact_heading text-uppercase text-left">Contact Me</p>
+                    <h2 class="contact_heading text-uppercase text-left">Contact Me</h2>
                     <p class="contact_info text-left">Thank you for reviewing my background. Please get in touch to find out more.</p>
                    <ul class="navbar-nav contact_email">
                         <li class="nav-item">
@@ -622,7 +495,7 @@
             </div>
                 <div class="col-12 col-md-6">
                    <!--Adding a Basic Form-->
-                   <form>
+                   <form action="mailto:joanclarke100@gmail.com">
                         <!--Name-->
                         <div class="form-group row">
                             <div class="col-md-12">
@@ -941,6 +814,9 @@
     </div>
   </footer>
 
+</main>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
 
@@ -950,10 +826,6 @@
     <!--Link to activate bootstrap on github pages-->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-    <!--Links to activate javascript and jQuery on github pages-->
-    <!--
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
--->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
