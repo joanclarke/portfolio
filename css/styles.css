@@ -1606,6 +1606,10 @@ nav#navbar a.logo_title{
     margin-left: 15px;
   }
 
+  .small_screen_hidden {
+    display: none;
+  }
+
  .quote_section .quote {
     font-size: 22px;
   }
