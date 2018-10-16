@@ -24,6 +24,9 @@
     <!--Link to activate bootstrap on github pages-->
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+     <!-- Glyphicons bootstrap-social Insert -->
+   <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+
     <!--Link to activate font-awesome fonts on github pages-->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
@@ -39,8 +42,6 @@
 </head>
 <body>
 
-
-
 <!-- **********************
       NAVIGATION BAR
 ************************-->
@@ -51,7 +52,8 @@
     <img src="https://i.imgur.com/B7LICxx.jpg" class="img-fluid" title="Joan Clarke Portfolio" alt="logo">
   </a>
   <a href="#home" class="logo_title text-uppercase"><span class="name">Joan Clarke</span><br><span class="text-capitalize career">Front-End Developer</span></a>
-    <div class="colored_social_buttons small_phone_only">
+    
+<!--     <div class="colored_social_buttons small_phone_only">
       <div class="col-12 social_buttons text-center">
             <a href="https://www.linkedin.com/in/clarkejoan" target="_blank" class="fa fa-linkedin" aria-hidden="true"></a>
 
@@ -63,7 +65,8 @@
 
           <a id="profile-link" href="https://www.freecodecamp.org/joanclarke" target="_blank" class="fa fa-free-code-camp" aria-hidden="true"></a>
           </div>
-    </div>
+    </div> -->
+
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 
     <span class="navbar-toggler-icon"></span>
@@ -78,7 +81,7 @@
         <a class="nav-link text-uppercase" href="#about">About</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-uppercase" href="#projects">Portfolio</a>
+        <a class="nav-link text-uppercase" href="#projects">Projects</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle text-uppercase" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -89,7 +92,7 @@
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#experience_1">Experience</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#skills_1">Skills</a>
+          <a class="dropdown-item" href="#back-end">Skills</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#education_1">Education</a>
         </div>
@@ -138,17 +141,25 @@
 <section id="welcome-section">
   <div class="container">
     <div class="row">
-      <div class="col-12 text-center welcome">
+      <div class="col-12 text-left welcome">
         
-        <p class="text-center typing">
-            <a href="" class="typewrite" data-period="2000" data-type='["Hello", "My name is Joan", "I am a Front-End Web Developer"]'>
+        <p class="text-left typing">
+            <a href="" class="typewrite" data-period="2000" data-type='["Hello", "My name is Joan", "I am a Front-End Web Developer", "To learn more about me" , "Check out the rest of my profile"]'>
               <span class="wrap"></span>
             </a>
           </p> 
-          <h1 class="lets_build text-uppercase text-center">Welcome to my Portfolio</h1>
+          <h1 class="lets_build text-capitalize text-left">Front-end Web Developer</h1>
+          <p id="profile_summary" class="text-left">Front-End Web Developer with aspirations of becoming a Full Stack Developer. Based in Kingston, Jamaica but willing to travel for employment. Interested in hiring? Let's have a talk.</p>
+        
+          <div id="top_button_holder">
             <button type="button" class="btn btn-link text-uppercase">
-              <a href="#outlook_section"> Learn More</a>
+              <a href="#outlook_section"> Learn More</a><i class="fa fa-chevron-right"></i>
             </button>
+            <button id="hire_me" type="button" class="btn btn-link text-uppercase">
+              <a href="mailto:joanclarke100@gmail.com" > Looking to hire </a><i class="fa fa-chevron-right"></i>
+              <!-- <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> -->
+            </button>
+          </div>
           </div>  
     </div>
   </div>
@@ -177,6 +188,24 @@
 </section>
 -->
 
+
+<!--*************************
+      CONTACT ME SNIPPET 
+**************************-->
+
+<section id="contact_me_snippet">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 contact_snippet_btn_wrapper">
+        <button type="button" class="btn btn-link float-right text-capitalize" >
+        <!-- <i class="fa fa-envelope"></i> -->
+      <a href="mailto:joanclarke100@gmail.com"> <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><br><span id="contact_popup">Contact Me</span></a>
+        <!-- <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> -->
+      </button>
+      </div>
+    </div>
+  </div>
+</section>
 <!--*************************
           ABOUT ME
 **************************-->
@@ -202,7 +231,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 text-center">
-                    <h2 class="projects_heading text-uppercase">Portfolio</h2>
+                    <h2 class="projects_heading text-uppercase">Projects</h2>
                 <p class="small_quotes text-secondary">"Success is not final; failure is not fatal: It is the courage </br>to continue that counts.</p>
                 <p class="text-secondary"><em class="quote_arthor">Winston S. Churchill</em></p>
                 </div>
@@ -610,17 +639,18 @@
         <div class="container-fluid">
             <div class="row row-content">
                 <div class="col-12 col-md-6 social_buttons text-left">
-                    <h2 class="contact_heading text-uppercase text-left">Contact Me</h2>
-                    <p class="contact_info text-left">Thank you for reviewing my background. Please get in touch to find out more.</p>
+                    <h2 class="contact_heading text-uppercase text-center">Contact Me</h2>
+                    <p class="contact_info text-center">Thank you for reviewing my background. Please get in touch to find out more.</p>
                    <ul class="navbar-nav contact_email">
-                        <li class="nav-item">
-                          <i class="fa fa-phone fa-1x" aria-hidden="true"></i>1-876-435-8993
+                        <li id= "phone" class="nav-item">
+                          <a href="tel:876-435-8993"><i class="fa fa-phone fa-1x" aria-hidden="true"></i>1-876-435-8993</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link mail text-left" href="mailto:joanclarke100@gmail.com" target="_blank"> joanclarke100@gmail.com </a>
                         </li>
                     </ul>
-            <div class="contact_social">
+            <div class="contact_social contact_social_footer">
+
             <a href="https://www.linkedin.com/in/clarkejoan" target="_blank" class="fa fa-linkedin fa-2x" aria-hidden="true"></a>
 
            <a href="https://www.instagram.com/joan_clarke/" target="_blank" class="fa fa-instagram" aria-hidden="true"></a>
@@ -632,23 +662,25 @@
 
           </div>
             </div>
-                <div class="col-12 col-md-6">
+
+
+                <!-- <div class="col-12 col-md-6"> -->
                    <!--Adding a Basic Form-->
-                   <form action="mailto:joanclarke100@gmail.com">
-                        <!--Name-->
-                        <div class="form-group row">
+                   <!-- <form action="mailto:joanclarke100@gmail.com">
+ -->                        <!--Name-->
+            <!--             <div class="form-group row">
                             <div class="col-md-12">
                                <input type="text" class="form-control form-border rounded-0" id="name" name="name" placeholder="Name*">
                             </div>
                         </div>
-                        <!--Email-->
-                        <div class="form-group row">
+                 -->        <!--Email-->
+                       <!--  <div class="form-group row">
                             <div class="col-md-12">
                                 <input type="email" class="form-control form-border rounded-0" id="emailid" name="emailid" placeholder="Email*">
                             </div>
-                        </div>
+                        </div> -->
                         <!--Adding a Input Group with addons-->
-                        <div class="form-group row">
+                        <!-- <div class="form-group row">
                             <div class="col-5 col-sm-6 col-md-6">
                                 <div class="input-group form-border rounded-0">
                                     <div class="input-group-addon form-border rounded-0">(</div>
@@ -659,9 +691,9 @@
                             <div class="col-7 col-sm-6 col-md-6">
                                 <input type="tel" class="form-control form-border rounded-0" id="telnum" name="telnum" placeholder="Tel. number">
                             </div>
-                        </div>
+                        </div> -->
                         <!--Adding a Select -->
-                    <div class="form-group row">
+                    <!-- <div class="form-group row">
                         <div class="col-sm-8 offset-md-2 rounded-0">
                             <select id="country" name="country" class="form-control form-border rounded-0">
                                 <option value="">Country...</option>
@@ -914,16 +946,16 @@
                                 <option value="Zimbabwe">Zimbabwe</option>
                             </select>
                         </div>
-                    </div>
+                    </div> -->
 
                      <!--Adding a textarea-->
-                    <div class="form-group row">
+                    <!-- <div class="form-group row">
                         <div class="col-md-12">
                             <textarea class="form-control form-border rounded-0" id="feedback" name="feedback" rows="12" placeholder="Message"></textarea>
                         </div>
-                    </div>
+                    </div> -->
                     <!--Adding the Send Button-->
-                    <div class="form-group row">
+                    <!-- <div class="form-group row">
                         <div class="col-md-12">
                             <button type="submit" class="btn btn-block rounded-0">
                                 Send
@@ -931,7 +963,10 @@
                         </div>
                     </div>
                    </form>
-                </div>
+                </div> -->
+
+
+
             </div>
         </div>
     </section>
