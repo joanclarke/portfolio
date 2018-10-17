@@ -74,8 +74,23 @@ nav#navbar a.logo_title span.text-capitalize {
   margin-bottom: 0;
 }
 
+
+/*nav#navbar .nav-item {
+  margin-bottom: 10px;
+}*/
+
 nav#navbar .nav-item .nav-link {
   color:rgb(255,255,255);
+}
+
+nav#navbar .nav-item .nav-link:hover {
+  /*margin-bottom: 5px;*/
+  /*text-decoration-line: underline;
+  text-decoration-color: rgb(9,167,161);
+  text-decoration-style: wavy;*/
+  /*background-color: rgb(9,167,161);*/
+  border-bottom: 3px solid rgb(9,167,161);;
+  /*border-style: wavy;*/
 }
 
 nav#navbar .dropdown-item{
@@ -645,8 +660,9 @@ img:hover + .view_button,
   	margin: 0;
   	padding: 0;
     background-color: rgb(0,0,0);
-  	background: url('https://i.imgur.com/IsiR20L.jpg') 100% 0 no-repeat;
-  	background-size: cover;
+/*  	background: url('https://i.imgur.com/IsiR20L.jpg') 100% 0 no-repeat;*/
+  	background: url('http://www.wallpapers4u.org/wp-content/uploads/window_block_street_city_cloudy_58680_1920x1080.jpg') 100% 0 no-repeat;
+    background-size: cover;
   	background-attachment: fixed;
   
 }
@@ -1054,8 +1070,10 @@ label, input, textarea, select, button {
 **************************--*/
 
 footer {
+  background-color: rgb(0,0,0);
   padding-top:12px;
   font-size:11px;
+  color: rgb(255,255,255);
 }
 
 
@@ -1078,7 +1096,7 @@ footer {
     /*height: 100vh;*/
     padding-top: 0;
     margin-bottom: 0;
-    height: 575px;
+    height: 500px;
   }
 
   #videoWrapper {
@@ -1092,18 +1110,17 @@ footer {
   */
  #welcome-section {
     /*height: 84vh;*/
-    height: 575px;
-    padding-top: 120px;
+    height: 480px;
     font-size: 55px;
-    padding-top: 150px;
+    padding-top: 130px;
 }
 
   #welcome-section .welcome .typing {
-    padding-bottom: 20px;
+    padding-bottom: 5px;
   }
 
   #welcome-section .welcome a.typewrite {
-    padding-top: 20px;
+    padding-top: 5px;
   }
 
 #welcome-section .welcome h1{
@@ -1111,7 +1128,6 @@ footer {
    padding-bottom: 20px;
    margin-top: 10px;
   }
-
 
   .sticky-top {
      margin-top: 10px;
@@ -1140,14 +1156,40 @@ footer {
   }
 */
 
+#top_button_holder {
+  margin-top: -10px;
+}
+
+#welcome-section .welcome h1 {
+  margin-top: -60px !important;
+  margin-bottom: 0px;
+  font-size: 50px;
+}
+
+p#profile_summary {
+    margin-top: 0px;
+    font-size: 14px;
+}
+
+button.btn.btn-link {
+  font-size: 12px;
+  font-weight: 300;
+  text-decoration: none;
+  padding: 7px 16px;
+}
+
+#contact_me_snippet {
+    margin-top: -95px;
+    margin-bottom: 0px;
+}
 
 #contact_me_snippet .glyphicon-envelope{
-  font-size: 32px;
-  padding-top: 0px;
+  font-size: 24px;
+  padding: 4px 5px;
 }
 
 #contact_me_snippet .contact_snippet_btn_wrapper button.btn.btn-link span#contact_popup {
-  font-size: 8px;
+  font-size: 6px;
 }
 
   .project-tile {
@@ -1179,8 +1221,41 @@ footer {
     font-size: 25px;
   }
 
+  #about {
+    font-size: 18px;
+  }
+
+  .quote {
+    font-size: 16px;
+  }
+
+  .professional_sub-heading {
+    font-size: 20px;
+  }
+
+  .professional_outlook p.professional_detail {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .experience_sub-heading {
+    font-size: 20px;
+  }
+
+  .experience_date {
+    font-size: 16px;
+  }
+
+ .experience ul li {
+    font-size: 16px;
+  }
+
   .skills ul li{  
       margin-left: -140px; 
+  }
+
+  .education .education_sub-heading{
+    font-size: 20px;
   }
 
   .contact {
@@ -1190,11 +1265,11 @@ footer {
     font-weight:100;
   }
 
-  form {
+  /*form {
     padding-top: 120px;
     padding-left: 10px;
     padding-right: 10px;
-  }
+  }*/
 
 }
 
@@ -1246,7 +1321,6 @@ nav#navbar .navbar-collapse{
 
   .colored_social_buttons {
       margin-left: -60px;
-      
   }
 
   #welcome-section {
@@ -1267,18 +1341,19 @@ nav#navbar .navbar-collapse{
   }
 
  #separator_bg {
-  height: 500px;
-}
-
-.dark_background {
-    min-height: 500px;
-}
-
-#welcome-section .welcome h1, #separator_bg p {
-   padding-top: 0px !important;
-   margin-top: 10px;
-   font-size: 50px;
+    height: 500px;
   }
+
+  .dark_background {
+      min-height: 500px;
+  }
+
+  #welcome-section .welcome h1, #separator_bg p {
+     padding-top: 0px !important;
+     margin-top: 10px;
+     font-size: 50px;
+  }
+
   #separator_bg p {
     margin-top: -50px;
   }
@@ -1288,7 +1363,7 @@ nav#navbar .navbar-collapse{
     padding-right: 50px;
     margin-right: 0;
     margin-left: 0;
-    font-size: 18px;
+    font-size: 14px;
   }
 
   #projects .project_row {
@@ -1381,7 +1456,6 @@ nav#navbar .navbar-collapse{
     height: 445px;
     margin-top: 0px;
     padding-top: 10px;
-    font-size: 55px;
   }
 
   #welcome-section .welcome .typing {
@@ -1390,8 +1464,8 @@ nav#navbar .navbar-collapse{
 }
 
 #welcome-section .welcome h1 {
-    padding-bottom: 10px;
-    font-size: 45px;
+    padding-bottom: 40px;
+    font-size: 35px;
 }
 
   #welcome-section .welcome a.typewrite {
@@ -1513,7 +1587,7 @@ nav#navbar .navbar-collapse .dropdown-menu {
   }
 
   button.btn.btn-link {
-    padding: 15px 40px 15px 40px;
+    /*padding: 15px 40px 15px 40px;*/
     border-radius: 0px;
   }
 
@@ -1716,7 +1790,6 @@ nav#navbar a.logo_title{
     padding-top: 60px;
 }
 
-
   #welcome-section .welcome .welcome_title{
     font-size: 45px;
     padding-top: 0;
@@ -1728,7 +1801,6 @@ nav#navbar a.logo_title{
 
 
 #welcome-section .welcome h1 {
-    margin-top: 0px;
     font-size: 38px;
     margin-bottom: 0;
     padding-bottom: 0px;
@@ -1738,7 +1810,8 @@ nav#navbar a.logo_title{
 }
 
 #welcome-section button.btn.btn-link {
-    padding: 12px 25px;
+    font-size: 10px;
+    padding: 5px 10px;
   }
 
   nav#navbar .navbar-brand img{
@@ -1773,6 +1846,21 @@ nav#navbar a.logo_title{
     font-size: 14px;
   }
 
+
+#welcome-section .welcome h1 {
+  font-size: 30px;
+  margin-top: -20px;
+}
+
+p#profile_summary {
+    font-size: 11px;
+}
+
+/*button.btn.btn-link {
+  font-size: 12px;
+  padding: 5px 5px;
+}*/
+
   #skills_sec ul li a img {
   width: 40px;
   height: 40px;
@@ -1793,7 +1881,18 @@ nav#navbar a.logo_title{
   padding-left: 10px !important;
     padding-right: 10px !important;
     padding-bottom: 20px !important;
+    font-size: 12px;
 }
+
+.about_heading, .projects_heading, .professional_heading, .contact_heading
+{
+  font-size: 22px;
+}
+
+.professional_sub_headings {
+  font-size: 18px;
+}
+
   #projects .project_row {
     padding-left: 30px !important;
     padding-right: 60px !important;
@@ -1810,21 +1909,66 @@ nav#navbar a.logo_title{
   }
 
  .quote_section .quote {
-    font-size: 22px;
+    font-size: 14px;
   }
 
+.professional_sub-heading {
+    font-size: 14px;
+}
 
+.professional_outlook p.professional_detail {
+  font-size: 12px;
+}
+
+.text-left .btn.btn-link {
+  font-size: 10px;
+}
+
+.experience .experience_sub-heading {
+  font-size: 14px;
+}
+
+.experience .experience_date {
+  font-size: 10px;
+}
+
+.experience ul li{
+  font-size: 12px;
+}
+.small_quotes {
+  font-size: 12px;
+}
+
+.quote_arthor {
+  font-size: 10px;
+}
+
+.education_info p.education_sub-heading {
+  font-size: 14px;
+}
+
+.experience_date, .education_date{
+  font-size: 12px;
+}
+
+#separator_bg .dark_background div p.text-uppercase {
+  font-size: 35px !important;
+}
   .view_button { 
       margin-left:155px;
   }
-
+/*
   .skills ul li{ 
     margin-left: -250px; 
   }
 
   .skills ul li i.fa{
       font-size: 56px !important;
-  }
+  }*/
+}
+
+.contact_info, .contact ul.contact_email li#phone.nav-item a, .contact ul.contact_email li a{
+  font-size: 14px;
 }
 
 /* small phones only - 375px */
@@ -1841,7 +1985,7 @@ nav#navbar a.logo_title{
 
   #home {
     height: 246px;
-    margin-top: 60px;
+    margin-top: 5px;
     background:none;
 }
 /*
@@ -1851,8 +1995,8 @@ nav#navbar a.logo_title{
 }
 */
   #welcome-section {
-    height: 305px;
-    margin-top: 0px;
+    height: 300px;
+    margin-top: -50px;
     padding-top: 80px;
 }
 
@@ -1862,28 +2006,60 @@ nav#navbar a.logo_title{
   }
 
   #welcome-section .welcome a.typewrite {
-    font-size: 18px;
+    font-size: 16px;
     padding-left: 0px;
     padding-right: 0px;
     padding-bottom: 0px;
     margin-top: -50px;
     margin-right: 0px;
     margin-left: 0px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
   }
 
-  #welcome-section .welcome h1, #separator_bg p {
+  #welcome-section .welcome h1{
+    /*font-size: 24px;*/
+    margin-bottom: 0px;
+  }
+
+
+ #separator_bg p {
     font-size: 24px;
+    margin-bottom: 0px;
   }
 
+
+  p#profile_summary {
+    font-size: 10px;
+    margin-top: -10px;
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+/*
   #welcome-section button.btn {
     margin-top: -55px;
-  }
+  }*/
 
   #welcome-section button.btn.btn-link {
-    font-size: 12px;
-    padding: 10px 20px;
+    margin-top: -280px;
+    margin-left: 60px;
+    margin-right: -70px;
+    font-size: 6px;
+    padding: 0px 4px;
   }
+
+  .fa{
+    font-size: 6px !important;
+  }
+
+   #welcome-section button#hire_me.btn.btn-link {
+
+    margin-right: -80px;
+
+  }
+
+#welcome-section .welcome p {
+margin-top: 0px;
+}
 
  nav#navbar .navbar-brand img{
     width:50px;
@@ -1915,7 +2091,7 @@ nav#navbar a.logo_title{
   }
 
   .about_heading, .projects_heading, .professional_heading, .contact_heading {
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .quote_section .quote {
@@ -1962,6 +2138,8 @@ nav#navbar a.logo_title{
       margin-left: 80px;
       font-size: 34px;
     }
+
+
 }
 
 
