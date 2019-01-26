@@ -954,7 +954,7 @@ table.table_styling tr:nth-child(odd) {
 }
 
 #separator_bg {
-  background: url("https://i.imgur.com/OfPU9tC.jpg") 50% 0 no-repeat;
+  background: url("https://i.imgur.com/6eRwHpX.jpg?1") 50% 0 no-repeat;
   background-size: cover;
   height: 650px;
   background-color: rgba(0,0,0,0.7);
@@ -2123,7 +2123,7 @@ margin-top: 0px;
     width: 20%;
   }
 
-  .separator_bg_cover p{;
+  .separator_bg_cover p{
      font-size: 26px;
   }
 
@@ -2236,7 +2236,7 @@ nav {
       font-size: 44px !important;
   }
 
-  .separator_bg_cover p{;
+  .separator_bg_cover p{
      font-size: 22px;
     }
 
