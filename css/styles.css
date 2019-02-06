@@ -497,6 +497,11 @@ nav#navbar a.fa:hover {
   font-size: 14px;
 }
 
+.project-group-heading {
+  margin-top: 50px;
+  font-weight: 600;
+}
+
 .project-tile {
   font-family: 'Roboto', sans-serif;
   font-family: 'Open Sans Condensed', sans-serif;
@@ -661,10 +666,14 @@ img:hover + .view_button,
   	padding: 0;
     background-color: rgb(0,0,0);
 /*  	background: url('https://i.imgur.com/IsiR20L.jpg') 100% 0 no-repeat;*/
-  	background: url('http://www.wallpapers4u.org/wp-content/uploads/window_block_street_city_cloudy_58680_1920x1080.jpg') 100% 0 no-repeat;
+  	background: url('https://i.imgur.com/uJzJg16.jpg') 100% 100% no-repeat;
     background-size: cover;
   	background-attachment: fixed;
   
+}
+
+.outlook_img p{
+  font-weight: 100;
 }
 
 .outlook_height_img {
