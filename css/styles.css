@@ -1,6 +1,6 @@
 
-@import url('https://fonts.googleapis.com/css?family=Arapey|Jura|Lobster')
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Raleway:200,300,400,500,600,700')
+/* @import url('https://fonts.googleapis.com/css?family=Arapey|Jura|Lobster')
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Raleway:200,300,400,500,600,700') */
 
 body{
   margin:0;
@@ -18,7 +18,6 @@ body{
   padding-left:0;
   padding-right:0;
 }
-
 
 /*--*************************
           NAVIGATION
@@ -58,7 +57,6 @@ nav#navbar a.logo_title{
   color: rgb(255,255,255);
 }
 
-
 nav#navbar a.logo_title span.name{
   font-size: 26px;
   font-weight: 300;
@@ -74,23 +72,12 @@ nav#navbar a.logo_title span.text-capitalize {
   margin-bottom: 0;
 }
 
-
-/*nav#navbar .nav-item {
-  margin-bottom: 10px;
-}*/
-
 nav#navbar .nav-item .nav-link {
   color:rgb(255,255,255);
 }
 
 nav#navbar .nav-item .nav-link:hover {
-  /*margin-bottom: 5px;*/
-  /*text-decoration-line: underline;
-  text-decoration-color: rgb(9,167,161);
-  text-decoration-style: wavy;*/
-  /*background-color: rgb(9,167,161);*/
   border-bottom: 3px solid rgb(9,167,161);;
-  /*border-style: wavy;*/
 }
 
 nav#navbar .dropdown-item{
@@ -101,7 +88,6 @@ nav#navbar .dropdown-item{
 
 nav#navbar .dropdown-item:visited{
   background-color: #09a7a1;
-
 }
 
 nav#navbar .dropdown-item:hover {
@@ -112,7 +98,6 @@ nav#navbar .dropdown-item:hover {
 a.active {
   color: rgb(9,167,161) !important;
 }
-
 
 /*--*************************
           HOME
@@ -128,21 +113,8 @@ a.active {
   padding-right:0;
   padding-bottom:0;
   z-index: 1;
-  /*height:659px;*/
   height: 700px;
-  /*border-top-width: 15px; 
-  border-top-color: rgba(254, 249, 231, 0.5);*/
 }
-
-/*for some reason .container-fluid .row is extending 
-pass the given home height so i had to give it a fixed 
-height whuch is the same height as home.*/
-
-/*
-#home .container-fluid .row {
- height: 100vh;
-}
-*/
 
 #home .col-12 {
   padding-right: 0;
@@ -150,36 +122,14 @@ height whuch is the same height as home.*/
   margin-bottom:0;
 }
 
-#home iframe { 
- /* z-index: 1;
-  position: relative;
-  min-width:100%; 
-  max-height:100%;
-  width: 100%;*/
-  /*height:155%;*/
-/*
-  max-width: 100%;
-  max-height: 100%;
-  margin-top: 0px;
-  */
- /* height: 100%;
-  height: 100vw;
-  margin-top: -317px;*/
-}
-
-
-
-
 #videoWrapper {
   z-index: 2;
   position: relative;
   padding-bottom: 50%;
   padding-top: 100px;
- /*width: 100vw;*/
   height:0;
   margin: 0 auto;
   margin-top: 0px;
- /* border: 5px solid rgb(0,0,0);*/
 }
 
 #videoWrapper iframe#video {
@@ -188,10 +138,8 @@ height whuch is the same height as home.*/
   left: 0;
   width: 100%;
   height: 100%;
- /* border: 1px solid rgb(250, 219, 216);*/
   margin-top: 0px;
 }
-
 
 /*--*************************
           WELCOME
@@ -201,38 +149,23 @@ height whuch is the same height as home.*/
   z-index: 2;
   position: absolute;
   background-color: rgba(0,0,0,0.7); 
- /* background: linear-gradient(45deg, rgba(9,167,161,0.3), rgba(0,0,0,0.7));*/ 
   top: 0px;
   left: 0px;
   right: 0px;
   bottom: 0px;
-  /*height:659px;*/
   margin-top: -20px;
   height: 700px;
   padding-top: 220px;
 }
 
  #welcome-section .welcome h1, #welcome-section .welcome p {
-  /*font-family: 'Open Sans', sans-serif;
-  font-family: 'Raleway', sans-serif;
-  font-family: "Open Sans Condensed", sans-serif;
-  font-family: "Quicksand", sans-serif;*/
   color:rgb(255,255,255);
   display: inline-block;
-  /*using transform: scale to stretch the font; */
   transform: scale(1.0, 1);
-  /*padding-top: 20px;*/
   padding-bottom: 0;
   margin-bottom: 0;
   margin-top: -60px;
 }
-/*
-#welcome-section .welcome .welcome_title{
-  padding-bottom: 40px;
-  font-weight: 700;
-  font-size: 45px;
-}
-*/
 
 #welcome-section .welcome .typing {
     font-family: 'Raleway', sans-serif;
@@ -244,7 +177,6 @@ height whuch is the same height as home.*/
 
 
 #welcome-section .welcome a.typewrite {
-  /*color:rgb(255,255,255);*/
   color: #05bab3;
   color: #07bab3;
   text-decoration: none;
@@ -279,7 +211,6 @@ p#profile_summary {
 button.btn.btn-link {
   color: white;
   background-color: rgba(211,211,211, 0.3);
-  /*border:solid 2px white;*/
   font-size: 16px;
   font-weight: 300;
   text-decoration: none;
@@ -295,13 +226,11 @@ button.btn.btn-link {
 button#hire_me.btn.btn-link {
   margin-left: 20px;
   background-color: rgb(9,167,161);
- /* border: 2px solid rgb(9,167,161);*/
 }
 
 button#hire_me.btn.btn-link:hover{
   margin-left: 20px;
   background-color: rgb(10, 211, 204);
- /* border: 2px solid rgb(9,167,161);*/
 }
 
 button.btn.btn-link a {
@@ -311,7 +240,6 @@ button.btn.btn-link a {
 
 button.btn.btn-link:hover {
   background-color: rgb(255,255, 255);
- /* border: solid 2px rgb(255,255,255);*/
   color: rgb(0,0,0);
 }
 
@@ -330,13 +258,8 @@ button.btn.btn-link:hover {
 
 .fa {
   padding: 8px 10px 8px 10px;
-  /*font-size: 20px !important;*/
-  /*background-color: rgb(255, 255, 255);*/
   text-align: center;
   text-decoration: none;
-  /*-webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;*/
 }
 
 .colored_social_buttons .social_buttons a.fa {
@@ -362,19 +285,12 @@ button.btn.btn-link:hover {
   margin-right: 40px;
   position: relative;
   z-index: 3;
-    font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-family: 'Open Sans Condensed', sans-serif;
   font-family: 'Quicksand', sans-serif;
 }
 
- /*#snippet_border {
-  margin-left: 1080px;
-  padding:20px;
-  border: 2px solid rgb(9,167,161);
-}*/
-
 #contact_me_snippet button.btn.btn-link{
-  /*padding: 0px 10px;*/
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
@@ -395,11 +311,6 @@ button.btn.btn-link:hover {
   font-size: 12px !important;
 }
 
-/*#contact_me_snippet button.hire_me.btn.btn-link .fa-envelope a{
-  font-size: 18px;
-}*/
-
-
 /*=======NAVIGATION=======*/
 
 nav#navbar .navbar {
@@ -413,9 +324,9 @@ nav#navbar .dropdown-menu {
 }
 
 nav#navbar a.fa:hover {
-      text-decoration: none;
-      opacity: 0.7;
-      border: solid 1px white;
+    text-decoration: none;
+    opacity: 0.7;
+    border: solid 1px white;
   }
 
 /*--*************************
@@ -426,7 +337,6 @@ nav#navbar a.fa:hover {
   z-index:2;
   font-size: 22px;
   line-height: 1.8em;
-  /*margin-top: -310px;*/
   padding-left: 100px;
   padding-right: 100px;
   padding-bottom:100px;
@@ -449,7 +359,6 @@ nav#navbar a.fa:hover {
   font-family: 'Raleway', sans-serif;
 	font-weight: 100;
 	line-height: 12px;
-	/*background-color: rgb(248, 249, 249);*/
 	padding-left: 0px;
 	padding-right: 0px;
 	margin-left:0px;
@@ -514,8 +423,6 @@ nav#navbar a.fa:hover {
   padding-right: 10px;
   padding-left: 10px;
   background-color: white;
-  /*border: 1px solid #EBEDEF;*/
-  /*border: 1px solid rgb(0,0,0);*/
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
@@ -571,9 +478,7 @@ nav#navbar a.fa:hover {
 
 .quote_section {
   background-color: rgb(248, 249, 249);
-  /*height:400px;*/
   font-weight:100;
-  /*padding-bottom:0px;*/
   padding-left:150px;
   padding-right:150px;
 }
@@ -641,14 +546,12 @@ img:hover + .view_button,
 
 .professional_outlook .col-md-6.outlook_img {
     min-height: 500px;
-
 }
 
 .professional_outlook{
   	padding: 0;
   	margin: 0;
     background-color: rgb(232, 246, 243);
-  
 }
 
 .professional_outlook .text-left {
@@ -665,7 +568,6 @@ img:hover + .view_button,
   	margin: 0;
   	padding: 0;
     background-color: rgb(0,0,0);
-/*  	background: url('https://i.imgur.com/IsiR20L.jpg') 100% 0 no-repeat;*/
   	background: url('https://i.imgur.com/uJzJg16.jpg') 100% 100% no-repeat;
     background-size: cover;
   	background-attachment: fixed;
@@ -680,13 +582,11 @@ img:hover + .view_button,
   min-height: 0px !important;
 }
 
-
 .professional_sub-heading {
   padding-top: 30px;
 	font-size: 30px;
   font-weight: 100;
 }
-
 
 .professional_outlook p.professional_detail, .contact_info{
   font-family: 'Open Sans', sans-serif;
@@ -720,7 +620,6 @@ img:hover + .view_button,
 	color: white;
 }
 
-
 /*--============================
      *** WORK EXPERIENCE *** 
   =============================--*/
@@ -749,7 +648,6 @@ img:hover + .view_button,
   margin: auto;
   font-size: 38px;
   font-weight: 300;
-  /*background-color: rgba(9,167,161, 0.1);*/
   line-height: 0.9;
 }
 
@@ -762,12 +660,7 @@ hr.heading_underline {
 hr.heading_underline2 {
   width: 50%;
 }
-/*
-.experience hr , .education hr{
-  margin-top: -20px !important;
-  margin-bottom: 40px !important;
-}
-*/
+
 .experience .col-sm-6{
    padding-left: 50px;
   padding-right: 50px;
@@ -779,7 +672,6 @@ hr.heading_underline2 {
   font-size: 30px;
   font-weight: 100;
 }
-
 
 /*--============================
           *** SKILLS *** 
@@ -800,10 +692,6 @@ hr.heading_underline2 {
   border: 1px solid rgb(9,167,161);
 }
 
-/*#back-end .skills_col_border ul{
-  padding-left: 120px;
-}*/
-
 #skills_sec .skills_title {
   text-align: center;
   background-color: rgb(9,167,161);
@@ -821,10 +709,6 @@ hr.heading_underline2 {
   text-align: center;
 }
 
-/*#skills_sec ul.inline{
-  padding-left: 0;
-}*/
-
 #skills_sec ul li {
   padding: 5px;
   margin: 0 auto;
@@ -832,17 +716,6 @@ hr.heading_underline2 {
   font-size: 14px;
   font-weight: 200;
 }
-/*
-#skills-info ul li::before {
-  content: "\2022";
-  color: rgb(9,167,161);
-  font-size: 34px;
-  font-weight: bold;
-  display: inline-block; 
-  width: 1em;
-  margin-left: -1em;
-}*/
-
 
 #skills_sec ul li a{
   display: inline;
@@ -859,95 +732,6 @@ hr.heading_underline2 {
 #skills_sec ul li p {
   text-align: center;
 }
-
-/******************/
-/*.skills {
-  padding-top: 40px;
-  padding-bottom: 100px;
-}
-
-.skills_heading {
-  padding-bottom: 0px;
-  margin-bottom: 0px;
-}
-
-table, th, td {
-  padding: 5px;
-  border: 0.3px solid rgb(224,224,224);
-}
-
-table {
-  width: 90%;
-}
-th.heading_row {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-td {
-  font-size: 14px;
-  width: 25%;
-}
-
-td.small_col {
-  width: 15%;
-}
-
-table.table_styling tr:nth-child(even) {
-    background-color: rgb(232, 246, 243);
-}
-
-table.table_styling tr:nth-child(odd) {
-    background-color: rgb(248, 249, 249);
-}
-
-
-.skills ul li{
-    display: inline-block;
-    list-style: none;    
-    margin-left: -70px; 
-    padding-top: 20px; 
-    padding-bottom: 40px;
-}
-
-.skills ul li i.fa{
-    font-size: 64px !important;
-    margin-left: 320px;
-}
-
-.skills .frame {
-  border: solid 1px rgb(96,96,96);
-  padding: 15px 10px;
-  margin: 5% 30%;
-  border-bottom-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-}*/
-/*
-.skills .progress {
-  margin-left: 200px;
-}
-
-.skills_logo img {
-  height: 70%;
-  width: 4%;
-}
-
-.progress{
-    width: 60%;
-    background: #eee;
-    margin: 15px;
-    height: 25px !important;
-}
-
-.html, .css, .jquery, .php{
-    width: 0;
-    background: green;
-    color: #fff;
-    height: 40px;
-    line-height: 40px;
-    padding: 0 5px
-}
-*/
 
 /*--============================
           *** EDUCATION *** 
@@ -985,7 +769,6 @@ table.table_styling tr:nth-child(odd) {
   color: rgb(255,255,255);
 }
 
-
 .button_wrapper{
   display: flex;
   align-items: center;
@@ -998,9 +781,6 @@ table.table_styling tr:nth-child(odd) {
   =============================--*/
 
 .contact {
-	/*padding-left:130px;
-  padding-right:30px;
-  padding-bottom:100px;*/
   font-weight:100;
 }
 
@@ -1042,37 +822,6 @@ table.table_styling tr:nth-child(odd) {
 .contact_social_footer {
   text-align: center; 
 }
-/*form{
-	padding-top: 120px;
-  padding-left: 30px;
-  padding-right:100px;
-}
-
-.form-group .btn, footer {
-  font-weight:100;
-	background-color: rgb(64, 64, 72);
-	color: white;
-}
-
-.form-group .btn:hover{
-	background-color: rgb(127, 127, 127);
-}
-
-.form-border{
-	border: 0.5px solid rgb(224,224,224);
-}
-
-label, input, textarea, select, button {
-  font-family: 'Roboto', sans-serif;
-	font-family: 'Open Sans Condensed', sans-serif;
-  font-family: 'Quicksand', sans-serif;
-  font-weight:100;
-}
-
-.input-group-addon {
- padding-top:3px;
-}
-*/
 
 /*--*************************
           FOOTER
@@ -1085,40 +834,21 @@ footer {
   color: rgb(255,255,255);
 }
 
-
-
 /*====================================*/
 
 /*========== MEDIA QUERIES  ==========*/
 
 /*====================================*/
 
-
-/***** max-width: 1366px *****/
-@media screen and (max-width: 1366px){
-}
-
-
 /***** max-width: 1024px *****/
 @media screen and (max-width: 1024px){
   #home {
-    /*height: 100vh;*/
     padding-top: 0;
     margin-bottom: 0;
     height: 500px;
   }
 
-  #videoWrapper {
-
-  }
-  /*
-   #home iframe {
-      margin-top: -15px;
-      width: 100%;
-  }
-  */
  #welcome-section {
-    /*height: 84vh;*/
     height: 480px;
     font-size: 55px;
     padding-top: 130px;
@@ -1133,18 +863,18 @@ footer {
   }
 
 #welcome-section .welcome h1{
-   padding-top: 0px !important;
-   padding-bottom: 20px;
-   margin-top: 10px;
+  padding-top: 0px !important;
+  padding-bottom: 20px;
+  margin-top: 10px;
   }
 
   .sticky-top {
-     margin-top: 10px;
+    margin-top: 10px;
   }
   
   .colored_social_buttons{
-      margin-right: 0px;
-      margin-left: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
   }
 
   nav#navbar ul.navbar-nav {
@@ -1158,12 +888,6 @@ footer {
  nav#navbar a.logo_title span.career {
     font-size: 14px;
   }
-/*
- #about {
-    margin-left: 70px;
-    margin-right: 70px;
-  }
-*/
 
 #top_button_holder {
   margin-top: -10px;
@@ -1273,44 +997,29 @@ button.btn.btn-link {
     padding-bottom:150px;
     font-weight:100;
   }
-
-  /*form {
-    padding-top: 120px;
-    padding-left: 10px;
-    padding-right: 10px;
-  }*/
-
 }
-
 /***** max-width: 812px *****/
 @media screen and (max-width: 812px){
   
-#home {
-    /*height: 125vh;*/
+  #home {
     height: 470px;
     margin-top: 0px;
-}
+  }
 
-/*
- #home iframe {
-    margin-top: -150px;
-    width: 100%;
-}
-*/
   .sticky-top {
-       margin-top: 20px;
-    }
+    margin-top: 20px;
+  }
 
-nav#navbar .navbar {
+  nav#navbar .navbar {
     padding-right: 5rem !important;
     color: rgb(255,255,255);
     background-color: rgba(0,0,0,0.9) !important;
   }
 
-nav#navbar .navbar-collapse{
-      margin-left: 650px;
-      font-size: 14px;
-    }
+  nav#navbar .navbar-collapse{
+    margin-left: 650px;
+    font-size: 14px;
+  }
 
   nav#navbar .navbar-collapse .dropdown-menu {
     margin-left: -80px;
@@ -1440,7 +1149,6 @@ nav#navbar .navbar-collapse{
   .skills .progress {
     margin-left: 120px;
   }
-
 }
 
 /***** max-width: 768px *****/
@@ -1448,20 +1156,11 @@ nav#navbar .navbar-collapse{
   
 
   #home {
-      /*height: 125vh;*/
       height: 445px;
       margin-top: 0px;
   }
 
-/*
-  #home iframe {
-      margin-top: -305px;
-      width: 100%;
-      height: 70vh;
-  }
-*/
-
-#welcome-section {
+  #welcome-section {
     height: 445px;
     margin-top: 0px;
     padding-top: 10px;
@@ -1470,12 +1169,12 @@ nav#navbar .navbar-collapse{
   #welcome-section .welcome .typing {
     margin-top: 90px !important;
     padding-bottom: 0px;
-}
+  }
 
-#welcome-section .welcome h1 {
+  #welcome-section .welcome h1 {
     padding-bottom: 40px;
     font-size: 35px;
-}
+  } 
 
   #welcome-section .welcome a.typewrite {
     font-size: 30px;
@@ -1485,36 +1184,36 @@ nav#navbar .navbar-collapse{
     margin-left: 650px;
   }
 
-nav#navbar .navbar-collapse{
+  nav#navbar .navbar-collapse{
     margin-left: 610px;
     font-size: 14px;
   }
 
-nav#navbar .navbar-collapse .dropdown-menu {
-  margin-left: -80px;
-}
+  nav#navbar .navbar-collapse .dropdown-menu {
+    margin-left: -80px;
+  }
 
-#contact_me_snippet .glyphicon-envelope{
-  font-size: 28px;
-  padding-top: 0px;
-}
+  #contact_me_snippet .glyphicon-envelope{
+    font-size: 28px;
+    padding-top: 0px;
+  }
 
-#contact_me_snippet .contact_snippet_btn_wrapper button.btn.btn-link span#contact_popup {
-  font-size: 6px;
-  letter-spacing: 0.3px;
-}
+  #contact_me_snippet .contact_snippet_btn_wrapper button.btn.btn-link span#contact_popup {
+    font-size: 6px;
+    letter-spacing: 0.3px;
+  }
 
 
-#projects .project_row {
-  padding-left: 20px !important;
+  #projects .project_row {
+    padding-left: 20px !important;
 
-}
+  }
 
-.project-tile {    
-    min-width: 340px;
-    padding-right: 30px;
-    padding-left: 30px;
-}
+  .project-tile {    
+      min-width: 340px;
+      padding-right: 30px;
+      padding-left: 30px;
+  }
 
   .view_button { 
       margin-left:85px;
@@ -1547,21 +1246,13 @@ nav#navbar .navbar-collapse .dropdown-menu {
     /*height: 100vh;*/
     height: 390px;
     margin-top: 0px;
-}
-/*
- #home iframe {
-    margin-top: 0px;
-    height: 100vh;
-}
-*/
-
+  }
 
   #welcome-section {
     height: 390px;
     margin-top: 0px;
     padding-top: 80px;
-}
-
+  }
 
   #welcome-section p{
     padding-top: 0;
@@ -1583,20 +1274,24 @@ nav#navbar .navbar-collapse .dropdown-menu {
     font-size: 26px;
     }
 
-#welcome-section .welcome h1{
+  #welcome-section .welcome h1{
     margin-top: 4px;
     font-size: 40px;
     margin-bottom: 0;
     padding-bottom: 0px;
   }
 
-
+  p#profile_summary {
+    margin-top: -5px !important;
+    margin-left: 60px;
+    margin-right: 10px;
+  }
+  
   #welcome-section .welcome button {
     margin-top: -20px;
   }
 
   button.btn.btn-link {
-    /*padding: 15px 40px 15px 40px;*/
     border-radius: 0px;
   }
 
@@ -1604,11 +1299,11 @@ nav#navbar .navbar-collapse .dropdown-menu {
     margin-top: -20px;
   }
 
-nav#navbar .navbar {
+  nav#navbar .navbar {
       padding-right: 1rem !important;
   }
 
-nav#navbar a.logo_title{
+  nav#navbar a.logo_title{
     margin-left: -10px;
   }
 
@@ -1652,23 +1347,21 @@ nav#navbar a.logo_title{
     display: none;
   }
 
-
   #about {
     font-size: 16px;
-      padding-right: 30px !important;
-      padding-left: 30px !important;
-      margin-right: 0px;
-      margin-left: 0px;
-      margin-bottom: 50px;
-    }
-/*
-  .about_heading, .portfolio_heading,.professional_heading,.contact_heading {
-    font-size: 34px;
-    padding-top: 30px;    
+    padding-right: 30px !important;
+    padding-left: 30px !important;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 50px;
   }
-*/
+
+  #projects {
+     margin-top: -50px;
+  }    
+
   #projects .project_row {
-  padding-left: 15px;
+    padding-left: 15px;
   }
 
   .project-tile {
@@ -1697,17 +1390,17 @@ nav#navbar a.logo_title{
     font-size: 24px;
   }
 
-.professional_outlook .col-md-6.outlook_img {
+  .professional_outlook .col-md-6.outlook_img {
     max-height: 350px !important;
     height: 300px !important;
-}
+  }
 
-.professional_outlook p.professional_detail {
-  line-height: 1.5;
-}
+  .professional_outlook p.professional_detail {
+    line-height: 1.5;
+  }
 
-.professional_outlook .text-left {
-  line-height: 1.5;
+  .professional_outlook .text-left {
+    line-height: 1.5;
   }
   .experience .col-sm-6{
      padding-left: 10px;
@@ -1718,9 +1411,9 @@ nav#navbar a.logo_title{
     padding-bottom: 7px;
   }
 
-.experience, .education {
-    line-height: 1.3;
-}
+  .experience, .education {
+      line-height: 1.3;
+  }
 
   .skills ul li{    
     margin-left: -230px; 
@@ -1751,7 +1444,6 @@ nav#navbar a.logo_title{
   }
 }
 
-
 /***** max-width: 640px *****/
 @media screen and (max-width: 640px){
   .project-tile {
@@ -1780,24 +1472,18 @@ nav#navbar a.logo_title{
 
 }
 
-
 /***** max-width: 568px *****/
 @media screen and (max-width: 568px){
    #home {
     height: 340px;
     margin-top: 0px;
-}
-/*
- #home iframe {
-    margin-top: 0px;
-    height: 100vh;
-}*/
+  }
  
   #welcome-section {
     height: 342px;
     margin-top: 0px;
     padding-top: 60px;
-}
+  }
 
   #welcome-section .welcome .welcome_title{
     font-size: 45px;
@@ -1809,19 +1495,19 @@ nav#navbar a.logo_title{
   }
 
 
-#welcome-section .welcome h1 {
-    font-size: 38px;
-    margin-bottom: 0;
-    padding-bottom: 0px;
-}
-  #welcome-section .welcome button {
-    margin-top: -40px;
-}
-
-#welcome-section button.btn.btn-link {
-    font-size: 10px;
-    padding: 5px 10px;
+  #welcome-section .welcome h1 {
+      font-size: 38px;
+      margin-bottom: 0;
+      padding-bottom: 0px;
   }
+    #welcome-section .welcome button {
+      margin-top: -40px;
+  }
+
+  #welcome-section button.btn.btn-link {
+      font-size: 10px;
+      padding: 5px 10px;
+    }
 
   nav#navbar .navbar-brand img{
     width:70px;
@@ -1855,52 +1541,42 @@ nav#navbar a.logo_title{
     font-size: 14px;
   }
 
-
-#welcome-section .welcome h1 {
-  font-size: 30px;
-  margin-top: -20px;
-}
-
-p#profile_summary {
-    font-size: 11px;
-}
-
-/*button.btn.btn-link {
-  font-size: 12px;
-  padding: 5px 5px;
-}*/
-
-  #skills_sec ul li a img {
-  width: 40px;
-  height: 40px;
-}
-
-/*
-  .about_heading, .portfolio_heading,.professional_heading,.contact_heading {
+  #welcome-section .welcome h1 {
     font-size: 30px;
-    padding-top: 50px;   
-  }
-*/
-#about, #projects, .quote_section, .contact {
-    padding-top: 40px;
+    margin-top: -20px;
   }
 
-#about {
-  line-height: 1.5;
-  padding-left: 10px !important;
-    padding-right: 10px !important;
-    padding-bottom: 20px !important;
-    font-size: 12px;
-}
+  p#profile_summary {
+    font-size: 11px;
+    margin-left: 40px;
+    margin-right: 10px;
+  }
 
-.about_heading, .projects_heading, .professional_heading, .contact_heading
-{
-  font-size: 22px;
-}
+    #skills_sec ul li a img {
+    width: 40px;
+    height: 40px;
+  }
 
-.professional_sub_headings {
-  font-size: 18px;
-}
+  #about, #projects, .quote_section, .contact {
+      padding-top: 40px;
+    }
+
+  #about {
+    line-height: 1.5;
+    padding-left: 10px !important;
+      padding-right: 10px !important;
+      padding-bottom: 20px !important;
+      font-size: 12px;
+  }
+
+  .about_heading, .projects_heading, .professional_heading, .contact_heading
+  {
+    font-size: 22px;
+  }
+
+  .professional_sub_headings {
+    font-size: 18px;
+  }
 
   #projects .project_row {
     padding-left: 30px !important;
@@ -1917,243 +1593,218 @@ p#profile_summary {
     display: none;
   }
 
- .quote_section .quote {
-    font-size: 14px;
-  }
-
-.professional_sub-heading {
-    font-size: 14px;
-}
-
-.professional_outlook p.professional_detail {
-  font-size: 12px;
-}
-
-.text-left .btn.btn-link {
-  font-size: 10px;
-}
-
-.experience .experience_sub-heading {
-  font-size: 14px;
-}
-
-.experience .experience_date {
-  font-size: 10px;
-}
-
-.experience ul li{
-  font-size: 12px;
-}
-.small_quotes {
-  font-size: 12px;
-}
-
-.quote_arthor {
-  font-size: 10px;
-}
-
-.education_info p.education_sub-heading {
-  font-size: 14px;
-}
-
-.experience_date, .education_date{
-  font-size: 12px;
-}
-
-#separator_bg .dark_background div p.text-uppercase {
-  font-size: 35px !important;
-}
-  .view_button { 
-      margin-left:155px;
-  }
-/*
-  .skills ul li{ 
-    margin-left: -250px; 
-  }
-
-  .skills ul li i.fa{
-      font-size: 56px !important;
-  }*/
-}
-
-.contact_info, .contact ul.contact_email li#phone.nav-item a, .contact ul.contact_email li a{
-  font-size: 14px;
-}
-
-/* small phones only - 375px */
-@media only screen and (max-device-width : 375px){ 
-/*
-  .small_phone_only {
-    display:none;
-  }
-*/
-
-.navbar-brand {
-    margin-left: 90px;
-}
-
-  #home {
-    height: 246px;
-    margin-top: 5px;
-    background:none;
-}
-/*
- #home iframe {
-    margin-top: -240px;
-    height: 70vh;
-}
-*/
-  #welcome-section {
-    height: 300px;
-    margin-top: -50px;
-    padding-top: 80px;
-}
-
- #welcome-section .welcome .typing {
-      padding-top: 0px;
-      padding-bottom: 0px;
-  }
-
-  #welcome-section .welcome a.typewrite {
-    font-size: 16px;
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-bottom: 0px;
-    margin-top: -50px;
-    margin-right: 0px;
-    margin-left: 0px;
-    margin-bottom: 0px;
-  }
-
-  #welcome-section .welcome h1{
-    /*font-size: 24px;*/
-    margin-bottom: 0px;
-  }
-
-
- #separator_bg p {
-    font-size: 24px;
-    margin-bottom: 0px;
-  }
-
-
-  p#profile_summary {
-    font-size: 10px;
-    margin-top: -10px;
-    margin-left: 20px;
-    margin-right: 10px;
-  }
-/*
-  #welcome-section button.btn {
-    margin-top: -55px;
-  }*/
-
-  #welcome-section button.btn.btn-link {
-    margin-top: -280px;
-    margin-left: 60px;
-    margin-right: -70px;
-    font-size: 6px;
-    padding: 0px 4px;
-  }
-
-  .fa{
-    font-size: 6px !important;
-  }
-
-   #welcome-section button#hire_me.btn.btn-link {
-
-    margin-right: -80px;
-
-  }
-
-#welcome-section .welcome p {
-margin-top: 0px;
-}
-
- nav#navbar .navbar-brand img{
-    width:50px;
-    max-width:50%;
-    height:auto;
-    margin: 0;
-    padding: 0;
-  }
-
-  nav#navbar a.logo_title{
-    margin-right: 30px !important;
-  }
-
-  nav#navbar a.logo_title span.name{
-    font-size: 14px; 
-  }
-
-  nav#navbar a.logo_title span.career{
-    font-size: 10px;
-  }
-
-  nav#navbar .navbar-collapse {
-    margin-left: 240px !important;
-  }
-
-  nav#navbar .navbar-collapse .dropdown-menu{
-    font-size: 14px;
-    margin-left: -170px !important;
-  }
-
-  .about_heading, .projects_heading, .professional_heading, .contact_heading {
-    font-size: 20px;
-  }
-
   .quote_section .quote {
-      font-size: 10px;
+    font-size: 14px;
   }
 
-  .professional_outlook .col-md-6.outlook_img {
-      min-height: 350px;
+  .professional_sub-heading {
+      font-size: 14px;
   }
 
-  .skills ul li{   
-    margin-left: -290px; 
+  .professional_outlook p.professional_detail {
+    font-size: 12px;
   }
 
-  .skills ul li i.fa{
-      font-size: 48px !important;
+  .text-left .btn.btn-link {
+    font-size: 10px;
+  }
+
+  .experience .experience_sub-heading {
+    font-size: 14px;
+  }
+
+  .experience .experience_date {
+    font-size: 10px;
+  }
+
+  .experience ul li{
+    font-size: 12px;
+  }
+  .small_quotes {
+    font-size: 12px;
+  }
+
+  .quote_arthor {
+    font-size: 10px;
+  }
+
+  .education_info p.education_sub-heading {
+    font-size: 14px;
+  }
+
+  .experience_date, .education_date{
+    font-size: 12px;
+  }
+
+  #separator_bg .dark_background div p.text-uppercase {
+    font-size: 35px !important;
   }
 
   .view_button { 
-    margin-left:55px;
+    margin-left:155px;
   }
 
-  table {
-    width: 80%;
+  .contact_info, .contact ul.contact_email li#phone.nav-item a, .contact ul.contact_email li a{
+    font-size: 14px;
+  }
+}
+
+  /* small phones only - 375px */
+  @media only screen and (max-device-width : 375px){ 
+
+  .navbar-brand {
+      margin-left: 90px;
   }
 
-  td {
-    font-size: 8px;
-    width: 20%;
+    #home {
+      height: 246px;
+      margin-top: 5px;
+      background:none;
   }
 
-  .separator_bg_cover p{
-     font-size: 26px;
+    #welcome-section {
+      height: 300px;
+      margin-top: -50px;
+      padding-top: 80px;
   }
 
-  .contact .container-fluid{
-    padding-left: 0px !important;
-    padding-right: 0px !important;
-    margin-right: 0px !important; 
-    margin-left: 0px !important; 
-  }
+  #welcome-section .welcome .typing {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    #welcome-section .welcome a.typewrite {
+      font-size: 16px;
+      padding-left: 0px;
+      padding-right: 0px;
+      padding-bottom: 0px;
+      margin-top: -50px;
+      margin-right: 0px;
+      margin-left: 0px;
+      margin-bottom: 0px;
+    }
+
+    #welcome-section .welcome h1{
+      margin-bottom: 0px;
+    }
+
+
+  #separator_bg p {
+      font-size: 24px;
+      margin-bottom: 0px;
+    }
+
+
+    p#profile_summary {
+      font-size: 10px;
+      margin-top: -10px;
+      margin-left: 20px;
+      margin-right: 10px;
+    }
+
+    #welcome-section button.btn.btn-link {
+      margin-top: -280px;
+      margin-left: 60px;
+      margin-right: -70px;
+      font-size: 6px;
+      padding: 0px 4px;
+    }
+
+    .fa{
+      font-size: 6px !important;
+    }
+
+    #welcome-section button#hire_me.btn.btn-link {
+
+      margin-right: -80px;
+
+    }
+
+    #welcome-section .welcome p {
+      margin-top: 0px;
+    }
+
+  nav#navbar .navbar-brand img{
+      width:50px;
+      max-width:50%;
+      height:auto;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav#navbar a.logo_title{
+      margin-right: 30px !important;
+    }
+
+    nav#navbar a.logo_title span.name{
+      font-size: 14px; 
+    }
+
+    nav#navbar a.logo_title span.career{
+      font-size: 10px;
+    }
+
+    nav#navbar .navbar-collapse {
+      margin-left: 240px !important;
+    }
+
+    nav#navbar .navbar-collapse .dropdown-menu{
+      font-size: 14px;
+      margin-left: -170px !important;
+    }
+
+    .about_heading, .projects_heading, .professional_heading, .contact_heading {
+      font-size: 20px;
+    }
+
+    .quote_section .quote {
+        font-size: 10px;
+    }
+
+    .professional_outlook .col-md-6.outlook_img {
+        min-height: 350px;
+    }
+
+    .skills ul li{   
+      margin-left: -290px; 
+    }
+
+    .skills ul li i.fa{
+        font-size: 48px !important;
+    }
+
+    .view_button { 
+      margin-left:55px;
+    }
+
+    table {
+      width: 80%;
+    }
+
+    td {
+      font-size: 8px;
+      width: 20%;
+    }
+
+    .separator_bg_cover p{
+      font-size: 26px;
+    }
+
+    .contact .container-fluid{
+      padding-left: 0px !important;
+      padding-right: 0px !important;
+      margin-right: 0px !important; 
+      margin-left: 0px !important; 
+    }
 
     .professional_sub_headings {
       margin-left: 80px;
       font-size: 34px;
     }
+  }
 
-
-}
-
-
-/* small phones only - 360px */
-@media only screen and (max-device-width : 360px){ 
+  /* small phones only - 360px */
+  @media only screen and (max-device-width : 360px){ 
     #home {
       padding-bottom: 0;
       margin-bottom: -10px;
@@ -2168,49 +1819,55 @@ margin-top: 0px;
     #welcome-section .welcome a.typewrite {
       font-size: 16px;
     }
-}
 
-/* small phones only - 320px */
-@media only screen 
-and (max-device-width : 320px) { 
+    #about {
+      margin-top: 50px;
+    }
+  }
 
-nav {
-  width: 100vw;
-}
+  /* small phones only - 320px */
+  @media only screen 
+  and (max-device-width : 320px) { 
 
-.navbar-brand {
-  margin-left: 10px;
-} 
+  nav {
+    width: 100vw;
+  }
+
+  .navbar-brand {
+    margin-left: 10px;
+  } 
 
 
- #home {
-    height: 246px;
-    margin-top: 80px;
-    background:none;
-}
-/*
- #home iframe {
-    margin-top: -240px;
-    height: 70vh;
-}
-*/
-  #welcome-section {
-    height: 305px;
-    margin-top: -10px;
-    padding-top: 100px;
-}
+  #home {
+      height: 246px;
+      margin-top: 80px;
+      background:none;
+  }
 
-  #welcome-section .welcome a.typewrite {
+    #welcome-section {
+      height: 305px;
+      margin-top: -10px;
+      padding-top: 100px;
+  }
+
+  #welcome-section .row {
+    margin-top: -40px;
+  }
+
+    #welcome-section .welcome a.typewrite {
       font-size: 15px;
-    }
+      }
 
-  #welcome-section .welcome h1, #separator_bg p {
-      font-size: 22px;
-    }
+    #welcome-section .welcome h1, #separator_bg p {
+        font-size: 22px;
+      }
 
+    #top_button_holder {
+      margin-top: 85px;
+      margin-left: -10px;
+    }
 
     #welcome-section button.btn.btn-link {
-      margin-bottom: 25px;
       font-size: 10px;
       padding: 5px 15px;
     }
@@ -2220,95 +1877,93 @@ nav {
       margin-left: 35px;
     }
 
-  nav#navbar a.logo_title{
+    nav#navbar a.logo_title{
       margin-top: 20px;
     }
 
-  .colored_social_buttons .social_buttons{
+    .colored_social_buttons .social_buttons{
       margin-top: -15px;
-  }
-
- .project-tile {
-    min-width: 240px;
-  }
-
-  #projects .project_row {
-    padding-left: 0px;
-    padding-right: 10px;
-  }
-
-  .skills ul li{   
-    margin-left: -300px; 
-  }
-
-  .skills ul li i.fa{
-      font-size: 44px !important;
-  }
-
-  .separator_bg_cover p{
-     font-size: 22px;
     }
 
-  nav#navbar a.logo_title{
-      margin-right: 10px !important;
+  .project-tile {
+      min-width: 240px;
     }
 
-  nav#navbar button.navbar-toggler{
-  margin-right: 20px;
-  }
+    #projects .project_row {
+      padding-left: 0px;
+      padding-right: 10px;
+    }
 
-  nav#navbar .navbar-collapse {
-      margin-left: 230px !important;
-  }
+    .skills ul li{   
+      margin-left: -300px; 
+    }
 
-#about {
-  margin-top: -30px;
-  line-height: 1.5;
-  font-size: 14px;
-  padding-left: 5px !important;
-  padding-right: 5px !important;
-}
+    .skills ul li i.fa{
+        font-size: 44px !important;
+    }
 
-  .professional_sub-heading {
+    .separator_bg_cover p{
       font-size: 22px;
+      }
+
+    nav#navbar a.logo_title{
+        margin-right: 10px !important;
+      }
+
+    nav#navbar button.navbar-toggler{
+    margin-right: 20px;
+    }
+
+    nav#navbar .navbar-collapse {
+        margin-left: 230px !important;
+    }
+
+  #about {
+    margin-top: -30px;
+    line-height: 1.5;
+    font-size: 14px;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
   }
-.quote_section .quote {
-    font-size: 8px;
-}
 
-.quote_arthor_big {
-    font-size: 10px;
-}
+    .professional_sub-heading {
+        font-size: 22px;
+    }
+    .quote_section .quote {
+        font-size: 8px;
+    }
 
-.professional_outlook .text-left {
-  line-height: 0.8;
-  padding-left: 15px !important;
-  padding-right: 15px !important;
-}
+    .quote_arthor_big {
+        font-size: 10px;
+    }
 
-  .education_sub-heading, .experience_sub-heading {
-    font-size: 18px;
-  }
+    .professional_outlook .text-left {
+      line-height: 0.8;
+      padding-left: 15px !important;
+      padding-right: 15px !important;
+    }
 
-.professional_sub_headings {
-  margin-left: 10px;
-}
+    .education_sub-heading, .experience_sub-heading {
+      font-size: 18px;
+    }
 
-hr.heading_underline {
-  width: 80%;
-}
-table {
-    width: 60vw;
-    margin-left: 20px;
-}
+    .professional_sub_headings {
+      margin-left: 10px;
+    }
 
-table, th, td {
-    padding: 0px;
-    /* border: 0.3px solid rgb(224,224,224); */
-}
-th.font-weight-bold {
-  font-size: 14px;
-    font-weight: 500!important;
-}
+    hr.heading_underline {
+      width: 80%;
+    }
+    table {
+      width: 60vw;
+      margin-left: 20px;
+    }
 
+    table, th, td {
+        padding: 0px;
+    }
+    th.font-weight-bold {
+      font-size: 14px;
+      font-weight: 500!important;
+    }
 }
