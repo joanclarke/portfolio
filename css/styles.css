@@ -393,6 +393,7 @@ nav#navbar a.fa:hover {
 
 .small_quotes {
   line-height: 1.5;
+  font-size: 16px;
   font-family: 'Open Sans', sans-serif;
   font-family: 'Raleway', sans-serif;
 }
