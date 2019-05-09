@@ -367,8 +367,8 @@ nav#navbar a.fa:hover {
 }
 
 #about, #projects,.quote_section, .contact {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
 
 .about_heading, .projects_heading,.professional_heading,.contact_heading {
