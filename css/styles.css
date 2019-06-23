@@ -613,12 +613,14 @@ img:hover + .view_button,
 .professional_outlook button.btn.btn-link {
   margin-top: 0px;
   margin-left: 0px;
+  background-color: rgb(64, 64, 72);
+  color: white;
 }
 
 /*styling for professional outlook and work experience buttons*/
-.professional_outlook button.btn.btn-link:hover, .experience button.btn.btn-link:hover{
-	background-color: rgb(64, 64, 72);
-	color: white;
+.professional_outlook button.btn.btn-link:hover, .experience button.btn.btn-link:hover {
+  background-color: rgba(64, 64, 72, 0.7);
+  border: 1px solid rgba(64, 64, 72, 0.5);
 }
 
 /*--============================
