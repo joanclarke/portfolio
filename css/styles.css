@@ -512,18 +512,18 @@ nav#navbar a.fa:hover {
     font-family: 'Open Sans Condensed', sans-serif;
     font-family: 'Quicksand', sans-serif;
     font-size: 14px;
-    margin-top:-150px;
-    margin-left:90px;
+    margin-top:100px;
+    margin-left:-270px;
     display: none;
     position:absolute;
-    border: solid 1px white;
+    border: solid 1px rgb(64, 64, 72);
     color: rgb(255, 255, 255);
-    background-color: rgba(0,0,0, 0.4);
+    background-color: rgb(64, 64, 72);
     text-decoration:none;
     padding:18px 30px 18px 30px;
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
-    border-radius: 0px;
+    border-radius: 3px;
 }
 
 .coming_soon {
@@ -532,8 +532,9 @@ nav#navbar a.fa:hover {
 
 .view_button:hover {
   text-decoration: none;
-  background-color: rgb(255, 255, 255);
-  color: rgb(0,0,0);
+  background-color: rgb(106, 106, 110);
+  color: rgb(255, 255, 255);
+  border: solid 1px rgb(106, 106, 110);
 }
 
 img:hover + .view_button, 
@@ -787,10 +788,10 @@ hr.heading_underline2 {
   font-weight:100;
 }
 
-
+/* 
 #phone a{
   text-decoration: none;
-}
+} */
 .mail, .contact_email #phone a{
    color: rgb(0,0,0);
    font-weight: 200;
@@ -805,7 +806,7 @@ hr.heading_underline2 {
   padding: 5px 6px 5px 6px;
 }
 
-.contact_email #phone a:hover, .mail:hover, .contact_social .fa:hover  {
+.mail:hover, .contact_social .fa:hover  {
   color: rgb(9,167,161);
 }
 
