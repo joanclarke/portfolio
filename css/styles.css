@@ -955,7 +955,8 @@ button.btn.btn-link {
 
   .view_button { 
     font-size: 14px;
-    margin-left:60px;
+    /* margin-left:60px; */
+    margin-left: -220px;
     }
 
   .professional_outlook .text-left {
@@ -1117,7 +1118,7 @@ button.btn.btn-link {
   }
 
   .view_button { 
-      margin-left:50px;
+      /* margin-left:50px; */
   }
 
   .my_project {
@@ -1234,7 +1235,7 @@ button.btn.btn-link {
   }
 
   .view_button { 
-      margin-left:85px;
+      /* margin-left:85px; */
   }
 
   .professional_outlook .text-left {
@@ -1389,7 +1390,7 @@ button.btn.btn-link {
   }
 
   .view_button { 
-    margin-left:70px;
+    /* margin-left:70px; */
   }
 
   .quote_section {
@@ -1471,7 +1472,7 @@ button.btn.btn-link {
   }
 
   .view_button { 
-      margin-left:60px;
+      /* margin-left:60px; */
   }
 
   .outlook_height_img {
@@ -1659,7 +1660,7 @@ button.btn.btn-link {
   }
 
   .view_button { 
-    margin-left:155px;
+    /* margin-left:155px; */
   }
 
   .contact_info, .contact ul.contact_email li#phone.nav-item a, .contact ul.contact_email li a{
@@ -1792,7 +1793,7 @@ button.btn.btn-link {
     }
 
     .view_button { 
-      margin-left:55px;
+      /* margin-left:55px; */
     }
 
     table {
