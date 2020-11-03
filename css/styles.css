@@ -556,6 +556,19 @@ img:hover + .view_button,
     display: inline-block;
 }
 
+#toggle-team-proj {
+  background-color: blue;
+  color: white;
+}
+
+/* #team-projects {
+  display: block;
+} */
+
+.hide {
+  display: none;
+  visibility: hidden;
+}
 /*================================
     *** PROFESSIONAL OUTLOOK  *** 
 =================================*/
@@ -1611,6 +1624,7 @@ button.btn.btn-link {
   .small_screen_hidden {
     display: none;
   }
+
 
   .quote_section .quote {
     font-size: 14px;

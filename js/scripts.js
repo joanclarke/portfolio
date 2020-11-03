@@ -1,6 +1,7 @@
 /*Using javascript to highlight each section when scrolled to 
 */
 /*Retrieved from codetheory.in - http://codetheory.in/change-active-state-links-sticky-navigation-scroll/ */
+
 var sections = $("section"),
   nav = $("nav"),
   nav_height = nav.outerHeight();
@@ -149,3 +150,9 @@ $('.progress').each(function(){
    animateProgressBar($(this).find("div"), $(this).data("width")) 
 });
 
+$('#toggle-team-proj').on('click', showHide);
+
+function showHide() {
+  $("div#team-projects ").toggleClass("hide");
+  console.log("I KNOW");
+};
