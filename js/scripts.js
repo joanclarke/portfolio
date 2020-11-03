@@ -148,3 +148,4 @@ function animateProgressBar(el, width){
 $('.progress').each(function(){
    animateProgressBar($(this).find("div"), $(this).data("width")) 
 });
+
