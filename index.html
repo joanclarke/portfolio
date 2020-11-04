@@ -225,7 +225,7 @@
             <p class="detail">Responsive website. Designed to provide viewers with live streaming services as well as videos of past events.</p>
           </div>
           <!--- To-Do List-->
-          <div class="col-12 col-sm-3 project-tile large_screen">
+          <div class="col-12 col-sm-3 project-tile large_screen toggle-indiv-proj hide">
             <img src="./img/todo-list-dark.png" class="project_image" title="Project: To-Do List" alt="image of Todo App">  
             <!--view project button-->
             <a class="button view_button text-uppercase" href="https://joanclarke.github.io/ToDo/" target="_blank">View Project</a>
@@ -236,13 +236,13 @@
             <p class="detail">This To Do List enables users to create, edit, delete and mark tasks as complete. Users can also switch between dark and light mode backgrounds.</p>
           </div>
         </div> <!--***end of INDIVIDUAL PROJECTS ***-->
-
-        <!-- show/hide button  -->
-        <button id="toggle-team-proj">
+        <!-- show/hide button for Individual Projects -->
+        <div class="toggle-btn-div">
+          <button type="button" class="btn btn-link toggle-btn indiv-proj text-uppercase">
           <!-- <a href="#" id="toggle-team-proj"> Show Team Projects </a> -->
-          Show Team Projects 
-        </button>
-
+            More Individual Projects 
+          </button>
+        </div>
         <!-- TEAM PROJECTS -->
 
         <div id="team-projects" class="row row-content project_row">
@@ -268,7 +268,7 @@
             <p class="detail">User-friendly Hotel Reservation Database System designed to undertake complex SQL queries, forms and analytical assessment. <em>Created as part of a team</em></p>
           </div>
           <!--Human Dev Comp.-->
-          <div class="col-12 col-sm-3 project-tile large_screen">
+          <div class="col-12 col-sm-3 project-tile large_screen toggle-team-proj hide">
             <img src="https://i.imgur.com/XewQiUc.png" class="project_image" title="Project: Human Comparator" alt="image of Human Comparator line graph">
             <a class="button view_button text-uppercase" href="https://drive.google.com/file/d/0BzXxwuh3Iowub1JoNlhrRXFpaGs/view?usp=sharing" target="_blank">View Project</a>
             <p class="my_project">Human Dev. Comparator</p>
@@ -278,6 +278,13 @@
             <p class="detail">A dynamic Data visualization Web application which extracts demographic information from over 100 countries and exhibits data via line graph. <em>Created as part of a team</em></p>
           </div>
         </div> <!--***end of TEAM PROJECTS ***-->
+        <!-- show/hide button for Team Projects -->
+        <div class="toggle-btn-div">
+          <button type="button" class=" btn btn-link toggle-btn team-proj text-uppercase">
+          <!-- <a href="#" id="toggle-team-proj"> Show Team Projects </a> -->
+            More Team Projects 
+          </button>
+        </div>
       </div> 
     </section>
 

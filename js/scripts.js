@@ -150,9 +150,12 @@ $('.progress').each(function(){
    animateProgressBar($(this).find("div"), $(this).data("width")) 
 });
 
-$('#toggle-team-proj').on('click', showHide);
+// $('.toggle-indiv-proj').on('click', showHide);
+$('.team-proj').on('click', {event_type: '.toggle-team-proj'}, showHide);
+$('.indiv-proj').on('click', {event_type: '.toggle-indiv-proj'}, showHide);
 
-function showHide() {
-  $("div#team-projects ").toggleClass("hide");
+// hide and show projects on button click 
+function showHide(event) {
+  $(event.data.event_type).toggleClass("hide");
   console.log("I KNOW");
 };
