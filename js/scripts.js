@@ -80,8 +80,8 @@ var TxtType = function(el, toRotate, period) {
     };
 
     TxtType.prototype.tick = function() {
-        var i = this.loopNum % this.toRotate.length;
-        var fullTxt = this.toRotate[i];
+        let i = this.loopNum % this.toRotate.length;
+        let fullTxt = this.toRotate[i];
 
         if (this.isDeleting) {
         this.txt = fullTxt.substring(0, this.txt.length - 1);
@@ -111,16 +111,16 @@ var TxtType = function(el, toRotate, period) {
     };
 
     window.onload = function() {
-        var elements = document.getElementsByClassName('typewrite');
-        for (var i=0; i<elements.length; i++) {
-            var toRotate = elements[i].getAttribute('data-type');
-            var period = elements[i].getAttribute('data-period');
+        let elements = document.getElementsByClassName('typewrite');
+        for (let i=0; i<elements.length; i++) {
+            let toRotate = elements[i].getAttribute('data-type');
+            let period = elements[i].getAttribute('data-period');
             if (toRotate) {
               new TxtType(elements[i], JSON.parse(toRotate), period);
             }
         }
         // INJECT CSS
-        var css = document.createElement("style");
+        let css = document.createElement("style");
         css.type = "text/css";
         css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid transparent}";
         document.body.appendChild(css);
@@ -131,19 +131,19 @@ var TxtType = function(el, toRotate, period) {
     /*Skills progress bar*/
 /*--Codes retrieved and adjusted from this jsfiddle - https://jsfiddle.net/hibbard_eu/pxnZZ/--*/
 
-function animateProgressBar(el, width){
-    el.animate(
-        {width: width}, 
-        {
-            duration: 2000,
-            step: function(now, fx) {
-                if(fx.prop == 'width') {
-                    el.html(el.data("name") + ": " + Math.round(now * 100) / 100 + '%');
-                }
-            }
-        }        
-    );    
-}
+// function animateProgressBar(el, width){
+//     el.animate(
+//         {width: width}, 
+//         {
+//             duration: 2000,
+//             step: function(now, fx) {
+//                 if(fx.prop == 'width') {
+//                     el.html(el.data("name") + ": " + Math.round(now * 100) / 100 + '%');
+//                 }
+//             }
+//         }        
+//     );    
+// }
 
 
 $('.progress').each(function(){
@@ -152,29 +152,10 @@ $('.progress').each(function(){
 
 $('.team-proj').on('click', function() {
   showHide(); 
-  changeTxt();
+  // changeTxt();
 });
 // $('.team-proj').on('click', {event_type: '.toggle-team-proj'}, showHide);
 // $('.indiv-proj').on('click', {event_type: '.toggle-indiv-proj'}, showHide);
-
-
-// hide and show projects on button click 
-function showHide() {
-  $('.toggle-team-proj').toggleClass("hide"), function() {
-    console.log( "Second handler for .toggle() called." );
-  };
-  // console.log("I KNOW");
-};
-
-function changeTxt() {
-  if( $(".toggle-more-or-less").html('More')) {
-       $(".toggle-more-or-less").html('Less');
-  } else {
-    $(".toggle-more-or-less").html('More');
-  }
-}
-
-
 
 // function showHide(event) {
 //   $(event.data.event_type).toggleClass("hide");
@@ -182,29 +163,15 @@ function changeTxt() {
 // };
 
 
-// $(document).ready(function(){
-  // $(".team-proj").on('click', changeTxt);
-// });
+// hide and show projects on button click 
+function showHide() {
+  $('.toggle-team-proj').toggleClass("hide");
+  toggleTxt();
+};
 
-// function changeTxt(){
-//   // $(".toggle-more-or-less").html("Less");
-//   if($(".toggle-more-or-less").html('More')) {
-//     $(".team-proj").toggle(function() {
-//         console.log( "First handler for .toggle() called." );
-//       },function() {
-//           console.log( "Second handler for .toggle() called." );
-//         });
-//   }
-// }
+// change content of 'view more projects' button 
+function toggleTxt() {
+  let el  = $('#toggle-more-or-less');    
+  el.text(el.text() == 'View Less'  ? 'View More' : 'View Less');
+}
 
-
-    // $(".toggle-more-or-less").html('Less');
-  // } else if($(".toggle-more-or-less").html('Less')) {
-  //   $(".toggle-more-or-less").html('More');
-
-
-// $( ".team-proj" ).toggle(function() {
-//   console.log( "First handler for .toggle() called." );
-// }, function() {
-//   console.log( "Second handler for .toggle() called." );
-// });

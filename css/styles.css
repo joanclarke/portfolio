@@ -348,22 +348,22 @@ nav#navbar a.fa:hover {
   font-weight: 100;
   background-color: rgb(248, 249, 249)
 }
-.resume, .toggle-btn-div {
+.resume, #toggle-btn-div {
   display: flex;
   align-items: center;
   justify-content: center;
   padding-top: 20px;
 }
 
-.toggle-btn-div {
+#toggle-btn-div {
   padding-top: 30px;
 }
 
-.resume button.btn.btn-link, button.btn.btn-link.toggle-btn{
+.resume button.btn.btn-link, button#toggle-btn-txt {
   background-color: rgb(64, 64, 72);
 }
 
-.resume button.btn.btn-link:hover, button.btn.btn-link.toggle-btn:hover {
+.resume button.btn.btn-link:hover, button#toggle-btn-txt:hover {
   background-color: rgb(162, 162, 167);
 }
 
@@ -559,11 +559,6 @@ nav#navbar a.fa:hover {
 img:hover + .view_button, 
 .view_button:hover {
     display: inline-block;
-}
-
-.team-proj {
-  background-color: blue;
-  color: white;
 }
 
 /* #team-projects {
