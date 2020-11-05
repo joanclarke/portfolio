@@ -150,12 +150,61 @@ $('.progress').each(function(){
    animateProgressBar($(this).find("div"), $(this).data("width")) 
 });
 
-// $('.toggle-indiv-proj').on('click', showHide);
-$('.team-proj').on('click', {event_type: '.toggle-team-proj'}, showHide);
-$('.indiv-proj').on('click', {event_type: '.toggle-indiv-proj'}, showHide);
+$('.team-proj').on('click', function() {
+  showHide(); 
+  changeTxt();
+});
+// $('.team-proj').on('click', {event_type: '.toggle-team-proj'}, showHide);
+// $('.indiv-proj').on('click', {event_type: '.toggle-indiv-proj'}, showHide);
+
 
 // hide and show projects on button click 
-function showHide(event) {
-  $(event.data.event_type).toggleClass("hide");
-  console.log("I KNOW");
+function showHide() {
+  $('.toggle-team-proj').toggleClass("hide"), function() {
+    console.log( "Second handler for .toggle() called." );
+  };
+  // console.log("I KNOW");
 };
+
+function changeTxt() {
+  if( $(".toggle-more-or-less").html('More')) {
+       $(".toggle-more-or-less").html('Less');
+  } else {
+    $(".toggle-more-or-less").html('More');
+  }
+}
+
+
+
+// function showHide(event) {
+//   $(event.data.event_type).toggleClass("hide");
+//   console.log("I KNOW");
+// };
+
+
+// $(document).ready(function(){
+  // $(".team-proj").on('click', changeTxt);
+// });
+
+// function changeTxt(){
+//   // $(".toggle-more-or-less").html("Less");
+//   if($(".toggle-more-or-less").html('More')) {
+//     $(".team-proj").toggle(function() {
+//         console.log( "First handler for .toggle() called." );
+//       },function() {
+//           console.log( "Second handler for .toggle() called." );
+//         });
+//   }
+// }
+
+
+    // $(".toggle-more-or-less").html('Less');
+  // } else if($(".toggle-more-or-less").html('Less')) {
+  //   $(".toggle-more-or-less").html('More');
+
+
+// $( ".team-proj" ).toggle(function() {
+//   console.log( "First handler for .toggle() called." );
+// }, function() {
+//   console.log( "Second handler for .toggle() called." );
+// });

@@ -352,6 +352,11 @@ nav#navbar a.fa:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 20px;
+}
+
+.toggle-btn-div {
+  padding-top: 30px;
 }
 
 .resume button.btn.btn-link, button.btn.btn-link.toggle-btn{
