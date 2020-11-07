@@ -37,6 +37,7 @@ nav.find("a").on("click", function() {
   return false;
 });
 
+
 /*Using jQuery to animate smooth scrolling for each link on the web page*/
 
 /*Info retrieved from w3school - https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_eff_animate_smoothscroll*/

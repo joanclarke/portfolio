@@ -348,6 +348,28 @@ nav#navbar a.fa:hover {
   font-weight: 100;
   background-color: rgb(248, 249, 249)
 }
+
+#about p.quote_arthor_big{
+  font-size: 14px;
+}
+
+
+.small_quotes {
+  line-height: 1.5;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
+}
+
+.quote_arthor{
+ font-family: 'Jura', sans-serif;
+  font-family: 'Arapey', serif;
+  font-family: 'Lobster', cursive;
+  padding-top: 0;
+  margin-top: 0px;
+  font-size: 14px !important;
+}
+
 .resume, #toggle-btn-div {
   display: flex;
   align-items: center;
@@ -408,22 +430,6 @@ nav#navbar a.fa:hover {
 
 #projects .project_row {
   padding-left: 45px;
-}
-
-.small_quotes {
-  line-height: 1.5;
-  font-size: 16px;
-  font-family: 'Open Sans', sans-serif;
-  font-family: 'Raleway', sans-serif;
-}
-
-.quote_arthor{
- font-family: 'Jura', sans-serif;
-  font-family: 'Arapey', serif;
-  font-family: 'Lobster', cursive;
-  padding-top: 0;
-  margin-top: 0px;
-  font-size: 14px;
 }
 
 .project-group-heading {
@@ -497,7 +503,8 @@ nav#navbar a.fa:hover {
 }
 
 .quote_section {
-  background-color: rgb(248, 249, 249);
+  /* background-color: rgb(248, 249, 249); */
+  background-color:rgb(232, 246, 243);
   font-weight:100;
   padding-left:150px;
   padding-right:150px;
@@ -915,6 +922,10 @@ footer {
 
   nav#navbar ul.navbar-nav {
     padding-right: 15px;
+  }
+
+  nav#navbarSupportedContent {
+    margin: 0 auto;
   }
 
   nav#navbar a.logo_title span.name {
