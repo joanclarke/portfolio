@@ -923,10 +923,10 @@ footer {
   nav#navbar ul.navbar-nav {
     padding-right: 15px;
   }
-
+/* 
   nav#navbarSupportedContent {
     margin: 0 auto;
-  }
+  } */
 
   nav#navbar a.logo_title span.name {
     font-size: 22px;
@@ -1065,7 +1065,7 @@ button.btn.btn-link {
   }
 
   nav#navbar .navbar-collapse{
-    margin-left: 650px;
+    /* margin-left: 650px; */
     font-size: 14px;
   }
 
@@ -1228,14 +1228,14 @@ button.btn.btn-link {
     font-size: 30px;
   }
 
-  nav#navbar .navbar-collapse {
+  /* nav#navbar .navbar-collapse {
     margin-left: 650px;
-  }
+  } */
 
-  nav#navbar .navbar-collapse{
+  /* nav#navbar .navbar-collapse {
     margin-left: 610px;
     font-size: 14px;
-  }
+  } */
 
   nav#navbar .navbar-collapse .dropdown-menu {
     margin-left: -80px;
@@ -1374,9 +1374,9 @@ button.btn.btn-link {
     margin-right: 55px;
   }
 
-  nav#navbar .navbar-collapse {
+  /* nav#navbar .navbar-collapse {
     margin-left: 520px !important;
-  }
+  } */
 
   .colored_social_buttons .social_buttons a{
       margin-left: 5px;
@@ -1581,7 +1581,7 @@ button.btn.btn-link {
   }
    
   nav#navbar .navbar-collapse {
-    margin-left: 440px !important;
+    /* margin-left: 440px !important; */
     font-size: 12px;
   }
 

@@ -132,19 +132,19 @@ var TxtType = function(el, toRotate, period) {
     /*Skills progress bar*/
 /*--Codes retrieved and adjusted from this jsfiddle - https://jsfiddle.net/hibbard_eu/pxnZZ/--*/
 
-// function animateProgressBar(el, width){
-//     el.animate(
-//         {width: width}, 
-//         {
-//             duration: 2000,
-//             step: function(now, fx) {
-//                 if(fx.prop == 'width') {
-//                     el.html(el.data("name") + ": " + Math.round(now * 100) / 100 + '%');
-//                 }
-//             }
-//         }        
-//     );    
-// }
+function animateProgressBar(el, width){
+    el.animate(
+        {width: width}, 
+        {
+            duration: 2000,
+            step: function(now, fx) {
+                if(fx.prop == 'width') {
+                    el.html(el.data("name") + ": " + Math.round(now * 100) / 100 + '%');
+                }
+            }
+        }        
+    );    
+}
 
 
 $('.progress').each(function(){
