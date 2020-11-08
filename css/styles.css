@@ -251,6 +251,7 @@ button.btn.btn-link:hover {
 }
 
 #top_button_holder {
+  /* display: block; */
   margin-top: 30px;
   margin-left: 100px;
 }
@@ -945,6 +946,7 @@ footer {
 
 #top_button_holder {
   margin-top: -10px;
+  /* margin-left: 37px; */
 }
 
 #welcome-section .welcome h1 {
@@ -1257,6 +1259,7 @@ button.btn.btn-link {
   nav#navbar .navbar-collapse .dropdown-menu {
     margin-left: -80px;
   }
+  
 
   #contact_me_snippet .glyphicon-envelope{
     font-size: 28px;
@@ -1570,7 +1573,7 @@ button.btn.btn-link {
   }
 
   #welcome-section button.btn.btn-link {
-      font-size: 10px;
+      font-size: 8px;
       padding: 5px 10px;
     }
 
@@ -1609,6 +1612,10 @@ button.btn.btn-link {
   #welcome-section .welcome h1 {
     font-size: 30px;
     margin-top: -20px;
+  }
+
+  #profile {
+    margin-top: -30px;
   }
 
   p#profile_summary {
@@ -1739,6 +1746,10 @@ button.btn.btn-link {
         padding-bottom: 0px;
     }
 
+    .text-left.typing {
+      margin-bottom: -20px;
+    }
+
     #welcome-section .welcome a.typewrite {
       font-size: 16px;
       padding-left: 0px;
@@ -1748,6 +1759,10 @@ button.btn.btn-link {
       margin-right: 0px;
       margin-left: 0px;
       margin-bottom: 0px;
+    }
+
+    #profession {
+      margin-top: -40px;
     }
 
     #welcome-section .welcome h1{
@@ -1781,7 +1796,6 @@ button.btn.btn-link {
     }
 
     #welcome-section button#hire_me.btn.btn-link {
-
       margin-right: -80px;
 
     }
@@ -1790,7 +1804,7 @@ button.btn.btn-link {
       margin-top: 0px;
     }
 
-  nav#navbar .navbar-brand img{
+    nav#navbar .navbar-brand img{
       width:50px;
       max-width:50%;
       height:auto;
@@ -1817,6 +1831,11 @@ button.btn.btn-link {
     nav#navbar .navbar-collapse .dropdown-menu{
       font-size: 14px;
       margin-left: -170px !important;
+    }
+
+  #top_button_holder {
+    margin-top: 110px;
+    /* margin-left: 37px !important; */
     }
 
     .about_heading, .projects_heading, .professional_heading, .contact_heading {
@@ -1906,14 +1925,14 @@ button.btn.btn-link {
 
   #home {
       height: 246px;
-      margin-top: 80px;
+      margin-top: 25px;
       background:none;
   }
 
     #welcome-section {
-      height: 305px;
+      height: 250px;
       margin-top: -10px;
-      padding-top: 100px;
+      /* padding-top: 100px; */
   }
 
   #welcome-section .row {
@@ -1928,13 +1947,13 @@ button.btn.btn-link {
         font-size: 22px;
       }
 
-    #top_button_holder {
-      margin-top: 85px;
-      margin-left: -10px;
+      #top_button_holder {
+        margin-top: 100px;
+        margin-left: 30px !important;
     }
 
     #welcome-section button.btn.btn-link {
-      font-size: 10px;
+      /* font-size: 10px; */
       padding: 5px 15px;
     }
 
