@@ -304,9 +304,14 @@ button.btn.btn-link:hover {
   border-radius: 50%;
 }
 
+#contact_me_snippet button.btn.btn-link a {
+  display: flex;
+  flex-direction: column;
+}
+
 #contact_me_snippet .glyphicon-envelope{
   font-size: 42px;
-  padding: 0px;
+  padding-bottom: 10px;
 }
 
 #contact_me_snippet .contact_snippet_btn_wrapper button.btn.btn-link span#contact_popup {
@@ -973,8 +978,8 @@ button.btn.btn-link {
 }
 
 #contact_me_snippet .glyphicon-envelope{
-  font-size: 24px;
-  padding: 4px 5px;
+  font-size: 28px;
+  /* padding: 10px 5px; */
 }
 
 #contact_me_snippet .contact_snippet_btn_wrapper button.btn.btn-link span#contact_popup {
@@ -1263,7 +1268,7 @@ button.btn.btn-link {
 
   #contact_me_snippet .glyphicon-envelope{
     font-size: 28px;
-    padding-top: 0px;
+    /* padding-top: 50px; */
   }
 
   #contact_me_snippet .contact_snippet_btn_wrapper button.btn.btn-link span#contact_popup {
@@ -1624,6 +1629,16 @@ button.btn.btn-link {
     margin-right: 10px;
   }
 
+  #contact_me_snippet button.btn.btn-link a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  #contact_me_snippet .glyphicon-envelope{
+    font-size: 24px;
+    /* padding-bottom: 0px; */
+  }
+
     #skills_sec ul li a img {
     width: 40px;
     height: 40px;
@@ -1852,21 +1867,23 @@ button.btn.btn-link {
       border-radius: 50%;
       /* padding: 0px; */
       margin-right: 35%;
-      margin-top: 128px;
+      /* margin-top: 128px; */
     }
 
     div.col-12.contact_snippet_btn_wrapper {
-      margin-top: -100px !important;
+      margin-top: 28px;
     }
 
     #contact_me_snippet .glyphicon-envelope{
-      font-size: 18px;
-      margin-bottom: 0px;
-      padding: 0px;
+      font-size: 20px;
+      /* margin-bottom: 0px; */
+      padding-bottom: 8px;
     }
 
-
-
+    #contact_me_snippet button.btn.btn-link a {
+      padding-top: 2px;
+      padding-bottom: 2px;
+    }
 /*     
     #contact_me_snippet .contact_snippet_btn_wrapper button.btn.btn-link span#contact_popup {
       padding: 0px;
@@ -2046,11 +2063,23 @@ button.btn.btn-link {
       }
 
     nav#navbar button.navbar-toggler{
-    margin-right: 20px;
+      margin-right: 20px;
     }
 
     nav#navbar .navbar-collapse {
         /* margin-left: 230px !important; */
+    }
+
+    #profile {
+      margin-top: -45px;
+  }
+
+    p#profile_summary {
+      font-size: 8px;
+    }
+
+    div.col-12.contact_snippet_btn_wrapper {
+      margin-top: 4px;
     }
 
   #about {
