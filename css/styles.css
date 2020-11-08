@@ -1645,7 +1645,7 @@ button.btn.btn-link {
   }
 
   #about, #projects, .quote_section, .contact {
-      padding-top: 40px;
+      padding-top: 80px;
     }
 
   #about {
@@ -1903,7 +1903,10 @@ button.btn.btn-link {
     #contact_me_snippet button.btn.btn-link {
       font-size: 12px !important;
     } */
-
+    
+    #about, #projects, .quote_section, .contact {
+      padding-top: 60px;
+  }
 
     .about_heading, .projects_heading, .professional_heading, .contact_heading {
       font-size: 20px;
