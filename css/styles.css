@@ -1838,6 +1838,56 @@ button.btn.btn-link {
     /* margin-left: 37px !important; */
     }
 
+
+
+    /* #contact_me_snippet {
+      margin-top: -100px !important;
+      margin-bottom: 80px;
+      margin-right: 40px;
+    } */
+    
+   #contact_me_snippet button.btn.btn-link{
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      /* padding: 0px; */
+      margin-right: 35%;
+      margin-top: 128px;
+    }
+
+    div.col-12.contact_snippet_btn_wrapper {
+      margin-top: -100px !important;
+    }
+
+    #contact_me_snippet .glyphicon-envelope{
+      font-size: 18px;
+      margin-bottom: 0px;
+      padding: 0px;
+    }
+
+
+
+/*     
+    #contact_me_snippet .contact_snippet_btn_wrapper button.btn.btn-link span#contact_popup {
+      padding: 0px;
+      font-weight: 100;
+      font-size: 10px;
+    } */
+
+    #contact_me_snippet .contact_snippet_btn_wrapper button.btn.btn-link span#contact_popup {
+      margin-top: 0px !important;
+      font-size: 4px;
+      padding: 0px;
+      /* letter-spacing: 0.3px; */
+  }      
+
+    /* 
+    
+    #contact_me_snippet button.btn.btn-link {
+      font-size: 12px !important;
+    } */
+
+
     .about_heading, .projects_heading, .professional_heading, .contact_heading {
       font-size: 20px;
     }
