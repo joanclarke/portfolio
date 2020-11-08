@@ -1631,7 +1631,7 @@ button.btn.btn-link {
 
   #contact_me_snippet {
     margin-top: -245px;
-    margin-bottom: 180px;
+    /* margin-bottom: 180px; */
     margin-right: 10px;
 }
 
@@ -1655,11 +1655,12 @@ button.btn.btn-link {
     }
 
   #about {
+    margin-top: 180px;
     line-height: 1.5;
     padding-left: 10px !important;
-      padding-right: 10px !important;
-      padding-bottom: 20px !important;
-      font-size: 12px;
+    padding-right: 10px !important;
+    padding-bottom: 20px !important;
+    font-size: 12px;
   }
 
   .about_heading, .projects_heading, .professional_heading, .contact_heading
@@ -1869,7 +1870,7 @@ button.btn.btn-link {
 
     #contact_me_snippet {
       margin-top: -180px;
-      margin-bottom: 125px;
+      /* margin-bottom: 125px; */
       margin-right: -150px;
   }
     
@@ -1907,7 +1908,11 @@ button.btn.btn-link {
       margin-top: 0px !important;
       font-size: 4px;
       padding: 0px;
-  }      
+  }     
+  
+  #about {
+    margin-top: 125px;
+  }
   
     #about, #projects, .quote_section, .contact {
       padding-top: 60px;
@@ -1980,9 +1985,9 @@ button.btn.btn-link {
       font-size: 16px;
     }
 
-    #about {
+    /* #about {
       margin-top: 50px;
-    }
+    } */
   }
 
   /* small phones only - 320px */
@@ -2091,7 +2096,7 @@ button.btn.btn-link {
     }
 
   #about {
-    margin-top: -30px;
+    margin-top: 80px;
     line-height: 1.5;
     font-size: 14px;
     padding-left: 5px !important;
