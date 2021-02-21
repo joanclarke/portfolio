@@ -766,7 +766,7 @@ hr.heading_underline2 {
 }
 
 #skills_sec ul li {
-  padding: 5px;
+  padding: 3rem;
   margin: 0 auto;
   text-align: left;
   font-size: 14px;
@@ -1049,6 +1049,10 @@ button.btn.btn-link {
       margin-left: -140px; 
   }
 
+  #skills_sec ul li {
+    padding: 1.5rem;
+  }
+
   .education .education_sub-heading{
     font-size: 20px;
   }
@@ -1210,6 +1214,10 @@ button.btn.btn-link {
 
   .skills .progress {
     margin-left: 120px;
+  }
+
+  #skills_sec ul li {
+    padding: 0.5rem;
   }
 }
 
