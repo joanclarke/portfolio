@@ -367,9 +367,10 @@ nav#navbar a.fa:hover {
 }
 
 
-.small_quotes {
+p.small_quotes {
   line-height: 1.5;
-  font-size: 0.9rem;
+  font-size: 16px!important;
+  font-size: 1rem !important;
   font-family: 'Open Sans', sans-serif;
   font-family: 'Raleway', sans-serif;
   color: #023e4d;
