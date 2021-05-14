@@ -369,15 +369,16 @@ nav#navbar a.fa:hover {
 
 .small_quotes {
   line-height: 1.5;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-family: 'Open Sans', sans-serif;
   font-family: 'Raleway', sans-serif;
+  color: #023e4d;
 }
 
 .quote_arthor{
  font-family: 'Jura', sans-serif;
   font-family: 'Arapey', serif;
-  font-family: 'Lobster', cursive;
+  /* font-family: 'Lobster', cursive; */
   padding-top: 0;
   margin-top: 0px;
   font-size: 14px !important;
@@ -437,9 +438,9 @@ nav#navbar a.fa:hover {
     color:#09A7A1;
 }
 
-.about_heading {
+/* .about_heading {
   margin-bottom: 30px;
-}
+} */
 
 #projects .project_row {
   padding-left: 45px;
@@ -1553,6 +1554,7 @@ button.btn.btn-link {
 
   .small_quotes {
     font-size: 0.5rem;
+    font-size: 8px;
   }
 
 }
@@ -1731,6 +1733,7 @@ button.btn.btn-link {
 
   .small_quotes {
     font-size: 0.3rem;
+    font-size: 6px;
   }
 
   .quote_arthor {
