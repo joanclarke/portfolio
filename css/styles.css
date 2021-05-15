@@ -8,6 +8,7 @@ body{
   z-index:0;
   font-family: 'Open Sans', sans-serif;
   font-family: 'Raleway', sans-serif;
+  color: #1ebeee;
 }
 
 .container-fluid {
@@ -84,7 +85,8 @@ nav#navbar .nav-item .nav-link {
 }
 
 nav#navbar .nav-item .nav-link:hover {
-  border-bottom: 3px solid rgb(9,167,161);;
+  /* border-bottom: 3px solid rgb(9,167,161); */
+  border-bottom: 3px solid rgb(30, 190, 238);
 }
 
 nav#navbar .dropdown-item{
@@ -94,7 +96,7 @@ nav#navbar .dropdown-item{
 }
 
 nav#navbar .dropdown-item:visited{
-  background-color: #09a7a1;
+  background-color: rgb(30, 190, 238);
 }
 
 nav#navbar .dropdown-item:hover {
@@ -103,7 +105,8 @@ nav#navbar .dropdown-item:hover {
 }
 
 a.active {
-  color: rgb(9,167,161) !important;
+  /* color: rgb(9,167,161) !important; */
+  color: rgb(30, 190, 238) !important;
 }
 
 /*--*************************
@@ -184,8 +187,8 @@ a.active {
 
 
 #welcome-section .welcome a.typewrite {
-  color: #05bab3;
-  color: #07bab3;
+  /* color: #07bab3; */
+  color: rgb(30, 190, 238);
   text-decoration: none;
   font-weight: 300;
   font-size: 45px;
@@ -232,12 +235,14 @@ button.btn.btn-link {
 
 button#hire_me.btn.btn-link {
   margin-left: 20px;
-  background-color: rgb(9,167,161);
+  /* background-color: rgb(9,167,161); */
+  background-color: rgb(30, 190, 238);
 }
 
 button#hire_me.btn.btn-link:hover{
   margin-left: 20px;
-  background-color: rgb(10, 211, 204);
+  /* background-color: rgb(10, 211, 204); */
+  background-color: rgb(17, 177, 226);
 }
 
 button.btn.btn-link a {
@@ -369,8 +374,8 @@ nav#navbar a.fa:hover {
 
 p.small_quotes {
   line-height: 1.5;
-  font-size: 16px!important;
   font-size: 1rem !important;
+  font-size: 16px!important;
   font-family: 'Open Sans', sans-serif;
   font-family: 'Raleway', sans-serif;
   color: #023e4d;
@@ -436,7 +441,8 @@ p.small_quotes {
     letter-spacing: 0em;
     line-height: 1em;
     text-transform: none;
-    color:#09A7A1;
+    /* color:#09A7A1; */
+    color: rgb(30, 190, 238);
 }
 
 /* .about_heading {
@@ -520,6 +526,7 @@ p.small_quotes {
 .quote_section {
   /* background-color: rgb(248, 249, 249); */
   background-color:rgb(232, 246, 243);
+  background-color: rgba(30, 190, 238, 0.3);
   font-weight:100;
   padding-left:150px;
   padding-right:150px;
@@ -608,6 +615,7 @@ img:hover + .view_button,
   	padding: 0;
   	margin: 0;
     background-color: rgb(232, 246, 243);
+    /* background-color: #1ebeee; */
 }
 
 .professional_outlook .text-left {
@@ -686,6 +694,7 @@ img:hover + .view_button,
   font-size: 18px;
   line-height: 35px;
   background-color: rgb(232, 246, 243);
+  background-color: #1ebeee;
   margin-top: 0;
   padding-top: 30px;
   padding-left: 0px;
@@ -747,12 +756,14 @@ hr.heading_underline2 {
   padding: 40px 10px;
   width: 100%;
   margin: 0 auto;
-  border: 1px solid rgb(9,167,161);
+  /* border: 1px solid rgb(9,167,161); */
+  border: 1px solid  rgb(30, 190, 238);
 }
 
 #skills_sec .skills_title {
   text-align: center;
-  background-color: rgb(9,167,161);
+  /* background-color: rgb(9,167,161); */
+  background-color: rgb(30, 190, 238);
   color: white;
   padding: 5px;
   border-radius: 5px;
@@ -1286,6 +1297,9 @@ button.btn.btn-link {
     letter-spacing: 0.3px;
   }
 
+.these-quotes p {
+    display: none !important;
+  } 
 
   #projects .project_row {
     padding-left: 20px !important;
@@ -1553,10 +1567,14 @@ button.btn.btn-link {
     height: 380px;
   }
 
-  .small_quotes {
+.these-quotes p {
+    display: none !important;
+  }
+
+  /* p.small_quotes {
     font-size: 0.5rem;
     font-size: 8px;
-  }
+  } */
 
 }
 
@@ -1732,10 +1750,10 @@ button.btn.btn-link {
   }
  
 
-  .small_quotes {
+  /* p.small_quotes {
     font-size: 0.3rem;
     font-size: 6px;
-  }
+  } */
 
   .quote_arthor {
     font-size: 10px;
